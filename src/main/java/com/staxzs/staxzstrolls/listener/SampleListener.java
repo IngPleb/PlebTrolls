@@ -1,4 +1,4 @@
-package org.mineacademy.template.listener;
+package com.staxzs.staxzstrolls.listener;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -7,7 +7,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.annotation.AutoRegister;
-import org.mineacademy.template.PlayerCache;
+import com.staxzs.staxzstrolls.PlayerCache;
 
 /**
  * A sample listener for events.

@@ -1,16 +1,16 @@
-package org.mineacademy.template.settings;
-
-import java.util.Arrays;
-import java.util.List;
+package com.staxzs.staxzstrolls.settings;
 
 import org.mineacademy.fo.settings.Lang;
 import org.mineacademy.fo.settings.SimpleSettings;
 import org.mineacademy.fo.settings.YamlStaticConfig;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * A sample settings class, utilizing {@link YamlStaticConfig} with prebuilt settings.yml handler
  * with a bunch of preconfigured keys, see resources/settings.yml
- *
+ * <p>
  * Foundation detects if you have "settings.yml" placed in your jar (in src/main/resources in source)
  * and will load this class automatically. The same goes for the {@link Lang} class which is
  * automatically loaded when we detect the presence of at least one localization/messages_X.yml
@@ -30,7 +30,7 @@ public final class Settings extends SimpleSettings {
 	/**
 	 * Place the sections where user can create new "key: value" pairs
 	 * here so that they are not removed while adding comments.
-	 *
+	 * <p>
 	 * Example use in ChatControl: user can add new channels in "Channels.List"
 	 * section so we place "Channels.List" here.
 	 *
@@ -40,29 +40,6 @@ public final class Settings extends SimpleSettings {
 	protected List<String> getUncommentedSections() {
 		return Arrays.asList(
 				"Example.Uncommented_Section");
-	}
-
-	/**
-	 * A sample settings section
-	 */
-	public static class SampleSection {
-
-		/**
-		 * A sample flag
-		 */
-		public static Boolean SAMPLE_FLAG;
-
-		/*
-		 * Automatically called method when we load settings.yml to load values in this subclass
-		 */
-		private static void init() {
-
-			// A convenience method to instruct the loader to prepend all paths with Example so you
-			// do not have to call "Example.Key1", "Example.Key2" all the time, only "Key1" and "Key2".
-			setPathPrefix("Example");
-
-			SAMPLE_FLAG = getBoolean("Sample_Flag");
-		}
 	}
 
 	/*

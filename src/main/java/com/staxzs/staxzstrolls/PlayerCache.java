@@ -1,18 +1,16 @@
-package org.mineacademy.template;
+package com.staxzs.staxzstrolls;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.UUID;
-
-import javax.annotation.Nullable;
-
+import lombok.Getter;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.constants.FoConstants;
 import org.mineacademy.fo.remain.Remain;
 import org.mineacademy.fo.settings.YamlConfig;
 
-import lombok.Getter;
+import javax.annotation.Nullable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.UUID;
 
 /**
  * A sample player cache storing permanent player information
@@ -24,7 +22,7 @@ public final class PlayerCache extends YamlConfig {
 	/**
 	 * The player cache map caching data for players online.
 	 */
-	private static volatile Map<UUID, PlayerCache> cacheMap = new HashMap<>();
+	private static final Map<UUID, PlayerCache> cacheMap = new HashMap<>();
 
 	/**
 	 * This instance's player's unique id
