@@ -17,17 +17,19 @@ public final class Permissions {
 	 * A sample permission group for your convenience. The {@link PermissionGroup}
 	 * is used in the {@link PermsCommand} for your convenience automatically.
 	 */
-	@PermissionGroup("Execute main plugin command for /{label}.")
+	@PermissionGroup("Execute main plugin command.")
 	public static final class Command {
 
-		@Permission("Reload the plugin")
+		@Permission("Open the troll menu for a player or troll them directly.")
+		public static final String TROLL = "staxzstrolls.command.troll";
+
+		@Permission("Reload the plugin.")
 		public static final String RELOAD = "staxzstrolls.command.reload";
 
-		@Permission("Permission management")
+		@Permission("Permission management.")
 		public static final String PERMS = "staxzstrolls.command.perms";
 
-		@Permission("Debug the plugin")
+		@Permission("Debug the plugin.")
 		public static final String DEBUG = "staxzstrolls.command.debug";
-
 	}
 }
