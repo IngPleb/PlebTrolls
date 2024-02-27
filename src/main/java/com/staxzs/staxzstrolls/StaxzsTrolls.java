@@ -1,13 +1,11 @@
 package com.staxzs.staxzstrolls;
 
+import com.staxzs.staxzstrolls.settings.Settings;
+import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
 /**
- * PluginTemplate is a simple template you can use every time you make
- * a new plugin. This will save you time because you no longer have to
- * recreate the same skeleton and features each time.
- * <p>
- * It uses Foundation for fast and efficient development process.
+ * The main class of the plugin.
  */
 public final class StaxzsTrolls extends SimplePlugin {
 
@@ -16,6 +14,8 @@ public final class StaxzsTrolls extends SimplePlugin {
 	 */
 	@Override
 	protected void onPluginStart() {
+		if (!Settings.SILENT_START)
+			this.consoleGreeting();
 	}
 
 	/**
@@ -29,11 +29,6 @@ public final class StaxzsTrolls extends SimplePlugin {
 
 		// Uncomment to load variables
 		// Variable.loadVariables();
-
-		//
-		// Add your own plugin parts to load automatically here
-		// Please see @AutoRegister for parts you do not have to register manually
-		//
 	}
 
 	@Override
@@ -41,6 +36,54 @@ public final class StaxzsTrolls extends SimplePlugin {
 
 		// Close your database here if you use one
 		//YourDatabase.getInstance().close();
+	}
+
+	private void consoleGreeting() {
+
+		String staxzsLogo = """
+				\u200E \u200E /$$$$$$\u200E \u200E \u200E /$$\u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E\s
+				\u200E /$$__\u200E \u200E $$\u200E |\u200E $$\u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E\s
+				|\u200E $$\u200E \u200E \\__//$$$$$$\u200E \u200E \u200E \u200E /$$$$$$\u200E \u200E /$$\u200E \u200E \u200E /$$\u200E /$$$$$$$$\u200E \u200E /$$$$$$$
+				|\u200E \u200E $$$$$$|_\u200E \u200E $$_/\u200E \u200E \u200E |____\u200E \u200E $$|\u200E \u200E $$\u200E /$$/|____\u200E /$$/\u200E /$$_____/
+				\u200E \\____\u200E \u200E $$\u200E |\u200E $$\u200E \u200E \u200E \u200E \u200E \u200E /$$$$$$$\u200E \\\u200E \u200E $$$$/\u200E \u200E \u200E \u200E /$$$$/\u200E |\u200E \u200E $$$$$$\u200E\s
+				\u200E /$$\u200E \u200E \\\u200E $$\u200E |\u200E $$\u200E /$$\u200E /$$__\u200E \u200E $$\u200E \u200E >$$\u200E \u200E $$\u200E \u200E \u200E /$$__/\u200E \u200E \u200E \\____\u200E \u200E $$
+				|\u200E \u200E $$$$$$/\u200E |\u200E \u200E $$$$/|\u200E \u200E $$$$$$$\u200E /$$/\\\u200E \u200E $$\u200E /$$$$$$$$\u200E /$$$$$$$/
+				\u200E \\______/\u200E \u200E \u200E \\___/\u200E \u200E \u200E \\_______/|__/\u200E \u200E \\__/|________/|_______/\u200E\s""";
+
+		String productName = """
+				\u200E /$$$$$$$$\u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E /$$\u200E /$$\u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E\s
+				|__\u200E \u200E $$__/\u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E |\u200E $$|\u200E $$\u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E \u200E\s
+				\u200E \u200E \u200E |\u200E $$\u200E \u200E /$$$$$$\u200E \u200E \u200E /$$$$$$\u200E |\u200E $$|\u200E $$\u200E \u200E /$$$$$$$
+				\u200E \u200E \u200E |\u200E $$\u200E /$$__\u200E \u200E $$\u200E /$$__\u200E \u200E $$|\u200E $$|\u200E $$\u200E /$$_____/
+				\u200E \u200E \u200E |\u200E $$|\u200E $$\u200E \u200E \\__/|\u200E $$\u200E \u200E \\\u200E $$|\u200E $$|\u200E $$|\u200E \u200E $$$$$$\u200E\s
+				\u200E \u200E \u200E |\u200E $$|\u200E $$\u200E \u200E \u200E \u200E \u200E \u200E |\u200E $$\u200E \u200E |\u200E $$|\u200E $$|\u200E $$\u200E \\____\u200E \u200E $$
+				\u200E \u200E \u200E |\u200E $$|\u200E $$\u200E \u200E \u200E \u200E \u200E \u200E |\u200E \u200E $$$$$$/|\u200E $$|\u200E $$\u200E /$$$$$$$/
+				\u200E \u200E \u200E |__/|__/\u200E \u200E \u200E \u200E \u200E \u200E \u200E \\______/\u200E |__/|__/|_______/\u200E\s""";
+
+		String divider = "\u200E\n" + Common.consoleLineSmooth() + "\n \u200E";
+
+		// Divider
+		Common.logNoPrefix(divider);
+
+		// Name of the plugin
+		Common.logNoPrefix(staxzsLogo);
+		Common.logNoPrefix(productName);
+
+		// Space
+		Common.logNoPrefix(" ");
+
+		// Version
+		Common.logNoPrefix("StaxzsTrolls v" + Settings.VERSION + " by Staxzs (IngPleb)");
+		Common.logNoPrefix("If you encounter any issues, please contact us!"); //TODO add contact info
+
+		// Space
+		Common.logNoPrefix(" ");
+
+		// PS
+		Common.logNoPrefix("Enjoy Trolling!");
+
+		// Divider
+		Common.logNoPrefix(divider);
 	}
 
 	/* ------------------------------------------------------------------------------- */
@@ -52,8 +95,9 @@ public final class StaxzsTrolls extends SimplePlugin {
 	 * field already created for you in SimplePlugin but casts it to your
 	 * specific plugin instance for your convenience.
 	 *
-	 * @return
+	 * @return StaxzsTrolls instance
 	 */
+	@SuppressWarnings("unused")
 	public static StaxzsTrolls getInstance() {
 		return (StaxzsTrolls) SimplePlugin.getInstance();
 	}

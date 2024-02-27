@@ -20,8 +20,14 @@ public final class Permissions {
 	@PermissionGroup("Execute main plugin command for /{label}.")
 	public static final class Command {
 
-		@Permission("Sends a sample message")
-		public static final String SAMPLE = "plugintemplate.command.sample";
+		@Permission("Reload the plugin")
+		public static final String RELOAD = "staxzstrolls.command.reload";
+
+		@Permission("Permission management")
+		public static final String PERMS = "staxzstrolls.command.perms";
+
+		@Permission("Debug the plugin")
+		public static final String DEBUG = "staxzstrolls.command.debug";
 
 	}
 }

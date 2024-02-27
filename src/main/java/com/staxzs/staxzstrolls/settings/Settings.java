@@ -19,6 +19,8 @@ import java.util.List;
 @SuppressWarnings("unused")
 public final class Settings extends SimpleSettings {
 
+	public static Boolean SILENT_START;
+
 	/**
 	 * @see org.mineacademy.fo.settings.SimpleSettings#getConfigVersion()
 	 */
@@ -49,5 +51,7 @@ public final class Settings extends SimpleSettings {
 	 */
 	private static void init() {
 		setPathPrefix(null);
+
+		SILENT_START = getBoolean("Silent_Start");
 	}
 }

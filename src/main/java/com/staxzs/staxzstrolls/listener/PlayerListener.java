@@ -1,19 +1,18 @@
 package com.staxzs.staxzstrolls.listener;
 
+import com.staxzs.staxzstrolls.PlayerCache;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.annotation.AutoRegister;
-import com.staxzs.staxzstrolls.PlayerCache;
 
 /**
  * A sample listener for events.
  */
 @AutoRegister
-public final class SampleListener implements Listener {
+public final class PlayerListener implements Listener {
 
 	/**
 	 * Listen for player join and loads his data
@@ -25,7 +24,6 @@ public final class SampleListener implements Listener {
 		final Player player = event.getPlayer();
 
 		PlayerCache.from(player); // Load player's cache
-		Messenger.success(player, "Welcome to the game!");
 	}
 
 	/**

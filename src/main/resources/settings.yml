@@ -27,6 +27,9 @@
 #
 # !-----------------------------------------------------------------------------------------------!
 
+# Allows you to enable the startup message.
+Silent_Start: false
+
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
@@ -37,7 +40,7 @@ Location_Format: "{world} [{x}, {y}, {z}]"
 # -------------------------------------------------------------------------------------------------
 # What commands should trigger the main plugin command group?
 # -------------------------------------------------------------------------------------------------
-Command_Aliases: [ staxzstrolls, staxzstroll, stroll, troll ]
+Command_Aliases: [ staxzstrolls ]
 
 # -------------------------------------------------------------------------------------------------
 # What language should we use for messages?
