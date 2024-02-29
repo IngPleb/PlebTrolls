@@ -1,6 +1,7 @@
 package com.staxzs.staxzstrolls;
 
 import com.staxzs.staxzstrolls.settings.Settings;
+import com.staxzs.staxzstrolls.troll.Troll;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
@@ -29,6 +30,8 @@ public final class StaxzsTrolls extends SimplePlugin {
 
 		// Uncomment to load variables
 		// Variable.loadVariables();
+
+		Troll.initailizeTrolls();
 	}
 
 	@Override

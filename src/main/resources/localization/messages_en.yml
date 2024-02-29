@@ -25,9 +25,20 @@
 # !-----------------------------------------------------------------------------------------------!
 
 # -------------------------------------------------------------------------------------------------
+# Texts/messages related to trolls
+# -------------------------------------------------------------------------------------------------
+Trolls:
+  Creeper_Hiss:
+    Display_Name: "&aC&fr&ae&fe&ap&fe&ar&f &aH&fi&fs&as"
+    Description: "Play a creeper hiss sound to a player."
+  Launch_Player:
+    Display_Name: "&3Launch Player"
+    Description: "Launch the player into the air"
+
+# -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
-Commands: 
+Commands:
   # true = https://i.imgur.com/us88BCT.png
   # false = https://i.imgur.com/N7jLu7v.png
   Simple_Help_Design: false
@@ -81,7 +92,7 @@ Commands:
   Debug_Copy_Fail: "&cCopying files failed on file {file} and it was stopped. See console for more information."
   Debug_Zip_Fail: "&cCreating a ZIP of your files failed, see console for more information. Please ZIP debug/ folder and send it to us via ufile.io manually."
   Perms_Description: "List all permissions the plugin has."
-  Perms_Usage: 
+  Perms_Usage:
   Perms_Header: "Listing All Plugin Permissions"
   Perms_Main: "Main"
   Perms_Permissions: "Permissions:"
@@ -103,17 +114,17 @@ Pages:
   Go_To_Page: "&7Go to page {page}"
   Go_To_First_Page: "&7Go to the first page"
   Tooltip:
-  - "&7You can also navigate using the"
-  - "&7hidden '/#flp <page> command.'"
-  
+    - "&7You can also navigate using the"
+    - "&7hidden '/#flp <page> command.'"
+
 # -------------------------------------------------------------------------------------------------
 # Messages related to players
 # -------------------------------------------------------------------------------------------------
-Player: 
+Player:
   Not_Online: "&cPlayer {player} &cis not online on this server."
   Not_Played_Before: "&cPlayer {player} &chas not played before or we could not locate his disk data."
   Invalid_UUID: "&cCould not find a player from UUID {uuid}."
-  
+
 # -------------------------------------------------------------------------------------------------
 # Messages related to menus
 # -------------------------------------------------------------------------------------------------
@@ -129,8 +140,8 @@ Menu:
   Tooltip_Info: "&fMenu Information"
   Button_Return_Title: "&4&lReturn"
   Button_Return_Lore:
-  - ""
-  - "Return back."
+    - ""
+    - "Return back."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to player conversation where server is waiting for his chat input
@@ -183,7 +194,7 @@ Data_Loading: "Database is currently loading data, please wait..."
 # -------------------------------------------------------------------------------------------------
 # Messages shown when player runs a command he lacks permission for
 # -------------------------------------------------------------------------------------------------
-No_Permission: "&cNo permission: {permission}" 
+No_Permission: "&cNo permission: {permission}"
 
 # -------------------------------------------------------------------------------------------------
 # Internal versioning number

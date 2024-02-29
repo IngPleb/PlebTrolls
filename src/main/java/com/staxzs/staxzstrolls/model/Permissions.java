@@ -32,4 +32,14 @@ public final class Permissions {
 		@Permission("Debug the plugin.")
 		public static final String DEBUG = "staxzstrolls.command.debug";
 	}
+
+	@PermissionGroup("Troll permissions")
+	public static final class Troll {
+		@Permission("Launch the player into the air")
+		public static final String LAUNCH = "staxzstrolls.troll.launch";
+
+		@Permission("Creeper hiss at the player")
+		public static final String CREEPER_HISS = "staxzstrolls.troll.creeperhiss";
+
+	}
 }

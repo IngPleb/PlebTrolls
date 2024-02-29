@@ -1,10 +1,15 @@
 package com.staxzs.staxzstrolls.command;
 
+import com.staxzs.staxzstrolls.menu.TrollPlayerMenu;
 import com.staxzs.staxzstrolls.model.Permissions;
+import com.staxzs.staxzstrolls.troll.Troll;
 import org.bukkit.entity.Player;
+import org.mineacademy.fo.Common;
 import org.mineacademy.fo.annotation.AutoRegister;
 import org.mineacademy.fo.collection.StrictList;
 import org.mineacademy.fo.command.SimpleCommand;
+
+import java.util.List;
 
 @AutoRegister
 @SuppressWarnings("unused")
@@ -20,15 +25,30 @@ public final class TrollCommand extends SimpleCommand {
 	@Override
 	protected void onCommand() {
 		Player target = this.findPlayer(this.args[0]);
-		String troll = this.args.length > 1 ? this.args[1] : null;
+		String trollName = this.args.length > 1 ? this.args[1] : null;
 
 		if (!this.isPlayer())
-			this.checkNotNull(troll, "You must specify a troll to use on the player");
+			this.checkNotNull(trollName, "You must specify a troll to use on the player");
 
-		if (troll == null) {
+		if (trollName == null) {
+			Player menuViewer = (Player) this.sender;
 
+			new TrollPlayerMenu(null, menuViewer, target).displayTo(menuViewer);
 		} else {
-			this.tellError("Not implemented yet.");
+			Troll troll = Troll.fromName(trollName);
+			this.checkBoolean(troll != null, "Troll " + trollName + " not found");
+
+			assert troll != null;
+			troll.executeTroll(this.sender, target);
 		}
+	}
+
+	@Override
+	protected List<String> tabComplete() {
+		return switch (this.args.length) {
+			case 1 -> Common.getPlayerNames();
+			case 2 -> this.completeLastWord(Troll.getTrollNames());
+			default -> NO_COMPLETE;
+		};
 	}
 }
