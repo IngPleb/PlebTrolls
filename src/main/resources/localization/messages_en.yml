@@ -37,6 +37,9 @@ Trolls:
   Lightning_Strike:
     Display_Name: "&eLightning Strike"
     Description: "Strike the player with a lightning bolt."
+  Ignite_Player:
+    Display_Name: "&6Ignite Player"
+    Description: "Set the player on fire."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

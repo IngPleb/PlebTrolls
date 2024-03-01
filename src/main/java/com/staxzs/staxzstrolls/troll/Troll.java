@@ -32,6 +32,10 @@ public abstract class Troll {
 		this.icon = icon;
 	}
 
+	//////////////////////////////
+	// Static
+	//////////////////////////////
+
 	public static Set<Troll> getRegisteredTrolls() {
 		return REGISTERED_TROLLS.getSource();
 	}
@@ -40,14 +44,11 @@ public abstract class Troll {
 		REGISTERED_TROLLS.add(troll);
 	}
 
-	//////////////////////////////
-	// Static
-	//////////////////////////////
-
 	public static void initializeTrolls() {
 		registerTroll(new CreeperHissTroll());
 		registerTroll(new LaunchTroll());
 		registerTroll(new LightingStrikeTroll());
+		registerTroll(new IgniteTroll());
 	}
 
 	public static Troll fromName(String name) {

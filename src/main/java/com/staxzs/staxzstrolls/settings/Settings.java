@@ -58,8 +58,12 @@ public final class Settings extends SimpleSettings {
 	public static class TrollSection {
 		public static String PATH_PREFIX = "Trolls";
 
+		public static Integer IGNITE_DURATION;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
+
+			IGNITE_DURATION = getInteger("Ignite_Duration");
 		}
 
 		public static class IconsSection {
@@ -69,12 +73,15 @@ public final class Settings extends SimpleSettings {
 			public static String CREEPER_HISS;
 			public static String LIGHTNING_STRIKE;
 
+			public static String IGNITE_PLAYER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
 				LAUNCH_PLAYER = getString("Launch_Player");
 				CREEPER_HISS = getString("Creeper_Hiss");
 				LIGHTNING_STRIKE = getString("Lightning_Strike");
+				IGNITE_PLAYER = getString("Ignite_Player");
 			}
 		}
 	}

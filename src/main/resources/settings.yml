@@ -36,12 +36,17 @@ Silent_Start: false
 # Trolls section
 # -------------------------------------------------------------------------------------------------
 Trolls:
+  # The time in ticks that the player will be burning after being ignited.
+  # 20 ticks = 1 second
+  # 100 ticks = 5 seconds
+  Ignite_Duration: 100
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
     Creeper_Hiss: "CREEPER_HEAD"
     Lightning_Strike: "TRIPWIRE_HOOK"
-
+    Ignite_Player: "FLINT_AND_STEEL"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
