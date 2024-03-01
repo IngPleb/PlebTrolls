@@ -15,8 +15,8 @@ public final class IgniteTroll extends Troll {
 	private static final IgniteTroll INSTANCE = new IgniteTroll();
 
 	public IgniteTroll() {
-		super("LAUNCH_PLAYER", Lang.of("Trolls.Ignite.Display_Name"),
-				Lang.of("Trolls.Ignite.Description"),
+		super("IGNITE_TROLL", Lang.of("Trolls.Ignite_Player.Display_Name"),
+				Lang.of("Trolls.Ignite_Player.Description"),
 				Permissions.Troll.IGNITE,
 				CompMaterial.fromString(Settings.TrollSection.IconsSection.IGNITE_PLAYER));
 	}
