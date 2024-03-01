@@ -43,6 +43,9 @@ Trolls:
   Explode_Player:
     Display_Name: "&cExplode Player"
     Description: "Explode the player."
+  Scream:
+    Display_Name: "&5Scream"
+    Description: "Play a loud ghast scream to a player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

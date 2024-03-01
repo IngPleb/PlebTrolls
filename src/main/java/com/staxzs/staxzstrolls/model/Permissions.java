@@ -49,5 +49,9 @@ public final class Permissions {
 
 		@Permission("Explode the player")
 		public static final String EXPLODE_PLAYER = "staxzstrolls.troll.explode_player";
+
+		@Permission("Scream at the player")
+		public static final String SCREAM_PLAYER = "staxzstrolls.troll.scream_player";
+
 	}
 }

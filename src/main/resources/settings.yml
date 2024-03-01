@@ -45,6 +45,12 @@ Trolls:
   # 1 is the default power.
   Explosion_Power: 1
 
+  # Name of the scream sound.
+  Scream_Sound: "GHAST_SCREAM"
+  # Volume of the scream sound.
+  # 1 is the default volume.
+  Scream_Volume: 1
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -52,6 +58,7 @@ Trolls:
     Lightning_Strike: "TRIPWIRE_HOOK"
     Ignite_Player: "FLINT_AND_STEEL"
     Explode_Player: "TNT"
+    Scream: "GHAST_TEAR"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
