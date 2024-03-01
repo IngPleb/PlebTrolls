@@ -11,6 +11,18 @@ import org.mineacademy.fo.plugin.SimplePlugin;
 public final class StaxzsTrolls extends SimplePlugin {
 
 	/**
+	 * Return the instance of this plugin, which simply refers to a static
+	 * field already created for you in SimplePlugin but casts it to your
+	 * specific plugin instance for your convenience.
+	 *
+	 * @return StaxzsTrolls instance
+	 */
+	@SuppressWarnings("unused")
+	public static StaxzsTrolls getInstance() {
+		return (StaxzsTrolls) SimplePlugin.getInstance();
+	}
+
+	/**
 	 * Automatically perform login ONCE when the plugin starts.
 	 */
 	@Override
@@ -31,7 +43,7 @@ public final class StaxzsTrolls extends SimplePlugin {
 		// Uncomment to load variables
 		// Variable.loadVariables();
 
-		Troll.initailizeTrolls();
+		Troll.initializeTrolls();
 	}
 
 	@Override
@@ -40,6 +52,10 @@ public final class StaxzsTrolls extends SimplePlugin {
 		// Close your database here if you use one
 		//YourDatabase.getInstance().close();
 	}
+
+	/* ------------------------------------------------------------------------------- */
+	/* Static */
+	/* ------------------------------------------------------------------------------- */
 
 	private void consoleGreeting() {
 
@@ -87,21 +103,5 @@ public final class StaxzsTrolls extends SimplePlugin {
 
 		// Divider
 		Common.logNoPrefix(divider);
-	}
-
-	/* ------------------------------------------------------------------------------- */
-	/* Static */
-	/* ------------------------------------------------------------------------------- */
-
-	/**
-	 * Return the instance of this plugin, which simply refers to a static
-	 * field already created for you in SimplePlugin but casts it to your
-	 * specific plugin instance for your convenience.
-	 *
-	 * @return StaxzsTrolls instance
-	 */
-	@SuppressWarnings("unused")
-	public static StaxzsTrolls getInstance() {
-		return (StaxzsTrolls) SimplePlugin.getInstance();
 	}
 }
