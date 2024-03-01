@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.model.Tuple;
+import org.mineacademy.fo.remain.CompMaterial;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -20,12 +21,49 @@ public abstract class Troll {
 	final String displayName;
 	final String description;
 	final String permission;
+	CompMaterial icon;
 
-	protected Troll(String name, String displayName, String description, String permission) {
+	protected Troll(String name, String displayName, String description, String permission, CompMaterial icon) {
 		this.name = name;
 		this.displayName = displayName;
 		this.description = description;
 		this.permission = permission;
+		this.icon = icon;
+	}
+
+	public static Set<Troll> getRegisteredTrolls() {
+		return REGISTERED_TROLLS;
+	}
+
+	public static void registerTroll(Troll troll) {
+		REGISTERED_TROLLS.add(troll);
+	}
+
+	//////////////////////////////
+	// Static
+	//////////////////////////////
+
+	public static void initializeTrolls() {
+		registerTroll(new CreeperHissTroll());
+		registerTroll(new LaunchTroll());
+		registerTroll(new LightingStrikeTroll());
+	}
+
+	public static Troll fromName(String name) {
+		for (Troll troll : REGISTERED_TROLLS)
+			if (troll.getName().equalsIgnoreCase(name))
+				return troll;
+
+		return null;
+	}
+
+	public static Set<String> getTrollNames() {
+		Set<String> names = new HashSet<>();
+
+		for (Troll troll : REGISTERED_TROLLS)
+			names.add(troll.getName());
+
+		return names;
 	}
 
 	public final void executeTroll(CommandSender sender, Player target) {
@@ -45,40 +83,5 @@ public abstract class Troll {
 	}
 
 	public abstract Tuple<Boolean, String> performTroll(CommandSender sender, Player target);
-
-	//////////////////////////////
-	// Static
-	//////////////////////////////
-
-
-	public static Set<Troll> getRegisteredTrolls() {
-		return REGISTERED_TROLLS;
-	}
-
-	public static void registerTroll(Troll troll) {
-		REGISTERED_TROLLS.add(troll);
-	}
-
-	public static void initailizeTrolls() {
-		registerTroll(new CreeperHissTroll());
-		registerTroll(new LaunchTroll());
-	}
-
-	public static Troll fromName(String name) {
-		for (Troll troll : REGISTERED_TROLLS)
-			if (troll.getName().equalsIgnoreCase(name))
-				return troll;
-
-		return null;
-	}
-
-	public static Set<String> getTrollNames() {
-		Set<String> names = new HashSet<>();
-
-		for (Troll troll : REGISTERED_TROLLS)
-			names.add(troll.getName());
-
-		return names;
-	}
 
 }

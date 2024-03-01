@@ -115,9 +115,9 @@ public class TrollPlayerMenu extends MenuPagged<Troll> {
 
 	@Override
 	protected ItemStack convertToItemStack(Troll troll) {
-		ItemCreator creator = ItemCreator.of(CompMaterial.GOLDEN_AXE)
+		ItemCreator creator = ItemCreator.of(troll.getIcon())
 				.name(troll.getDisplayName())
-				.lore(troll.getDescription());
+				.lore("", troll.getDescription());
 
 
 		return creator.make();

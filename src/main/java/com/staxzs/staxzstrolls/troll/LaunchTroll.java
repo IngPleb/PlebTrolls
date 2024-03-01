@@ -5,6 +5,7 @@ import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.model.Tuple;
+import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
 public final class LaunchTroll extends Troll {
@@ -13,7 +14,10 @@ public final class LaunchTroll extends Troll {
 	private static final LaunchTroll INSTANCE = new LaunchTroll();
 
 	public LaunchTroll() {
-		super("LAUNCH_PLAYER", Lang.of("Trolls.Launch_Player.Display_Name"), Lang.of("Trolls.Launch_Player.Description"), Permissions.Troll.LAUNCH);
+		super("LAUNCH_PLAYER", Lang.of("Trolls.Launch_Player.Display_Name"),
+				Lang.of("Trolls.Launch_Player.Description"),
+				Permissions.Troll.LAUNCH,
+				CompMaterial.FEATHER);
 	}
 
 
