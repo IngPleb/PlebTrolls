@@ -60,10 +60,13 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer IGNITE_DURATION;
 
+		public static Integer EXPLODE_POWER;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
 			IGNITE_DURATION = getInteger("Ignite_Duration");
+			EXPLODE_POWER = getInteger("Explosion_Power");
 		}
 
 		public static class IconsSection {
@@ -75,6 +78,8 @@ public final class Settings extends SimpleSettings {
 
 			public static String IGNITE_PLAYER;
 
+			public static String EXPLODE_PLAYER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -82,6 +87,7 @@ public final class Settings extends SimpleSettings {
 				CREEPER_HISS = getString("Creeper_Hiss");
 				LIGHTNING_STRIKE = getString("Lightning_Strike");
 				IGNITE_PLAYER = getString("Ignite_Player");
+				EXPLODE_PLAYER = getString("Explode_Player");
 			}
 		}
 	}

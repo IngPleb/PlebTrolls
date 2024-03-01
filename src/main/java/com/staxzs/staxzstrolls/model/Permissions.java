@@ -45,6 +45,9 @@ public final class Permissions {
 		public static final String LIGHTNING_STRIKE = "staxzstrolls.troll.lightning_strike";
 
 		@Permission("Ignite the player")
-		public static final String IGNITE = "staxzstrolls.troll.ignite";
+		public static final String IGNITE_PLAYER = "staxzstrolls.troll.ignite_player";
+
+		@Permission("Explode the player")
+		public static final String EXPLODE_PLAYER = "staxzstrolls.troll.explode_player";
 	}
 }

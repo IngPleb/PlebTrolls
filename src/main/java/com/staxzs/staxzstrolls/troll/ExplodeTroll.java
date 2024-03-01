@@ -9,22 +9,22 @@ import org.mineacademy.fo.model.Tuple;
 import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
-public final class IgniteTroll extends Troll {
+public final class ExplodeTroll extends Troll {
 
 	@Getter
-	private static final IgniteTroll INSTANCE = new IgniteTroll();
+	private static final ExplodeTroll INSTANCE = new ExplodeTroll();
 
-	public IgniteTroll() {
-		super("IGNITE_PLAYER", Lang.of("Trolls.Ignite_Player.Display_Name"),
-				Lang.of("Trolls.Ignite_Player.Description"),
-				Permissions.Troll.IGNITE_PLAYER,
-				CompMaterial.fromString(Settings.TrollSection.IconsSection.IGNITE_PLAYER));
+	public ExplodeTroll() {
+		super("EXPLODE_PLAYER", Lang.of("Trolls.Explode_Player.Display_Name"),
+				Lang.of("Trolls.Explode_Player.Description"),
+				Permissions.Troll.EXPLODE_PLAYER,
+				CompMaterial.fromString(Settings.TrollSection.IconsSection.EXPLODE_PLAYER));
 	}
 
 
 	@Override
 	public Tuple<Boolean, String> performTroll(CommandSender sender, Player target) {
-		target.setFireTicks(Settings.TrollSection.IGNITE_DURATION);
+		target.getWorld().createExplosion(target.getLocation(), (float) Settings.TrollSection.EXPLODE_POWER);
 		return null;
 	}
 }

@@ -40,6 +40,9 @@ Trolls:
   Ignite_Player:
     Display_Name: "&6Ignite Player"
     Description: "Set the player on fire."
+  Explode_Player:
+    Display_Name: "&cExplode Player"
+    Description: "Explode the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

@@ -41,12 +41,17 @@ Trolls:
   # 100 ticks = 5 seconds
   Ignite_Duration: 100
 
+  # The power of the explosion when a player is exploded.
+  # 1 is the default power.
+  Explosion_Power: 1
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
     Creeper_Hiss: "CREEPER_HEAD"
     Lightning_Strike: "TRIPWIRE_HOOK"
     Ignite_Player: "FLINT_AND_STEEL"
+    Explode_Player: "TNT"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
