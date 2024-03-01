@@ -5,6 +5,7 @@ import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.Messenger;
+import org.mineacademy.fo.collection.StrictSet;
 import org.mineacademy.fo.model.Tuple;
 import org.mineacademy.fo.remain.CompMaterial;
 
@@ -15,7 +16,7 @@ import java.util.Set;
 @EqualsAndHashCode
 public abstract class Troll {
 
-	private static final Set<Troll> REGISTERED_TROLLS = new HashSet<>();
+	private static final StrictSet<Troll> REGISTERED_TROLLS = new StrictSet<>();
 
 	final String name;
 	final String displayName;
@@ -32,7 +33,7 @@ public abstract class Troll {
 	}
 
 	public static Set<Troll> getRegisteredTrolls() {
-		return REGISTERED_TROLLS;
+		return REGISTERED_TROLLS.getSource();
 	}
 
 	public static void registerTroll(Troll troll) {
