@@ -29,7 +29,7 @@
 # -------------------------------------------------------------------------------------------------
 Trolls:
   Creeper_Hiss:
-    Display_Name: "&aC&fr&ae&fe&ap&fe&ar&f &aH&fi&fs&as"
+    Display_Name: "&aC&fr&ae&fe&ap&fe&ar&f &aH&fi&as&fs"
     Description: "Play a creeper hiss sound to a player."
   Launch_Player:
     Display_Name: "&3Launch Player"
@@ -142,6 +142,34 @@ Menu:
   Button_Return_Lore:
     - ""
     - "Return back."
+  Troll_Menu:
+    Title: "&8Trolling &l{target_name}"
+    # You can use {target_name}
+    Target_Info_Title: "&fTarget Information"
+    Target_Info_Lore:
+      - ""
+      - "Name: &f{target_name}"
+      - "Ping: &f{target_ping} &ams"
+      - "Health: &f{target_health} &c❤"
+      - "Food: &f{target_food} &6✿"
+      - "Gamemode: &f{target_gamemode}"
+      - "World: &f{target_world}"
+    Teleport_To_Player: "&fTeleport to Player"
+    Teleport_To_Player_Lore:
+      - ""
+      - "Teleport to the troll target."
+    Teleport_To_Player_Success: "&7You have been teleported to the &f{target_name}."
+    Teleport_Player_To_You: "&fTeleport Player to You"
+    Teleport_Player_To_You_Lore:
+      - ""
+      - "Teleport the troll target to you."
+    Teleport_Player_To_You_Success: "&7The &f{target_name} &7has been teleported to you."
+    Info:
+      - "Welcome to the Troll Selection Menu!"
+      - "Here, you can choose a troll action to use on the target."
+      - "Please click on your desired troll to proceed."
+      - ""
+      - "Have fun!"
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to player conversation where server is waiting for his chat input
