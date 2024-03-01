@@ -44,11 +44,16 @@ public abstract class Troll {
 		REGISTERED_TROLLS.add(troll);
 	}
 
-	public static void initializeTrolls() {
+	public static void registerAllTrolls() {
 		registerTroll(new CreeperHissTroll());
 		registerTroll(new LaunchTroll());
 		registerTroll(new LightingStrikeTroll());
 		registerTroll(new IgniteTroll());
+		registerTroll(new ExplodeTroll());
+	}
+
+	public static void deregisterAllTrolls() {
+		REGISTERED_TROLLS.clear();
 	}
 
 	public static Troll fromName(String name) {

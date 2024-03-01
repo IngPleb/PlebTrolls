@@ -43,11 +43,13 @@ public final class StaxzsTrolls extends SimplePlugin {
 		// Uncomment to load variables
 		// Variable.loadVariables();
 
-		Troll.initializeTrolls();
+		Troll.registerAllTrolls();
 	}
 
 	@Override
 	protected void onPluginPreReload() {
+
+		Troll.deregisterAllTrolls();
 
 		// Close your database here if you use one
 		//YourDatabase.getInstance().close();
