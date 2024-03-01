@@ -25,13 +25,13 @@ public class TrollPlayerMenu extends MenuPagged<Troll> {
 	private final Player target;
 
 	// Buttons
-	@Position(2)
+	@Position(6)
 	private final Button teleportToPlayer;
 
 	@Position(4)
 	private final Button targetInfo;
 
-	@Position(6)
+	@Position(4)
 	private final Button teleportPlayerToYou;
 
 	public TrollPlayerMenu(Menu parentMenu, Player viewer, @NotNull Player target) {
