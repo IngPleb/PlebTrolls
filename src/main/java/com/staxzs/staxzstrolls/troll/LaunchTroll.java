@@ -1,6 +1,7 @@
 package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
+import com.staxzs.staxzstrolls.settings.Settings;
 import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -17,7 +18,7 @@ public final class LaunchTroll extends Troll {
 		super("LAUNCH_PLAYER", Lang.of("Trolls.Launch_Player.Display_Name"),
 				Lang.of("Trolls.Launch_Player.Description"),
 				Permissions.Troll.LAUNCH,
-				CompMaterial.FEATHER);
+				CompMaterial.fromString(Settings.TrollSection.IconsSection.LAUNCH_PLAYER));
 	}
 
 

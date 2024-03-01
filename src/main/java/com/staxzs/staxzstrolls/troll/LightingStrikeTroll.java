@@ -1,6 +1,7 @@
 package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
+import com.staxzs.staxzstrolls.settings.Settings;
 import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -17,7 +18,7 @@ public final class LightingStrikeTroll extends Troll {
 		super("LAUNCH_PLAYER", Lang.of("Trolls.Lightning_Strike.Display_Name"),
 				Lang.of("Trolls.Lightning_Strike.Description"),
 				Permissions.Troll.LIGHTNING_STRIKE,
-				CompMaterial.TRIPWIRE_HOOK);
+				CompMaterial.fromString(Settings.TrollSection.IconsSection.LIGHTNING_STRIKE));
 	}
 
 

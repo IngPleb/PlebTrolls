@@ -21,6 +21,17 @@ public final class Settings extends SimpleSettings {
 
 	public static Boolean SILENT_START;
 
+	/*
+	 * Automatically called method when we load settings.yml to load values in this class
+	 *
+	 * See above for usage.
+	 */
+	private static void init() {
+		setPathPrefix(null);
+
+		SILENT_START = getBoolean("Silent_Start");
+	}
+
 	/**
 	 * @see org.mineacademy.fo.settings.SimpleSettings#getConfigVersion()
 	 */
@@ -44,14 +55,27 @@ public final class Settings extends SimpleSettings {
 				"Example.Uncommented_Section");
 	}
 
-	/*
-	 * Automatically called method when we load settings.yml to load values in this class
-	 *
-	 * See above for usage.
-	 */
-	private static void init() {
-		setPathPrefix(null);
+	public static class TrollSection {
+		public static String PATH_PREFIX = "Trolls";
 
-		SILENT_START = getBoolean("Silent_Start");
+		private static void init() {
+			setPathPrefix(PATH_PREFIX);
+		}
+
+		public static class IconsSection {
+			public static String PATH_PREFIX = TrollSection.PATH_PREFIX + ".Icons";
+
+			public static String LAUNCH_PLAYER;
+			public static String CREEPER_HISS;
+			public static String LIGHTNING_STRIKE;
+
+			private static void init() {
+				setPathPrefix(PATH_PREFIX);
+
+				LAUNCH_PLAYER = getString("Launch_Player");
+				CREEPER_HISS = getString("Creeper_Hiss");
+				LIGHTNING_STRIKE = getString("Lightning_Strike");
+			}
+		}
 	}
 }
