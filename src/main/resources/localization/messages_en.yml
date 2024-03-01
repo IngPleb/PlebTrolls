@@ -33,7 +33,10 @@ Trolls:
     Description: "Play a creeper hiss sound to a player."
   Launch_Player:
     Display_Name: "&3Launch Player"
-    Description: "Launch the player into the air"
+    Description: "Launch the player into the air."
+  Lightning_Strike:
+    Display_Name: "&eLightning Strike"
+    Description: "Strike the player with a lightning bolt."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

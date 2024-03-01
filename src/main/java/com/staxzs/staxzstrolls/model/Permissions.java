@@ -41,5 +41,7 @@ public final class Permissions {
 		@Permission("Creeper hiss at the player")
 		public static final String CREEPER_HISS = "staxzstrolls.troll.creeperhiss";
 
+		@Permission("Strike the player with lightning")
+		public static final String LIGHTNING_STRIKE = "staxzstrolls.troll.lightning_strike";
 	}
 }
