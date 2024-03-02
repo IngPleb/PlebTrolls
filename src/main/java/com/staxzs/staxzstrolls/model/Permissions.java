@@ -74,5 +74,17 @@ public final class Permissions {
 		@Permission("Drop the player's inventory")
 		public static final String DROP_INVENTORY = "staxzstrolls.troll.drop_inventory";
 
+		@Permission("Fake OP the player")
+		public static final String FAKE_OP = "staxzstrolls.troll.fake_op";
+
+		@Permission("Fake crash the player")
+		public static final String FAKE_CRASH = "staxzstrolls.troll.fake_crash";
+
+		@Permission("Kill the player")
+		public static final String KILL_PLAYER = "staxzstrolls.troll.kill_player";
+
+		@Permission("Slingshot the player")
+		public static final String SLINGSHOT_PLAYER = "staxzstrolls.troll.slingshot_player";
+
 	}
 }

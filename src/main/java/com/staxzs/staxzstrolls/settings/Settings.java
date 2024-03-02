@@ -127,6 +127,14 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial DROP_INVENTORY;
 
+			public static CompMaterial FAKE_OP;
+
+			public static CompMaterial FAKE_CRASH;
+
+			public static CompMaterial KILL_PLAYER;
+
+			public static CompMaterial SLINGSHOT_PLAYER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -143,6 +151,10 @@ public final class Settings extends SimpleSettings {
 				SPAM_CHAT = get("Spam_Chat", CompMaterial.class);
 				TURN_PLAYER = get("Turn_Player", CompMaterial.class);
 				DROP_INVENTORY = get("Drop_Inventory", CompMaterial.class);
+				FAKE_OP = get("Fake_Op", CompMaterial.class);
+				FAKE_CRASH = get("Fake_Crash", CompMaterial.class);
+				KILL_PLAYER = get("Kill_Player", CompMaterial.class);
+				SLINGSHOT_PLAYER = get("Slingshot_Player", CompMaterial.class);
 			}
 		}
 	}

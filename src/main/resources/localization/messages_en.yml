@@ -67,6 +67,18 @@ Trolls:
   Drop_Inventory:
     Display_Name: "&8Drop Inventory"
     Description: "Drop the player's inventory on the ground."
+  Fake_Op:
+    Display_Name: "&bFake OP"
+    Description: "Send a fake OP message to the player."
+  Fake_Crash:
+    Display_Name: "&4Fake Crash"
+    Description: "Kick the player from the server with fake crash message."
+  Kill_Player:
+    Display_Name: "&cKill Player"
+    Description: "Kill the player."
+  Slingshot_Player:
+    Display_Name: "&aSlingshot Player"
+    Description: "Slingshot the player into the air."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

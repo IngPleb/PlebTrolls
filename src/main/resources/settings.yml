@@ -84,6 +84,10 @@ Trolls:
     Spam_Chat: "PAPER"
     Turn_Player: "CLOCK"
     Drop_Inventory: "DROPPER"
+    Fake_Op: "DIAMOND"
+    Fake_Crash: "REDSTONE_BLOCK"
+    Kill_Player: "SKULL"
+    Slingshot_Player: "LEAD"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
