@@ -75,6 +75,8 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer FILL_INVENTORY_ITEM_AMOUNT;
 
+		public static String SPAM_CHAT_MESSAGE;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -90,6 +92,8 @@ public final class Settings extends SimpleSettings {
 
 			FILL_INVENTORY_ITEM_TYPE = get("Fill_Inventory.Material", CompMaterial.class);
 			FILL_INVENTORY_ITEM_AMOUNT = getInteger("Fill_Inventory.Amount");
+
+			SPAM_CHAT_MESSAGE = getString("Spam_Chat_Message");
 		}
 
 
@@ -117,6 +121,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial CLEAR_INVENTORY;
 
+			public static CompMaterial SPAM_CHAT;
+
+			public static CompMaterial TURN_PLAYER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -130,6 +138,8 @@ public final class Settings extends SimpleSettings {
 				FILL_INVENTORY = getString("Fill_Inventory");
 				DIP_IN_LAVA = get("Dip_In_Lava", CompMaterial.class);
 				CLEAR_INVENTORY = get("Clear_Inventory", CompMaterial.class);
+				SPAM_CHAT = get("Spam_Chat", CompMaterial.class);
+				TURN_PLAYER = get("Turn_Player", CompMaterial.class);
 			}
 		}
 	}

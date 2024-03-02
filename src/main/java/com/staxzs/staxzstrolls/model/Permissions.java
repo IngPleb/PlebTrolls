@@ -65,5 +65,11 @@ public final class Permissions {
 		@Permission("Clear the player's inventory")
 		public static final String CLEAR_INVENTORY = "staxzstrolls.troll.clear_inventory";
 
+		@Permission("Spam the player's chat")
+		public static final String SPAM_CHAT = "staxzstrolls.troll.spam_chat";
+
+		@Permission("Turn the player")
+		public static final String TURN_PLAYER = "staxzstrolls.troll.turn_player";
+
 	}
 }

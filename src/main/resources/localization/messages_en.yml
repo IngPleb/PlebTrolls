@@ -58,6 +58,12 @@ Trolls:
   Clear_Inventory:
     Display_Name: "&7Clear Inventory"
     Description: "Clear the player's inventory."
+  Spam_Chat:
+    Display_Name: "&eSpam Chat"
+    Description: "Spam the player's chat with messages."
+  Turn_Player:
+    Display_Name: "&dTurn Player"
+    Description: "Turn the player around."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

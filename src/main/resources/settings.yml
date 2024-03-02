@@ -65,6 +65,10 @@ Trolls:
     # The amount of items used to fill the player's inventory.
     Amount: 64
 
+  # The message spammed in the player's chat.
+  # You can use color codes and placeholders.
+  Spam_Chat_Message: "You have been trolled!!! Muhahaa!"
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -77,6 +81,8 @@ Trolls:
     Fill_Inventory: "CHEST"
     Dip_In_Lava: "LAVA_BUCKET"
     Clear_Inventory: "BARRIER"
+    Spam_Chat: "PAPER"
+    Turn_Player: "CLOCK"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
