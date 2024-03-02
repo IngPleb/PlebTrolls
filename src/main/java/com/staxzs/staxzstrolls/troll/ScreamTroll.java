@@ -18,7 +18,7 @@ public final class ScreamTroll extends Troll {
 	public ScreamTroll() {
 		super("SREAM_PLAYER", Lang.of("Trolls.Scream.Display_Name"),
 				Lang.of("Trolls.Scream.Description"),
-				Permissions.Troll.IGNITE_PLAYER,
+				Permissions.Troll.SCREAM_PLAYER,
 				CompMaterial.fromString(Settings.TrollSection.IconsSection.SCREAM));
 	}
 

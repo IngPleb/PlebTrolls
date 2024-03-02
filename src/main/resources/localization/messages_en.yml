@@ -46,6 +46,9 @@ Trolls:
   Scream:
     Display_Name: "&5Scream"
     Description: "Play a loud ghast scream to a player."
+  Ambush_Player:
+    Display_Name: "&4Ambush"
+    Description: "Spawn few monsters around the player to ambush them."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

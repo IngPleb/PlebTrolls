@@ -1,5 +1,6 @@
 package com.staxzs.staxzstrolls.settings;
 
+import org.bukkit.entity.EntityType;
 import org.mineacademy.fo.settings.Lang;
 import org.mineacademy.fo.settings.SimpleSettings;
 import org.mineacademy.fo.settings.YamlStaticConfig;
@@ -65,6 +66,10 @@ public final class Settings extends SimpleSettings {
 		public static String SCREAM_SOUND;
 		public static Integer SCREAM_VOLUME;
 
+		public static EntityType AMBUSH_ENTITY_TYPE;
+
+		public static Integer AMBUSH_ENTITY_AMOUNT;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -74,8 +79,15 @@ public final class Settings extends SimpleSettings {
 
 			SCREAM_SOUND = getString("Scream_Sound");
 			SCREAM_VOLUME = getInteger("Scream_Volume");
+
+			AMBUSH_ENTITY_TYPE = get("Ambush_Entity_Type", EntityType.class);
+			AMBUSH_ENTITY_AMOUNT = getInteger("Ambush_Entity_Amount");
 		}
 
+
+		/**
+		 * Section for troll icons
+		 */
 		public static class IconsSection {
 			public static String PATH_PREFIX = TrollSection.PATH_PREFIX + ".Icons";
 
@@ -89,6 +101,8 @@ public final class Settings extends SimpleSettings {
 
 			public static String SCREAM;
 
+			public static String AMBUSH_PLAYER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -98,6 +112,7 @@ public final class Settings extends SimpleSettings {
 				IGNITE_PLAYER = getString("Ignite_Player");
 				EXPLODE_PLAYER = getString("Explode_Player");
 				SCREAM = getString("Scream");
+				AMBUSH_PLAYER = getString("Ambush_Player");
 			}
 		}
 	}

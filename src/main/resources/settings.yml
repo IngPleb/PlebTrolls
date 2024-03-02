@@ -34,6 +34,7 @@ Silent_Start: false
 
 # -------------------------------------------------------------------------------------------------
 # Trolls section
+# Here you can configure each aspect of the trolls.
 # -------------------------------------------------------------------------------------------------
 Trolls:
   # The time in ticks that the player will be burning after being ignited.
@@ -51,6 +52,12 @@ Trolls:
   # 1 is the default volume.
   Scream_Volume: 1
 
+  # Ambush entity type.
+  Ambush_Entity_Type: "PILLAGER"
+
+  # Number of entities spawned when a player is ambushed.
+  Ambush_Entity_Amount: 3
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -59,6 +66,7 @@ Trolls:
     Ignite_Player: "FLINT_AND_STEEL"
     Explode_Player: "TNT"
     Scream: "GHAST_TEAR"
+    Ambush_Player: "ZOMBIE_SPAWN_EGG"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
