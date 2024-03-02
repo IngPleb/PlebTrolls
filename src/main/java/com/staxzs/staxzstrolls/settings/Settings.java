@@ -125,6 +125,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial TURN_PLAYER;
 
+			public static CompMaterial DROP_INVENTORY;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -140,6 +142,7 @@ public final class Settings extends SimpleSettings {
 				CLEAR_INVENTORY = get("Clear_Inventory", CompMaterial.class);
 				SPAM_CHAT = get("Spam_Chat", CompMaterial.class);
 				TURN_PLAYER = get("Turn_Player", CompMaterial.class);
+				DROP_INVENTORY = get("Drop_Inventory", CompMaterial.class);
 			}
 		}
 	}

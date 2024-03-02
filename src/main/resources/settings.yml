@@ -83,6 +83,7 @@ Trolls:
     Clear_Inventory: "BARRIER"
     Spam_Chat: "PAPER"
     Turn_Player: "CLOCK"
+    Drop_Inventory: "DROPPER"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

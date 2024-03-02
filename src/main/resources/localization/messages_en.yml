@@ -64,6 +64,9 @@ Trolls:
   Turn_Player:
     Display_Name: "&dTurn Player"
     Description: "Turn the player around."
+  Drop_Inventory:
+    Display_Name: "&8Drop Inventory"
+    Description: "Drop the player's inventory on the ground."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

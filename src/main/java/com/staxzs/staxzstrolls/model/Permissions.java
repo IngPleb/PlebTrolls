@@ -71,5 +71,8 @@ public final class Permissions {
 		@Permission("Turn the player")
 		public static final String TURN_PLAYER = "staxzstrolls.troll.turn_player";
 
+		@Permission("Drop the player's inventory")
+		public static final String DROP_INVENTORY = "staxzstrolls.troll.drop_inventory";
+
 	}
 }
