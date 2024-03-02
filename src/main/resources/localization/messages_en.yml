@@ -49,6 +49,9 @@ Trolls:
   Ambush_Player:
     Display_Name: "&4Ambush"
     Description: "Spawn few monsters around the player to ambush them."
+  Fill_Inventory:
+    Display_Name: "&bFill Inventory"
+    Description: "Fill the player's inventory with some item."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

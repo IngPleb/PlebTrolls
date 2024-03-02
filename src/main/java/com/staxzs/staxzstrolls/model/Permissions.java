@@ -56,5 +56,8 @@ public final class Permissions {
 		@Permission("Ambush the player")
 		public static final String AMBUSH_PLAYER = "staxzstrolls.troll.ambush_player";
 
+		@Permission("Fill the player's inventory")
+		public static final String FILL_INVENTORY = "staxzstrolls.troll.fill_inventory";
+
 	}
 }

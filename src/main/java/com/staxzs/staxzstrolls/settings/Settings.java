@@ -1,6 +1,7 @@
 package com.staxzs.staxzstrolls.settings;
 
 import org.bukkit.entity.EntityType;
+import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 import org.mineacademy.fo.settings.SimpleSettings;
 import org.mineacademy.fo.settings.YamlStaticConfig;
@@ -70,6 +71,10 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer AMBUSH_ENTITY_AMOUNT;
 
+		public static CompMaterial FILL_INVENTORY_ITEM_TYPE;
+
+		public static Integer FILL_INVENTORY_ITEM_AMOUNT;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -82,6 +87,9 @@ public final class Settings extends SimpleSettings {
 
 			AMBUSH_ENTITY_TYPE = get("Ambush_Entity_Type", EntityType.class);
 			AMBUSH_ENTITY_AMOUNT = getInteger("Ambush_Entity_Amount");
+
+			FILL_INVENTORY_ITEM_TYPE = get("Fill_Inventory.Material", CompMaterial.class);
+			FILL_INVENTORY_ITEM_AMOUNT = getInteger("Fill_Inventory.Amount");
 		}
 
 
@@ -103,6 +111,8 @@ public final class Settings extends SimpleSettings {
 
 			public static String AMBUSH_PLAYER;
 
+			public static String FILL_INVENTORY;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -113,6 +123,7 @@ public final class Settings extends SimpleSettings {
 				EXPLODE_PLAYER = getString("Explode_Player");
 				SCREAM = getString("Scream");
 				AMBUSH_PLAYER = getString("Ambush_Player");
+				FILL_INVENTORY = getString("Fill_Inventory");
 			}
 		}
 	}

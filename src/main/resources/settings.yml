@@ -58,6 +58,13 @@ Trolls:
   # Number of entities spawned when a player is ambushed.
   Ambush_Entity_Amount: 3
 
+  # The item type and the amount used to fill the player's inventory.
+  Fill_Inventory:
+    # The item type used to fill the player's inventory.
+    Material: "DEAD_BUSH"
+    # The amount of items used to fill the player's inventory.
+    Amount: 64
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -67,6 +74,7 @@ Trolls:
     Explode_Player: "TNT"
     Scream: "GHAST_TEAR"
     Ambush_Player: "ZOMBIE_SPAWN_EGG"
+    Fill_Inventory: "CHEST"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
