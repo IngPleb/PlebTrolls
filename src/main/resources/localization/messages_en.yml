@@ -79,6 +79,9 @@ Trolls:
   Slingshot_Player:
     Display_Name: "&aSlingshot Player"
     Description: "Slingshot the player into the air."
+  Abyss:
+    Display_Name: "&8Abyss"
+    Description: "Teleport player to the Void."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
@@ -201,7 +204,6 @@ Menu:
       - "World: &f{target_world}"
     Teleport_To_Player: "&fTeleport to Player"
     Teleport_To_Player_Lore:
-      - ""
       - "Teleport to the troll target."
     Teleport_To_Player_Success: "&7You have been teleported to the &f{target_name}."
     Teleport_Player_To_You: "&fTeleport Player to You"
@@ -209,10 +211,22 @@ Menu:
       - ""
       - "Teleport the troll target to you."
     Teleport_Player_To_You_Success: "&7The &f{target_name} &7has been teleported to you."
+    Search_Troll_Button:
+      Title: "&9Search for a Troll"
+      Lore:
+        - ""
+        - "Search for a troll to use."
     Info:
       - "Welcome to the Troll Selection Menu!"
       - "Here, you can choose a troll action to use on the target."
       - "Please click on your desired troll to proceed."
+      - ""
+      - "Have fun!"
+  Troll_Search_Menu:
+    Title: "&8Search Results: &l{search_input}"
+    Info:
+      - "These are the search results."
+      - "Please click on the troll to proceed."
       - ""
       - "Have fun!"
 
@@ -225,6 +239,7 @@ Conversation:
   Error: "&cOups! There was a problem in this conversation! Please contact the administrator to review the console for details."
   Conversation_Cancelled: "Your pending chat answer has been canceled."
   Conversation_Cancelled_Inactive: "Your pending chat answer has been canceled because you were inactive."
+  Troll_Search_Prompt: "Enter the&a name &7of the troll you want to search for or type&c exit&7:"
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to tools

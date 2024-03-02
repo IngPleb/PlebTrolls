@@ -86,5 +86,8 @@ public final class Permissions {
 		@Permission("Slingshot the player")
 		public static final String SLINGSHOT_PLAYER = "staxzstrolls.troll.slingshot_player";
 
+		@Permission("Abyss the player")
+		public static final String ABYSS = "staxzstrolls.troll.abyss_player";
+
 	}
 }

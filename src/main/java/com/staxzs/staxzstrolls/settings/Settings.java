@@ -135,6 +135,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial SLINGSHOT_PLAYER;
 
+			public static CompMaterial ABYSS;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -155,6 +157,7 @@ public final class Settings extends SimpleSettings {
 				FAKE_CRASH = get("Fake_Crash", CompMaterial.class);
 				KILL_PLAYER = get("Kill_Player", CompMaterial.class);
 				SLINGSHOT_PLAYER = get("Slingshot_Player", CompMaterial.class);
+				ABYSS = get("Abyss", CompMaterial.class);
 			}
 		}
 	}

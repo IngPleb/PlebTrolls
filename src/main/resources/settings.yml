@@ -86,8 +86,9 @@ Trolls:
     Drop_Inventory: "DROPPER"
     Fake_Op: "DIAMOND"
     Fake_Crash: "REDSTONE_BLOCK"
-    Kill_Player: "SKULL"
+    Kill_Player: "SKELETON_SKULL"
     Slingshot_Player: "LEAD"
+    Abyss: "BEDROCK"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

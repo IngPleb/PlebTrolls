@@ -1,5 +1,6 @@
 package com.staxzs.staxzstrolls.menu;
 
+import com.staxzs.staxzstrolls.prompt.TrollSearchPrompt;
 import com.staxzs.staxzstrolls.troll.Troll;
 import com.staxzs.staxzstrolls.util.Interval;
 import org.bukkit.entity.Player;
@@ -20,19 +21,21 @@ import org.mineacademy.fo.settings.Lang;
 import java.util.Arrays;
 import java.util.List;
 
-public class TrollPlayerMenu extends MenuPagged<Troll> {
+public final class TrollPlayerMenu extends MenuPagged<Troll> {
 
 	private final Player target;
 
 	// Buttons
-	@Position(6)
-	private final Button teleportToPlayer;
-
-	@Position(4)
-	private final Button targetInfo;
-
 	@Position(2)
-	private final Button teleportPlayerToYou;
+	private final Button teleportPlayerToYouButton;
+	@Position(4)
+	private final Button targetInfoButton;
+	@Position(6)
+	private final Button teleportToPlayerButton;
+
+	@Position(46)
+	private final Button searchTrollButton;
+
 
 	public TrollPlayerMenu(Menu parentMenu, Player viewer, @NotNull Player target) {
 
@@ -68,12 +71,12 @@ public class TrollPlayerMenu extends MenuPagged<Troll> {
 				})
 				.toList();
 
-		this.targetInfo = Button.makeDummy(ItemCreator.of(CompMaterial.PLAYER_HEAD)
+		this.targetInfoButton = Button.makeDummy(ItemCreator.of(CompMaterial.PLAYER_HEAD)
 				.name(Lang.of("Menu.Troll_Menu.Target_Info_Title").replace("{target_name}", target.getName()))
 				.lore(lore)
 				.skullOwner(target.getName()));
 
-		this.teleportToPlayer = Button.makeSimple(
+		this.teleportToPlayerButton = Button.makeSimple(
 				ItemCreator.of(CompMaterial.ENDER_PEARL,
 						Lang.of("Menu.Troll_Menu.Teleport_To_Player"),
 						Lang.ofList("Menu.Troll_Menu.Teleport_To_Player_Lore")),
@@ -85,7 +88,7 @@ public class TrollPlayerMenu extends MenuPagged<Troll> {
 							.replace("{target_name}", target.getName()));
 				});
 
-		this.teleportPlayerToYou = Button.makeSimple(
+		this.teleportPlayerToYouButton = Button.makeSimple(
 				ItemCreator.of(CompMaterial.ENDER_EYE,
 						Lang.of("Menu.Troll_Menu.Teleport_Player_To_You"),
 						Lang.ofList("Menu.Troll_Menu.Teleport_Player_To_You_Lore")),
@@ -96,6 +99,18 @@ public class TrollPlayerMenu extends MenuPagged<Troll> {
 					Messenger.success(player, Lang.of("Menu.Troll_Menu.Teleport_Player_To_You_Success")
 							.replace("{target_name}", target.getName()));
 				});
+
+		final String trollSearchButtonPrefix = "Menu.Troll_Menu.Search_Troll_Button.";
+
+		this.searchTrollButton = Button.makeSimple(CompMaterial.COMPASS,
+				Lang.of(trollSearchButtonPrefix + "Title"),
+				Lang.of(trollSearchButtonPrefix + "Lore"),
+				player -> {
+					player.closeInventory();
+
+					new TrollSearchPrompt(this, target).show(player);
+				}
+		);
 
 	}
 
@@ -115,12 +130,7 @@ public class TrollPlayerMenu extends MenuPagged<Troll> {
 
 	@Override
 	protected ItemStack convertToItemStack(Troll troll) {
-		ItemCreator creator = ItemCreator.of(troll.getIcon())
-				.name(troll.getDisplayName())
-				.lore("", troll.getDescription());
-
-
-		return creator.make();
+		return troll.getItemstack();
 	}
 
 	@Override

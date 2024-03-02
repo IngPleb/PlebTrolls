@@ -4,8 +4,10 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.collection.StrictSet;
+import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.model.Tuple;
 import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
@@ -67,6 +69,7 @@ public abstract class Troll {
 		registerTroll(new FakeCrashTroll());
 		registerTroll(new KillTroll());
 		registerTroll(new SlingshotTroll());
+		registerTroll(new AbyssTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -139,6 +142,14 @@ public abstract class Troll {
 			Messenger.error(sender, message);
 	}
 
-	public abstract Tuple<Boolean, String> performTroll(CommandSender sender, Player target);
+	protected abstract Tuple<Boolean, String> performTroll(CommandSender sender, Player target);
+
+	public ItemStack getItemstack() {
+		ItemCreator creator = ItemCreator.of(this.getIcon())
+				.name(this.getDisplayName())
+				.lore("", this.getDescription());
+
+		return creator.make();
+	}
 
 }
