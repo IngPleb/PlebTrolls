@@ -62,5 +62,8 @@ public final class Permissions {
 		@Permission("Dip the player in lava")
 		public static final String DIP_IN_LAVA = "staxzstrolls.troll.dip_in_lava";
 
+		@Permission("Clear the player's inventory")
+		public static final String CLEAR_INVENTORY = "staxzstrolls.troll.clear_inventory";
+
 	}
 }

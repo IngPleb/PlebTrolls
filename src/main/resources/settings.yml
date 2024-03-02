@@ -76,6 +76,7 @@ Trolls:
     Ambush_Player: "ZOMBIE_SPAWN_EGG"
     Fill_Inventory: "CHEST"
     Dip_In_Lava: "LAVA_BUCKET"
+    Clear_Inventory: "BARRIER"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

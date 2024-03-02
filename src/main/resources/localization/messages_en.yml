@@ -55,6 +55,9 @@ Trolls:
   Dip_In_Lava:
     Display_Name: "&6Dip in Lava"
     Description: "Make one block lava under the player."
+  Clear_Inventory:
+    Display_Name: "&7Clear Inventory"
+    Description: "Clear the player's inventory."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

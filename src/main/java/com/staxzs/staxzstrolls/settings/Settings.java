@@ -115,6 +115,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial DIP_IN_LAVA;
 
+			public static CompMaterial CLEAR_INVENTORY;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -127,6 +129,7 @@ public final class Settings extends SimpleSettings {
 				AMBUSH_PLAYER = getString("Ambush_Player");
 				FILL_INVENTORY = getString("Fill_Inventory");
 				DIP_IN_LAVA = get("Dip_In_Lava", CompMaterial.class);
+				CLEAR_INVENTORY = get("Clear_Inventory", CompMaterial.class);
 			}
 		}
 	}

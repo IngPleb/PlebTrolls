@@ -59,6 +59,7 @@ public abstract class Troll {
 		registerTroll(new AmbushTroll());
 		registerTroll(new FillInventoryTroll());
 		registerTroll(new DipInLavaTroll());
+		registerTroll(new ClearInventoryTroll());
 	}
 
 	public static void deregisterAllTrolls() {
