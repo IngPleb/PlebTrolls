@@ -52,6 +52,9 @@ Trolls:
   Fill_Inventory:
     Display_Name: "&bFill Inventory"
     Description: "Fill the player's inventory with some item."
+  Dip_In_Lava:
+    Display_Name: "&6Dip in Lava"
+    Description: "Make one block lava under the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
