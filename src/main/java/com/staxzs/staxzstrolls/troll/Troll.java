@@ -8,6 +8,7 @@ import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.collection.StrictSet;
 import org.mineacademy.fo.model.Tuple;
 import org.mineacademy.fo.remain.CompMaterial;
+import org.mineacademy.fo.settings.Lang;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -24,6 +25,10 @@ public abstract class Troll {
 	final String permission;
 	CompMaterial icon;
 
+	protected Troll(String name, String permission, CompMaterial icon) {
+		this(name, getDisplayNameFromName(name), getDescriptionFromName(name), permission, icon);
+	}
+
 	protected Troll(String name, String displayName, String description, String permission, CompMaterial icon) {
 		this.name = name;
 		this.displayName = displayName;
@@ -32,13 +37,13 @@ public abstract class Troll {
 		this.icon = icon;
 	}
 
-	//////////////////////////////
-	// Static
-	//////////////////////////////
-
 	public static Set<Troll> getRegisteredTrolls() {
 		return REGISTERED_TROLLS.getSource();
 	}
+
+	//////////////////////////////
+	// Static
+	//////////////////////////////
 
 	public static void registerTroll(Troll troll) {
 		REGISTERED_TROLLS.add(troll);
@@ -76,6 +81,39 @@ public abstract class Troll {
 
 		return names;
 	}
+
+	private static String getKeyFromName(String name) {
+		// Split the string into words
+		String[] words = name.split("_");
+
+		// Capitalize each word
+		for (int i = 0; i < words.length; i++) {
+			words[i] = words[i].substring(0, 1).toUpperCase() + words[i].substring(1).toLowerCase();
+		}
+
+		// Join the words back together with underscores
+		return String.join("_", words);
+	}
+
+	private static String getDisplayNameFromName(String name) {
+		String key = getKeyFromName(name);
+
+		String path = "Trolls." + key + ".Display_Name";
+
+		return Lang.of(path);
+	}
+
+	private static String getDescriptionFromName(String name) {
+		String key = getKeyFromName(name);
+
+		String path = "Trolls." + key + ".Description";
+
+		return Lang.of(path);
+	}
+
+	//////////////////////////////
+	// Instance methods
+	//////////////////////////////
 
 	public final void executeTroll(CommandSender sender, Player target) {
 		String finalMessage = "&7Executed troll " + this.displayName + " &7on &f" + target.getName() + "&7!";
