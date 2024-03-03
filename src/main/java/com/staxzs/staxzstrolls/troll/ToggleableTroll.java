@@ -34,8 +34,8 @@ public abstract class ToggleableTroll extends Troll {
 
 		ItemCreator itemCreator = ItemCreator.of(this.getIcon(),
 						this.getDisplayName() + " " +
-								(this.isToggled(target) ? Lang.of(langPathPrefix + "Enabled") : Lang.of(langPathPrefix + "Disabled")),
-						this.getDescription())
+								(this.isToggled(target) ? Lang.of(langPathPrefix + "Enabled") : Lang.of(langPathPrefix + "Disabled")))
+				.lore("", this.getDescription())
 				.glow(this.isToggled(target));
 
 		return itemCreator.make();
