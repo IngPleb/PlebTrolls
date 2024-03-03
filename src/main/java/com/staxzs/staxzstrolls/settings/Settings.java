@@ -155,6 +155,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial NO_ITEM_DROP;
 
+			public static CompMaterial OPEN_RANDOM_INVENTORY;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -181,6 +183,7 @@ public final class Settings extends SimpleSettings {
 				LAG_BEHIND = get("Lag_Behind", CompMaterial.class);
 				PUMPKIN = get("Pumpkin", CompMaterial.class);
 				NO_ITEM_DROP = get("No_Item_Drop", CompMaterial.class);
+				OPEN_RANDOM_INVENTORY = get("Open_Random_Inventory", CompMaterial.class);
 			}
 		}
 	}

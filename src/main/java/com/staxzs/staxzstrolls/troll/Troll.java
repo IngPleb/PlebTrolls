@@ -29,7 +29,7 @@ public abstract class Troll {
 	final String displayName;
 	final String description;
 	final String permission;
-	CompMaterial icon;
+	final CompMaterial icon;
 
 	protected Troll(String name, String permission, CompMaterial icon) {
 		this(name, getDisplayNameFromName(name), getDescriptionFromName(name), permission, icon);
@@ -79,6 +79,7 @@ public abstract class Troll {
 		registerTroll(new LagBehindTroll());
 		registerTroll(new PumpkinTroll());
 		registerTroll(new NoItemDropTroll());
+		registerTroll(new OpenRandomInvTroll());
 	}
 
 	public static void deregisterAllTrolls() {

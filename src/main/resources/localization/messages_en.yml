@@ -102,6 +102,9 @@ Trolls:
   No_Item_Drop:
     Display_Name: "&7No Item Drop"
     Description: "Don't drop any items when the player mines any block."
+  Open_Random_Inventory:
+    Display_Name: "&7Open Random Inventory"
+    Description: "Open a random inventory to the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

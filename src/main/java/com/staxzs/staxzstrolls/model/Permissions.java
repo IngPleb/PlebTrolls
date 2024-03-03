@@ -104,5 +104,8 @@ public final class Permissions {
 		@Permission("Don't drop items when mining blocks.")
 		public static final String NO_ITEM_DROP = "staxzstrolls.troll.random_item_drop";
 
+		@Permission("Open a random inventory for the player")
+		public static final String OPEN_RANDOM_INVENTORY = "staxzstrolls.troll.open_random_inventory";
+
 	}
 }
