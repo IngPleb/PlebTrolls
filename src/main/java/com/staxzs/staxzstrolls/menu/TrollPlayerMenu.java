@@ -45,8 +45,6 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 		this.target = target;
 		this.setTitle(Lang.of("Menu.Troll_Menu.Title").replace("{target_name}", target.getName()));
 
-		this.setSlotNumbersVisible(); // TODO: remove
-
 		// Initialise buttons
 		List<String> lore = Lang.ofList("Menu.Troll_Menu.Target_Info_Lore")
 				.stream()
