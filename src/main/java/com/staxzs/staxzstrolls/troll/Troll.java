@@ -4,6 +4,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -77,6 +78,7 @@ public abstract class Troll {
 		registerTroll(new RandomTeleportTroll());
 		registerTroll(new LagBehindTroll());
 		registerTroll(new PumpkinTroll());
+		registerTroll(new NoItemDropTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -180,6 +182,10 @@ public abstract class Troll {
 	}
 
 	public void onPlayerRespawn(PlayerRespawnEvent event) {
+		// Override if needed
+	}
+
+	public void onBlockBreak(BlockBreakEvent event) {
 		// Override if needed
 	}
 }

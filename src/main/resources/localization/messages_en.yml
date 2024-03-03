@@ -99,6 +99,9 @@ Trolls:
   Pumpkin:
     Display_Name: "&6Pumpkin"
     Description: "Put a pumpkin on the player's head."
+  No_Item_Drop:
+    Display_Name: "&7No Item Drop"
+    Description: "Don't drop any items when the player mines any block."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

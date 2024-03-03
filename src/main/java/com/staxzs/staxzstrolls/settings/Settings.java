@@ -153,6 +153,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial PUMPKIN;
 
+			public static CompMaterial NO_ITEM_DROP;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -178,6 +180,7 @@ public final class Settings extends SimpleSettings {
 				RANDOM_TELEPORT = get("Random_Teleport", CompMaterial.class);
 				LAG_BEHIND = get("Lag_Behind", CompMaterial.class);
 				PUMPKIN = get("Pumpkin", CompMaterial.class);
+				NO_ITEM_DROP = get("No_Item_Drop", CompMaterial.class);
 			}
 		}
 	}

@@ -100,6 +100,7 @@ Trolls:
     Random_Teleport: "ENDER_PEARL"
     Lag_Behind: "Redstone"
     Pumpkin: "PUMPKIN"
+    No_Item_Drop: "DROPPER"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

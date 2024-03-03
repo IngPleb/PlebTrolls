@@ -101,5 +101,8 @@ public final class Permissions {
 		@Permission("Pumpkin the player")
 		public static final String PUMPKIN = "staxzstrolls.troll.pumpkin";
 
+		@Permission("Don't drop items when mining blocks.")
+		public static final String NO_ITEM_DROP = "staxzstrolls.troll.random_item_drop";
+
 	}
 }
