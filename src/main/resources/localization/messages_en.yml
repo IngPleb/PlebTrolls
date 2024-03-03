@@ -190,6 +190,13 @@ Menu:
   Button_Return_Lore:
     - ""
     - "Return back."
+  Player_List_Menu:
+    Title: "&8List of Players"
+    Player_Name: "&f{player_name} &7(Click to troll)"
+    Info:
+      - "Welcome to the List of Players Menu!"
+      - "Here, you can choose a player to troll."
+      - "Please click on the player to proceed."
   Troll_Menu:
     Title: "&8Trolling &l{target_name}"
     # You can use {target_name}

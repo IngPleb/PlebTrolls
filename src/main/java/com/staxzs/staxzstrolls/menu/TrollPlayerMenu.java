@@ -37,12 +37,11 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 	private final Button searchTrollButton;
 
 
-	public TrollPlayerMenu(Menu parentMenu, Player viewer, @NotNull Player target) {
+	public TrollPlayerMenu(Menu parentMenu, @NotNull Player target) {
 
 		// Initialise menu
 		super(parentMenu, Interval.of(18, 44).toList(), Troll.getRegisteredTrolls());
 		this.setSize(54);
-		this.setViewer(viewer);
 		this.target = target;
 		this.setTitle(Lang.of("Menu.Troll_Menu.Title").replace("{target_name}", target.getName()));
 
