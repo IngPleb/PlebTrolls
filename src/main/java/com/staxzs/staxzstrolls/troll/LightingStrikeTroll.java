@@ -15,7 +15,7 @@ public final class LightingStrikeTroll extends Troll {
 	private static final LightingStrikeTroll INSTANCE = new LightingStrikeTroll();
 
 	public LightingStrikeTroll() {
-		super("LAUNCH_PLAYER", Lang.of("Trolls.Lightning_Strike.Display_Name"),
+		super("LIGHTNING_STRIKE", Lang.of("Trolls.Lightning_Strike.Display_Name"),
 				Lang.of("Trolls.Lightning_Strike.Description"),
 				Permissions.Troll.LIGHTNING_STRIKE,
 				CompMaterial.fromString(Settings.TrollSection.IconsSection.LIGHTNING_STRIKE));
