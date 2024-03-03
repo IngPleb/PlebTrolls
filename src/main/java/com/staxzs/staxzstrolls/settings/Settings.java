@@ -77,6 +77,10 @@ public final class Settings extends SimpleSettings {
 
 		public static String SPAM_CHAT_MESSAGE;
 
+		public static Integer BLINDNESS_DURATION;
+
+		public static Integer RANDOM_TELEPORT_RADIUS;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -94,6 +98,10 @@ public final class Settings extends SimpleSettings {
 			FILL_INVENTORY_ITEM_AMOUNT = getInteger("Fill_Inventory.Amount");
 
 			SPAM_CHAT_MESSAGE = getString("Spam_Chat_Message");
+
+			BLINDNESS_DURATION = getInteger("Blindness_Duration");
+
+			RANDOM_TELEPORT_RADIUS = getInteger("Random_Teleport_Radius");
 		}
 
 
@@ -137,6 +145,12 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial ABYSS;
 
+			public static CompMaterial BLINDNESS;
+
+			public static CompMaterial RANDOM_TELEPORT;
+
+			public static CompMaterial LAG_BEHIND;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -158,6 +172,9 @@ public final class Settings extends SimpleSettings {
 				KILL_PLAYER = get("Kill_Player", CompMaterial.class);
 				SLINGSHOT_PLAYER = get("Slingshot_Player", CompMaterial.class);
 				ABYSS = get("Abyss", CompMaterial.class);
+				BLINDNESS = get("Blindness", CompMaterial.class);
+				RANDOM_TELEPORT = get("Random_Teleport", CompMaterial.class);
+				LAG_BEHIND = get("Lag_Behind", CompMaterial.class);
 			}
 		}
 	}

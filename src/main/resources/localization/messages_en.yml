@@ -28,6 +28,11 @@
 # Texts/messages related to trolls
 # -------------------------------------------------------------------------------------------------
 Trolls:
+  Execute_Message: "&7Executed troll {troll_name} &7on &f{target_name}&7!"
+  Toggle_Troll:
+    Execute_Message: "Toggled {state} &7the troll {troll_name} &7for &f{target_name}&7!"
+    On_State: "&aon"
+    Off_State: "&coff"
   Creeper_Hiss:
     Display_Name: "&aC&fr&ae&fe&ap&fe&ar&f &aH&fi&as&fs"
     Description: "Play a creeper hiss sound to a player."
@@ -82,6 +87,15 @@ Trolls:
   Abyss:
     Display_Name: "&8Abyss"
     Description: "Teleport player to the Void."
+  Blindness:
+    Display_Name: "&8Blindness"
+    Description: "Give the player blindness effect."
+  Random_Teleport:
+    Display_Name: "&9Random Teleport"
+    Description: "Teleport the player to a random location."
+  Lag_Behind:
+    Display_Name: "&cLag Behind"
+    Description: "Make the player lag behind when walking."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
@@ -218,6 +232,11 @@ Menu:
       - ""
       - "Teleport the troll target to you."
     Teleport_Player_To_You_Success: "&7The &f{target_name} &7has been teleported to you."
+
+    # This is the postfix text to the troll name which are toggleable
+    Toggleable_Troll_Enabled: "&7(&aEnabled&7)"
+    Toggleable_Troll_Disabled: "&7(&cDisabled&7)"
+
     Search_Troll_Button:
       Title: "&9Search for a Troll"
       Lore:

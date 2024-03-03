@@ -89,5 +89,14 @@ public final class Permissions {
 		@Permission("Abyss the player")
 		public static final String ABYSS = "staxzstrolls.troll.abyss_player";
 
+		@Permission("Blind the player")
+		public static final String BLINDNESS = "staxzstrolls.troll.blindness";
+
+		@Permission("Randomly teleport the player")
+		public static final String RANDOM_TELEPORT = "staxzstrolls.troll.random_teleport";
+
+		@Permission("Lag behind the player")
+		public static final String LAG_BEHIND = "staxzstrolls.troll.lag_behind";
+
 	}
 }

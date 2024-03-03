@@ -69,6 +69,13 @@ Trolls:
   # You can use color codes and placeholders.
   Spam_Chat_Message: "You have been trolled!!! Muhahaa!"
 
+  # How long does the blindness effect last in ticks.
+  # 20 ticks = 1 second
+  Blindness_Duration: 200
+
+  # Radius of the random teleportation in blocks.
+  Random_Teleport_Radius: 150
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -89,6 +96,9 @@ Trolls:
     Kill_Player: "SKELETON_SKULL"
     Slingshot_Player: "LEAD"
     Abyss: "BEDROCK"
+    Blindness: "INK_SAC"
+    Random_Teleport: "ENDER_PEARL"
+    Lag_Behind: "Redstone"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

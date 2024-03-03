@@ -70,6 +70,9 @@ public abstract class Troll {
 		registerTroll(new KillTroll());
 		registerTroll(new SlingshotTroll());
 		registerTroll(new AbyssTroll());
+		registerTroll(new BlindnessTroll());
+		registerTroll(new RandomTeleportTroll());
+		registerTroll(new LagBehindTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -127,11 +130,14 @@ public abstract class Troll {
 	//////////////////////////////
 
 	public final void executeTroll(CommandSender sender, Player target) {
-		String finalMessage = "&7Executed troll " + this.displayName + " &7on &f" + target.getName() + "&7!";
-		Tuple<Boolean, String> finalResult = new Tuple<>(true, finalMessage);
-
+		Tuple<Boolean, String> finalResult;
 		Tuple<Boolean, String> actionResult = this.performTroll(sender, target);
-		finalResult = actionResult != null ? actionResult : finalResult;
+
+		if (actionResult != null)
+			finalResult = actionResult;
+		else
+			finalResult = new Tuple<>(true, this.getExecuteMessage(target));
+
 
 		boolean success = finalResult.getKey();
 		String message = finalResult.getValue();
@@ -144,12 +150,17 @@ public abstract class Troll {
 
 	protected abstract Tuple<Boolean, String> performTroll(CommandSender sender, Player target);
 
-	public ItemStack getItemstack() {
+	protected String getExecuteMessage(Player target) {
+		return Lang.of("Trolls.Execute_Message")
+				.replace("{troll_name}", this.displayName)
+				.replace("{target_name}", target.getName());
+	}
+
+	public ItemStack getItemStack(Player target) {
 		ItemCreator creator = ItemCreator.of(this.getIcon())
 				.name(this.getDisplayName())
 				.lore("", this.getDescription());
 
 		return creator.make();
 	}
-
 }

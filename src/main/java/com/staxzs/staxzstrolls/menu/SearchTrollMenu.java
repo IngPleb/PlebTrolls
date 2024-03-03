@@ -32,7 +32,7 @@ public final class SearchTrollMenu extends MenuPagged<Troll> {
 
 	@Override
 	protected ItemStack convertToItemStack(Troll troll) {
-		return troll.getItemstack();
+		return troll.getItemStack(this.target);
 	}
 
 	@Override
