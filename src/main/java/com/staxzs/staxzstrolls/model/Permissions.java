@@ -98,5 +98,8 @@ public final class Permissions {
 		@Permission("Lag behind the player")
 		public static final String LAG_BEHIND = "staxzstrolls.troll.lag_behind";
 
+		@Permission("Pumpkin the player")
+		public static final String PUMPKIN = "staxzstrolls.troll.pumpkin";
+
 	}
 }

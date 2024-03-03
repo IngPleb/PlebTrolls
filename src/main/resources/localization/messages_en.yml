@@ -96,6 +96,9 @@ Trolls:
   Lag_Behind:
     Display_Name: "&cLag Behind"
     Description: "Make the player lag behind when walking."
+  Pumpkin:
+    Display_Name: "&6Pumpkin"
+    Description: "Put a pumpkin on the player's head."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

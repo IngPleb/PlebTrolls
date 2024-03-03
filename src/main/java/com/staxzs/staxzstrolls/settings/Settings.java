@@ -151,6 +151,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial LAG_BEHIND;
 
+			public static CompMaterial PUMPKIN;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -175,6 +177,7 @@ public final class Settings extends SimpleSettings {
 				BLINDNESS = get("Blindness", CompMaterial.class);
 				RANDOM_TELEPORT = get("Random_Teleport", CompMaterial.class);
 				LAG_BEHIND = get("Lag_Behind", CompMaterial.class);
+				PUMPKIN = get("Pumpkin", CompMaterial.class);
 			}
 		}
 	}
