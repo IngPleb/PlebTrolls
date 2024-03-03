@@ -76,6 +76,9 @@ Trolls:
   # Radius of the random teleportation in blocks.
   Random_Teleport_Radius: 150
 
+  # The message sent to the player when they are fake banned.
+  Fake_Ban_Message: "&c&lYou have been banned for CHEATING!"
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -102,6 +105,8 @@ Trolls:
     Pumpkin: "PUMPKIN"
     No_Item_Drop: "DROPPER"
     Open_Random_Inventory: "CHEST"
+    Fake_Ban: "BARRIER"
+    Cobweb: "COBWEB"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

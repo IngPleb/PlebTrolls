@@ -80,6 +80,8 @@ public abstract class Troll {
 		registerTroll(new PumpkinTroll());
 		registerTroll(new NoItemDropTroll());
 		registerTroll(new OpenRandomInvTroll());
+		registerTroll(new FakeBanTroll());
+		registerTroll(new CobwebTroll());
 	}
 
 	public static void deregisterAllTrolls() {

@@ -107,5 +107,11 @@ public final class Permissions {
 		@Permission("Open a random inventory for the player")
 		public static final String OPEN_RANDOM_INVENTORY = "staxzstrolls.troll.open_random_inventory";
 
+		@Permission("Fake ban the player")
+		public static final String FAKE_BAN = "staxzstrolls.troll.fake_ban";
+
+		@Permission("Cobweb the player")
+		public static final String COBWEB = "staxzstrolls.troll.cobweb";
+
 	}
 }

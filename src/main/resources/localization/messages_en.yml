@@ -105,6 +105,12 @@ Trolls:
   Open_Random_Inventory:
     Display_Name: "&7Open Random Inventory"
     Description: "Open a random inventory to the player."
+  Fake_Ban:
+    Display_Name: "&4Fake Ban"
+    Description: "Send a fake ban message to the player."
+  Cobweb:
+    Display_Name: "&fCobweb"
+    Description: "Place a cobwebs around the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

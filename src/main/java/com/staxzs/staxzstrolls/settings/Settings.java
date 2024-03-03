@@ -81,6 +81,8 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer RANDOM_TELEPORT_RADIUS;
 
+		public static String FAKE_BAN_MESSAGE;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -102,6 +104,8 @@ public final class Settings extends SimpleSettings {
 			BLINDNESS_DURATION = getInteger("Blindness_Duration");
 
 			RANDOM_TELEPORT_RADIUS = getInteger("Random_Teleport_Radius");
+
+			FAKE_BAN_MESSAGE = getString("Fake_Ban_Message");
 		}
 
 
@@ -157,6 +161,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial OPEN_RANDOM_INVENTORY;
 
+			public static CompMaterial FAKE_BAN;
+
+			public static CompMaterial COBWEB;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -184,6 +192,8 @@ public final class Settings extends SimpleSettings {
 				PUMPKIN = get("Pumpkin", CompMaterial.class);
 				NO_ITEM_DROP = get("No_Item_Drop", CompMaterial.class);
 				OPEN_RANDOM_INVENTORY = get("Open_Random_Inventory", CompMaterial.class);
+				FAKE_BAN = get("Fake_Ban", CompMaterial.class);
+				COBWEB = get("Cobweb", CompMaterial.class);
 			}
 		}
 	}
