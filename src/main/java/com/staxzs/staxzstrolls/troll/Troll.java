@@ -4,6 +4,9 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.collection.StrictSet;
@@ -16,7 +19,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Getter
-@EqualsAndHashCode
+@EqualsAndHashCode(of = "name")
 public abstract class Troll {
 
 	private static final StrictSet<Troll> REGISTERED_TROLLS = new StrictSet<>();
@@ -73,6 +76,7 @@ public abstract class Troll {
 		registerTroll(new BlindnessTroll());
 		registerTroll(new RandomTeleportTroll());
 		registerTroll(new LagBehindTroll());
+		registerTroll(new PumpkinTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -162,5 +166,20 @@ public abstract class Troll {
 				.lore("", this.getDescription());
 
 		return creator.make();
+	}
+
+	//////////////////////////////
+	// Events
+	//////////////////////////////
+	public void onPlayerJoin(PlayerJoinEvent event) {
+		// Override if needed
+	}
+
+	public void onInventoryClick(InventoryClickEvent event) {
+		// Override if needed
+	}
+
+	public void onPlayerRespawn(PlayerRespawnEvent event) {
+		// Override if needed
 	}
 }
