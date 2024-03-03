@@ -2,15 +2,11 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.model.Tuple;
 
 public final class BlindnessTroll extends Troll {
-
-	@Getter
-	private static final BlindnessTroll INSTANCE = new BlindnessTroll();
 
 	public BlindnessTroll() {
 		super("BLINDNESS", Permissions.Troll.BLINDNESS, Settings.TrollSection.IconsSection.BLINDNESS);

@@ -3,7 +3,6 @@ package com.staxzs.staxzstrolls.troll;
 import com.staxzs.staxzstrolls.StaxzsTrolls;
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -12,13 +11,9 @@ import org.mineacademy.fo.model.Tuple;
 
 public final class SpamChatTroll extends Troll {
 
-	@Getter
-	private static final SpamChatTroll INSTANCE = new SpamChatTroll();
-
 	public SpamChatTroll() {
 		super("SPAM_CHAT", Permissions.Troll.SPAM_CHAT, Settings.TrollSection.IconsSection.SPAM_CHAT);
 	}
-
 
 	@Override
 	public Tuple<Boolean, String> performTroll(CommandSender sender, Player target) {

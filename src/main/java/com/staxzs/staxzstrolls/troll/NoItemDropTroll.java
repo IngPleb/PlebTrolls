@@ -15,8 +15,6 @@ import java.util.UUID;
 @Getter
 public final class NoItemDropTroll extends ToggleableTroll {
 
-	private static final NoItemDropTroll INSTANCE = new NoItemDropTroll();
-
 	private static final Set<UUID> PLAYERS_WITH_NO_DROPS = new HashSet<>();
 
 	public NoItemDropTroll() {

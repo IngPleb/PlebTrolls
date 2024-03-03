@@ -2,15 +2,12 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.model.Tuple;
 
 public final class ClearInventoryTroll extends Troll {
 
-	@Getter
-	private static final ClearInventoryTroll INSTANCE = new ClearInventoryTroll();
 
 	public ClearInventoryTroll() {
 		super("CLEAR_INVENTORY", Permissions.Troll.CLEAR_INVENTORY, Settings.TrollSection.IconsSection.CLEAR_INVENTORY);

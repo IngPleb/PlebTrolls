@@ -17,8 +17,6 @@ import java.util.UUID;
 @Getter
 public final class LagBehindTroll extends ToggleableTroll {
 
-	private static final LagBehindTroll INSTANCE = new LagBehindTroll();
-
 	private static final Map<UUID, BukkitRunnable> lagBehindTasks = new HashMap<>();
 
 	public LagBehindTroll() {

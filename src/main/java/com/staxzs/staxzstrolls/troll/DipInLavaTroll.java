@@ -2,7 +2,6 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -12,8 +11,6 @@ import org.mineacademy.fo.settings.Lang;
 
 public final class DipInLavaTroll extends Troll {
 
-	@Getter
-	private static final DipInLavaTroll INSTANCE = new DipInLavaTroll();
 
 	public DipInLavaTroll() {
 		super("DIP_IN_LAVA", Lang.of("Trolls.Dip_In_Lava.Display_Name"),

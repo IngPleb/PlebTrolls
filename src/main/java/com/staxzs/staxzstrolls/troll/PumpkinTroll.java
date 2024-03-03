@@ -21,8 +21,6 @@ import java.util.UUID;
 @Getter
 public final class PumpkinTroll extends ToggleableTroll {
 
-	private static final PumpkinTroll INSTANCE = new PumpkinTroll();
-
 	private static final Set<UUID> playersWithPumpkin = new HashSet<>();
 
 	private static final Material pumpkinMaterial = Material.CARVED_PUMPKIN;

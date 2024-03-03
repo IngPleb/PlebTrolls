@@ -2,7 +2,6 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
@@ -13,9 +12,6 @@ import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
 public final class AmbushTroll extends Troll {
-
-	@Getter
-	private static final AmbushTroll INSTANCE = new AmbushTroll();
 
 	public AmbushTroll() {
 		super("AMBUSH_PLAYER", Lang.of("Trolls.Ambush_Player.Display_Name"),

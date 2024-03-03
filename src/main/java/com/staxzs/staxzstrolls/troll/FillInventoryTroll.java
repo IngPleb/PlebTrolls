@@ -2,7 +2,6 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.PlayerInventory;
@@ -11,9 +10,6 @@ import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
 public final class FillInventoryTroll extends Troll {
-
-	@Getter
-	private static final FillInventoryTroll INSTANCE = new FillInventoryTroll();
 
 	public FillInventoryTroll() {
 		super("FILL_INVENTORY", Lang.of("Trolls.Fill_Inventory.Display_Name"),

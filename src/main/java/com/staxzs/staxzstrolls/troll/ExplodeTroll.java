@@ -2,7 +2,6 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.model.Tuple;
@@ -10,9 +9,6 @@ import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
 public final class ExplodeTroll extends Troll {
-
-	@Getter
-	private static final ExplodeTroll INSTANCE = new ExplodeTroll();
 
 	public ExplodeTroll() {
 		super("EXPLODE_PLAYER", Lang.of("Trolls.Explode_Player.Display_Name"),

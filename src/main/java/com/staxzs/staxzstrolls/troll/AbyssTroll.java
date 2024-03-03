@@ -2,16 +2,12 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.model.Tuple;
 
 public final class AbyssTroll extends Troll {
-
-	@Getter
-	private static final AbyssTroll INSTANCE = new AbyssTroll();
 
 	public AbyssTroll() {
 		super("ABYSS", Permissions.Troll.ABYSS, Settings.TrollSection.IconsSection.ABYSS);

@@ -2,7 +2,6 @@ package com.staxzs.staxzstrolls.troll;
 
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
-import lombok.Getter;
 import lombok.NonNull;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
@@ -12,10 +11,6 @@ import org.mineacademy.fo.model.Tuple;
 import java.util.Objects;
 
 public final class RandomTeleportTroll extends Troll {
-
-	@Getter
-	private static final RandomTeleportTroll INSTANCE = new RandomTeleportTroll();
-
 	public RandomTeleportTroll() {
 		super("RANDOM_TELEPORT", Permissions.Troll.RANDOM_TELEPORT, Settings.TrollSection.IconsSection.RANDOM_TELEPORT);
 	}
