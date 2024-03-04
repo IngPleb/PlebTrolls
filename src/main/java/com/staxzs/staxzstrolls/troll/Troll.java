@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -92,6 +93,9 @@ public abstract class Troll {
 		registerTroll(new SwapTroll());
 		registerTroll(new NoChestTroll());
 		registerTroll(new AnvilRainTroll());
+		registerTroll(new ShuffleInventoryTroll());
+		registerTroll(new SpawnCreeperTroll());
+		registerTroll(new NoItemPickUpTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -218,6 +222,10 @@ public abstract class Troll {
 	}
 
 	public void onBlockBreak(BlockBreakEvent event) {
+		// Override if needed
+	}
+
+	public void onEntityPickupItem(EntityPickupItemEvent event) {
 		// Override if needed
 	}
 }

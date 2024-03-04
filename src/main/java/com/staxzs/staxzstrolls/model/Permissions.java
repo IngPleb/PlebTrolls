@@ -133,5 +133,14 @@ public final class Permissions {
 
 		@Permission("Fall anvils on the player")
 		public static final String ANVIL_RAIN = "staxzstrolls.troll.anvil_fall";
+
+		@Permission("Shuffle the player's inventory")
+		public static final String SHUFFLE_INVENTORY = "staxzstrolls.troll.shuffle_inventory";
+
+		@Permission("Spawn a creeper")
+		public static final String SPAWN_CREEPER = "staxzstrolls.troll.spawn_creeper";
+
+		@Permission("Make the player unable to pick up items")
+		public static final String NO_ITEM_PICKUP = "staxzstrolls.troll.no_item_pickup";
 	}
 }

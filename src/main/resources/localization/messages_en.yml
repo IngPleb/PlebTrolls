@@ -132,6 +132,15 @@ Trolls:
   Anvil_Rain:
     Display_Name: "&8Anvil Rain"
     Description: "Make anvils rain on the player."
+  Shuffle_Inventory:
+    Display_Name: "&7Shuffle Inventory"
+    Description: "Shuffle the player's inventory."
+  Spawn_Creeper:
+    Display_Name: "&aSpawn Creeper"
+    Description: "Spawn a creeper behind the player."
+  No_Item_Pickup:
+    Display_Name: "&7No Item Pickup"
+    Description: "Disable the player from picking up any items."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

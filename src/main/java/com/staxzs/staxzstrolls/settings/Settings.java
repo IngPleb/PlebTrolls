@@ -183,6 +183,12 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial ANVIL_RAIN;
 
+			public static CompMaterial SHUFFLE_INVENTORY;
+
+			public static CompMaterial SPAWN_CREEPER;
+
+			public static CompMaterial NO_ITEM_PICKUP;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -219,6 +225,9 @@ public final class Settings extends SimpleSettings {
 				SWAP = get("Swap", CompMaterial.class);
 				NO_CHEST = get("No_Chest", CompMaterial.class);
 				ANVIL_RAIN = get("Anvil_Rain", CompMaterial.class);
+				SHUFFLE_INVENTORY = get("Shuffle_Inventory", CompMaterial.class);
+				SPAWN_CREEPER = get("Spawn_Creeper", CompMaterial.class);
+				NO_ITEM_PICKUP = get("No_Item_Pickup", CompMaterial.class);
 			}
 		}
 	}
