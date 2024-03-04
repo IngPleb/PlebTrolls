@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -89,6 +90,7 @@ public abstract class Troll {
 		registerTroll(new TeleportToSunTroll());
 		registerTroll(new ObsidianCageTroll());
 		registerTroll(new SwapTroll());
+		registerTroll(new NoChestTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -199,6 +201,10 @@ public abstract class Troll {
 	}
 
 	public void onInventoryClick(InventoryClickEvent event) {
+		// Override if needed
+	}
+
+	public void onInventoryOpen(InventoryOpenEvent event) {
 		// Override if needed
 	}
 

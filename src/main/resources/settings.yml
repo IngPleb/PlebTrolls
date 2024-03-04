@@ -112,6 +112,7 @@ Trolls:
     Teleport_To_Sun: "SUNFLOWER"
     Obsidian_Cage: "OBSIDIAN"
     Swap: "PURPLE_DYE"
+    No_Chest: "CHEST"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

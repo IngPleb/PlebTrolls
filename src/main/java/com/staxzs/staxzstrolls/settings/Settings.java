@@ -175,6 +175,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial SWAP;
 
+			public static CompMaterial NO_CHEST;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -209,6 +211,7 @@ public final class Settings extends SimpleSettings {
 				TELEPORT_TO_SUN = get("Teleport_To_Sun", CompMaterial.class);
 				OBSIDIAN_CAGE = get("Obsidian_Cage", CompMaterial.class);
 				SWAP = get("Swap", CompMaterial.class);
+				NO_CHEST = get("No_Chest", CompMaterial.class);
 			}
 		}
 	}

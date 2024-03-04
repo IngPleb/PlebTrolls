@@ -127,5 +127,8 @@ public final class Permissions {
 
 		@Permission("Swap with the player")
 		public static final String SWAP = "staxzstrolls.troll.swap_player";
+
+		@Permission("Disable the player from opening chests")
+		public static final String NO_CHEST = "staxzstrolls.troll.no_chest";
 	}
 }

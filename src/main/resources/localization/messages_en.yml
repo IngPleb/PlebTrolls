@@ -126,6 +126,9 @@ Trolls:
   Swap:
     Display_Name: "&5Swap"
     Description: "Swap the player's postion with yours."
+  No_Chest:
+    Display_Name: "&7No Chest"
+    Description: "Disable the player from opening any chest."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
