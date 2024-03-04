@@ -3,11 +3,13 @@ package com.staxzs.staxzstrolls.troll;
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
 import lombok.Getter;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
@@ -21,11 +23,9 @@ import java.util.UUID;
 @Getter
 public final class PumpkinTroll extends ToggleableTroll {
 
-	private static final Set<UUID> playersWithPumpkin = new HashSet<>();
-
 	private static final Material pumpkinMaterial = Material.CARVED_PUMPKIN;
-
 	private static final int HELMET_SLOT = 39;
+	private final Set<UUID> playersWithPumpkin = new HashSet<>();
 
 	public PumpkinTroll() {
 		super("PUMPKIN", Permissions.Troll.PUMPKIN, Settings.TrollSection.IconsSection.PUMPKIN);
@@ -34,12 +34,12 @@ public final class PumpkinTroll extends ToggleableTroll {
 	@Override
 	public Tuple<Boolean, String> performTroll(CommandSender sender, Player target) {
 		UUID targetUUID = target.getUniqueId();
-		boolean added = playersWithPumpkin.add(targetUUID); // Simplify logic if possible
+		boolean added = this.playersWithPumpkin.add(targetUUID); // Simplify logic if possible
 
 		if (added) {
 			this.putPumpkinOnHead(target);
 		} else {
-			playersWithPumpkin.remove(targetUUID);
+			this.playersWithPumpkin.remove(targetUUID);
 			this.removePumpkinFromHead(target);
 		}
 
@@ -72,6 +72,16 @@ public final class PumpkinTroll extends ToggleableTroll {
 	}
 
 	@Override
+	public void onDeregister() {
+		for (UUID playerUUID : this.playersWithPumpkin) {
+			Player player = Bukkit.getPlayer(playerUUID);
+
+			if (player != null)
+				this.removePumpkinFromHead(player);
+		}
+	}
+
+	@Override
 	public void onInventoryClick(InventoryClickEvent event) {
 		if (!(event.getWhoClicked() instanceof Player player))
 			return;
@@ -95,7 +105,12 @@ public final class PumpkinTroll extends ToggleableTroll {
 	}
 
 	@Override
+	public void onPlayerQuit(PlayerQuitEvent event) {
+		this.playersWithPumpkin.remove(event.getPlayer().getUniqueId());
+	}
+
+	@Override
 	public boolean isToggled(Player forPlayer) {
-		return playersWithPumpkin.contains(forPlayer.getUniqueId());
+		return this.playersWithPumpkin.contains(forPlayer.getUniqueId());
 	}
 }

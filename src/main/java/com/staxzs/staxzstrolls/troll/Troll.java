@@ -8,6 +8,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.Messenger;
@@ -83,9 +84,14 @@ public abstract class Troll {
 		registerTroll(new OpenRandomInvTroll());
 		registerTroll(new FakeBanTroll());
 		registerTroll(new CobwebTroll());
+		registerTroll(new NoBuildAndBreakTroll());
+		registerTroll(new FreezeTroll());
 	}
 
 	public static void deregisterAllTrolls() {
+		for (Troll troll : REGISTERED_TROLLS)
+			troll.onDeregister();
+
 		REGISTERED_TROLLS.clear();
 	}
 
@@ -160,6 +166,10 @@ public abstract class Troll {
 
 	protected abstract Tuple<Boolean, String> performTroll(CommandSender sender, Player target);
 
+	public void onDeregister() {
+		// Override if needed
+	}
+
 	protected String getExecuteMessage(Player target) {
 		return Lang.of("Trolls.Execute_Message")
 				.replace("{troll_name}", this.displayName)
@@ -178,6 +188,10 @@ public abstract class Troll {
 	// Events
 	//////////////////////////////
 	public void onPlayerJoin(PlayerJoinEvent event) {
+		// Override if needed
+	}
+
+	public void onPlayerQuit(PlayerQuitEvent event) {
 		// Override if needed
 	}
 

@@ -41,6 +41,9 @@ public final class PlayerListener implements Listener {
 		final Player player = event.getPlayer();
 
 		PlayerCache.from(player).removeFromMemory(); // Unload player's cache
+
+		for (Troll troll : Troll.getRegisteredTrolls())
+			troll.onPlayerQuit(event);
 	}
 
 	@EventHandler(ignoreCancelled = true)

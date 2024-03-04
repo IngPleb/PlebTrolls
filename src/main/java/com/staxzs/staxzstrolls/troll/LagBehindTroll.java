@@ -7,6 +7,7 @@ import lombok.Getter;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.mineacademy.fo.model.Tuple;
 
@@ -17,7 +18,7 @@ import java.util.UUID;
 @Getter
 public final class LagBehindTroll extends ToggleableTroll {
 
-	private static final Map<UUID, BukkitRunnable> lagBehindTasks = new HashMap<>();
+	private final Map<UUID, BukkitRunnable> lagBehindTasks = new HashMap<>();
 
 	public LagBehindTroll() {
 		super("LAG_BEHIND", Permissions.Troll.LAG_BEHIND, Settings.TrollSection.IconsSection.LAG_BEHIND);
@@ -27,9 +28,9 @@ public final class LagBehindTroll extends ToggleableTroll {
 	public Tuple<Boolean, String> performTroll(CommandSender sender, Player target) {
 		UUID targetUUID = target.getUniqueId();
 
-		if (lagBehindTasks.containsKey(targetUUID)) {
-			lagBehindTasks.get(targetUUID).cancel();
-			lagBehindTasks.remove(targetUUID);
+		if (this.lagBehindTasks.containsKey(targetUUID)) {
+			this.lagBehindTasks.get(targetUUID).cancel();
+			this.lagBehindTasks.remove(targetUUID);
 		} else {
 			BukkitRunnable task = new BukkitRunnable() {
 
@@ -55,14 +56,33 @@ public final class LagBehindTroll extends ToggleableTroll {
 			};
 
 			task.runTaskTimer(StaxzsTrolls.getInstance(), 0, 15);
-			lagBehindTasks.put(targetUUID, task);
+			this.lagBehindTasks.put(targetUUID, task);
 		}
 
 		return null;
 	}
 
 	@Override
+	public void onDeregister() {
+		for (BukkitRunnable task : this.lagBehindTasks.values())
+			task.cancel();
+
+		this.lagBehindTasks.clear();
+	}
+
+	@Override
+	public void onPlayerQuit(PlayerQuitEvent event) {
+		UUID playerUUID = event.getPlayer().getUniqueId();
+
+		if (this.lagBehindTasks.containsKey(playerUUID)) {
+			this.lagBehindTasks.get(playerUUID).cancel();
+			this.lagBehindTasks.remove(playerUUID);
+		}
+
+	}
+
+	@Override
 	public boolean isToggled(Player forPlayer) {
-		return lagBehindTasks.containsKey(forPlayer.getUniqueId());
+		return this.lagBehindTasks.containsKey(forPlayer.getUniqueId());
 	}
 }

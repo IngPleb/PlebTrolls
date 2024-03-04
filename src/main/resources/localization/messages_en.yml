@@ -111,6 +111,12 @@ Trolls:
   Cobweb:
     Display_Name: "&fCobweb"
     Description: "Place a cobwebs around the player."
+  No_Build_And_Break:
+    Display_Name: "&7No Build and Break"
+    Description: "Disable the player from building and breaking blocks."
+  Freeze_Player:
+    Display_Name: "&bFreeze Player"
+    Description: "Freeze the player in place."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

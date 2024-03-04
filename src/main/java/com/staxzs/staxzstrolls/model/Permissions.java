@@ -113,5 +113,11 @@ public final class Permissions {
 		@Permission("Cobweb the player")
 		public static final String COBWEB = "staxzstrolls.troll.cobweb";
 
+		@Permission("No build and break")
+		public static final String NO_BUILD_AND_BREAK = "staxzstrolls.troll.no_build_and_break";
+
+		@Permission("Freeze the player")
+		public static final String FREEZE_PLAYER = "staxzstrolls.troll.freeze_player";
+
 	}
 }

@@ -165,6 +165,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial COBWEB;
 
+			public static CompMaterial NO_BUILD_AND_BREAK;
+
+			public static CompMaterial FREEZE_PLAYER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -194,6 +198,8 @@ public final class Settings extends SimpleSettings {
 				OPEN_RANDOM_INVENTORY = get("Open_Random_Inventory", CompMaterial.class);
 				FAKE_BAN = get("Fake_Ban", CompMaterial.class);
 				COBWEB = get("Cobweb", CompMaterial.class);
+				NO_BUILD_AND_BREAK = get("No_Build_And_Break", CompMaterial.class);
+				FREEZE_PLAYER = get("Freeze_Player", CompMaterial.class);
 			}
 		}
 	}
