@@ -120,6 +120,10 @@ Trolls:
     Shuffle_Inventory: "ENDER_CHEST"
     Spawn_Creeper: "CREEPER_HEAD"
     No_Item_Pickup: "FLOWER_POT"
+    Disable_Gravity: "FEATHER"
+    Disarm: "IRON_SWORD"
+    Reverse_Messages: "BOOK"
+    Send_Message: "PAPER"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

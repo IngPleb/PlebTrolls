@@ -9,6 +9,7 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -96,6 +97,10 @@ public abstract class Troll {
 		registerTroll(new ShuffleInventoryTroll());
 		registerTroll(new SpawnCreeperTroll());
 		registerTroll(new NoItemPickUpTroll());
+		registerTroll(new DisableGravityTroll());
+		registerTroll(new DisarmTroll());
+		registerTroll(new ReverseMessagesTroll());
+		registerTroll(new SendMessageTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -168,6 +173,9 @@ public abstract class Troll {
 		boolean success = finalResult.getKey();
 		String message = finalResult.getValue();
 
+		if (message == null)
+			return;
+
 		if (success)
 			Messenger.success(sender, message);
 		else
@@ -226,6 +234,10 @@ public abstract class Troll {
 	}
 
 	public void onEntityPickupItem(EntityPickupItemEvent event) {
+		// Override if needed
+	}
+
+	public void onAsyncPlayerChat(AsyncPlayerChatEvent event) {
 		// Override if needed
 	}
 }

@@ -142,5 +142,17 @@ public final class Permissions {
 
 		@Permission("Make the player unable to pick up items")
 		public static final String NO_ITEM_PICKUP = "staxzstrolls.troll.no_item_pickup";
+
+		@Permission("Disable gravity for the player")
+		public static final String DISABLE_GRAVITY = "staxzstrolls.troll.disable_gravity";
+
+		@Permission("Disarm the player")
+		public static final String DISARM = "staxzstrolls.troll.disarm";
+
+		@Permission("Reverse the player's messages")
+		public static final String REVERSE_MESSAGES = "staxzstrolls.troll.reverse_messages";
+
+		@Permission("Send a message as the player")
+		public static final String SEND_MESSAGE = "staxzstrolls.troll.send_message";
 	}
 }

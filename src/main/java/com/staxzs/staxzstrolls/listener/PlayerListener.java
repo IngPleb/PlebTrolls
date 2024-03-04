@@ -4,7 +4,9 @@ import com.staxzs.staxzstrolls.PlayerCache;
 import com.staxzs.staxzstrolls.troll.Troll;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -21,7 +23,7 @@ public final class PlayerListener implements Listener {
 	 *
 	 * @param event
 	 */
-	@EventHandler
+	@EventHandler(priority = EventPriority.LOWEST)
 	public void onJoin(PlayerJoinEvent event) {
 		final Player player = event.getPlayer();
 
@@ -44,6 +46,12 @@ public final class PlayerListener implements Listener {
 
 		for (Troll troll : Troll.getRegisteredTrolls())
 			troll.onPlayerQuit(event);
+	}
+
+	@EventHandler(ignoreCancelled = true)
+	public void onAsyncPlayerChat(AsyncPlayerChatEvent event) {
+		for (Troll troll : Troll.getRegisteredTrolls())
+			troll.onAsyncPlayerChat(event);
 	}
 
 	@EventHandler(ignoreCancelled = true)

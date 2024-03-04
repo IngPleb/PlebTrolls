@@ -189,6 +189,14 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial NO_ITEM_PICKUP;
 
+			public static CompMaterial DISABLE_GRAVITY;
+
+			public static CompMaterial DISARM;
+
+			public static CompMaterial REVERSE_MESSAGES;
+
+			public static CompMaterial SEND_MESSAGE;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -228,6 +236,10 @@ public final class Settings extends SimpleSettings {
 				SHUFFLE_INVENTORY = get("Shuffle_Inventory", CompMaterial.class);
 				SPAWN_CREEPER = get("Spawn_Creeper", CompMaterial.class);
 				NO_ITEM_PICKUP = get("No_Item_Pickup", CompMaterial.class);
+				DISABLE_GRAVITY = get("Disable_Gravity", CompMaterial.class);
+				DISARM = get("Disarm", CompMaterial.class);
+				REVERSE_MESSAGES = get("Reverse_Messages", CompMaterial.class);
+				SEND_MESSAGE = get("Send_Message", CompMaterial.class);
 			}
 		}
 	}

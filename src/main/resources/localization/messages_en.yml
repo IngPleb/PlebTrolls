@@ -141,6 +141,21 @@ Trolls:
   No_Item_Pickup:
     Display_Name: "&7No Item Pickup"
     Description: "Disable the player from picking up any items."
+  Disable_Gravity:
+    Display_Name: "&7Disable Gravity"
+    Description:
+      - "Disable the player's gravity."
+      - ""
+      - "&c(Be sure to have fly enabled)"
+  Disarm:
+    Display_Name: "&fDisarm"
+    Description: "Forces the player to throw away their held item."
+  Reverse_Messages:
+    Display_Name: "&7Reverse Messages"
+    Description: "Reverse the player's chat messages."
+  Send_Message:
+    Display_Name: "&7Send Message"
+    Description: "Send a message as the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
