@@ -117,6 +117,12 @@ Trolls:
   Freeze_Player:
     Display_Name: "&bFreeze Player"
     Description: "Freeze the player in place."
+  Teleport_To_Sun:
+    Display_Name: "&eTeleport to Sun"
+    Description: "Teleport the player to the maximum building height on a 1x1 glass block"
+  Obsidian_Cage:
+    Display_Name: "&8Obsidian Cage"
+    Description: "Create an obsidian cage around the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

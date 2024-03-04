@@ -169,6 +169,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial FREEZE_PLAYER;
 
+			public static CompMaterial TELEPORT_TO_SUN;
+
+			public static CompMaterial OBSIDIAN_CAGE;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -200,6 +204,8 @@ public final class Settings extends SimpleSettings {
 				COBWEB = get("Cobweb", CompMaterial.class);
 				NO_BUILD_AND_BREAK = get("No_Build_And_Break", CompMaterial.class);
 				FREEZE_PLAYER = get("Freeze_Player", CompMaterial.class);
+				TELEPORT_TO_SUN = get("Teleport_To_Sun", CompMaterial.class);
+				OBSIDIAN_CAGE = get("Obsidian_Cage", CompMaterial.class);
 			}
 		}
 	}

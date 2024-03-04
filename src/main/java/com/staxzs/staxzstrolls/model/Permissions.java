@@ -119,5 +119,10 @@ public final class Permissions {
 		@Permission("Freeze the player")
 		public static final String FREEZE_PLAYER = "staxzstrolls.troll.freeze_player";
 
+		@Permission("Teleport the player to the sun")
+		public static final String TELEPORT_TO_SUN = "staxzstrolls.troll.teleport_to_sun";
+
+		@Permission("Obsidian cage the player")
+		public static final String OBSIDIAN_CAGE = "staxzstrolls.troll.obsidian_cage";
 	}
 }

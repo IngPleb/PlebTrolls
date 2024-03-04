@@ -109,6 +109,8 @@ Trolls:
     Cobweb: "COBWEB"
     No_Build_And_Break: "OAK_SIGN"
     Freeze_Player: "ICE"
+    Teleport_To_Sun: "SUNFLOWER"
+    Obsidian_Cage: "OBSIDIAN"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
