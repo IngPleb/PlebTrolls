@@ -83,6 +83,8 @@ public final class Settings extends SimpleSettings {
 
 		public static String FAKE_BAN_MESSAGE;
 
+		public static Integer ANVIL_RAIN_HEIGHT;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -106,6 +108,8 @@ public final class Settings extends SimpleSettings {
 			RANDOM_TELEPORT_RADIUS = getInteger("Random_Teleport_Radius");
 
 			FAKE_BAN_MESSAGE = getString("Fake_Ban_Message");
+
+			ANVIL_RAIN_HEIGHT = getInteger("Anvil_Rain_Height");
 		}
 
 
@@ -177,6 +181,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial NO_CHEST;
 
+			public static CompMaterial ANVIL_RAIN;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -212,6 +218,7 @@ public final class Settings extends SimpleSettings {
 				OBSIDIAN_CAGE = get("Obsidian_Cage", CompMaterial.class);
 				SWAP = get("Swap", CompMaterial.class);
 				NO_CHEST = get("No_Chest", CompMaterial.class);
+				ANVIL_RAIN = get("Anvil_Rain", CompMaterial.class);
 			}
 		}
 	}

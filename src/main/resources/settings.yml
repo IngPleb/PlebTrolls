@@ -79,6 +79,9 @@ Trolls:
   # The message sent to the player when they are fake banned.
   Fake_Ban_Message: "&c&lYou have been banned for CHEATING!"
 
+  # The height of the anvil rain in blocks.
+  Anvil_Rain_Height: 20
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -113,6 +116,7 @@ Trolls:
     Obsidian_Cage: "OBSIDIAN"
     Swap: "PURPLE_DYE"
     No_Chest: "CHEST"
+    Anvil_Rain: "ANVIL"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

@@ -129,6 +129,9 @@ Trolls:
   No_Chest:
     Display_Name: "&7No Chest"
     Description: "Disable the player from opening any chest."
+  Anvil_Rain:
+    Display_Name: "&8Anvil Rain"
+    Description: "Make anvils rain on the player."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

@@ -91,6 +91,7 @@ public abstract class Troll {
 		registerTroll(new ObsidianCageTroll());
 		registerTroll(new SwapTroll());
 		registerTroll(new NoChestTroll());
+		registerTroll(new AnvilRainTroll());
 	}
 
 	public static void deregisterAllTrolls() {

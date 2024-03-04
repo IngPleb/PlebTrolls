@@ -130,5 +130,8 @@ public final class Permissions {
 
 		@Permission("Disable the player from opening chests")
 		public static final String NO_CHEST = "staxzstrolls.troll.no_chest";
+
+		@Permission("Fall anvils on the player")
+		public static final String ANVIL_RAIN = "staxzstrolls.troll.anvil_fall";
 	}
 }
