@@ -123,6 +123,9 @@ Trolls:
   Obsidian_Cage:
     Display_Name: "&8Obsidian Cage"
     Description: "Create an obsidian cage around the player."
+  Swap:
+    Display_Name: "&5Swap"
+    Description: "Swap the player's postion with yours."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

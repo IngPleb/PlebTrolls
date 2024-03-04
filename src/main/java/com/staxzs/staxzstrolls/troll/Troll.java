@@ -88,6 +88,7 @@ public abstract class Troll {
 		registerTroll(new FreezeTroll());
 		registerTroll(new TeleportToSunTroll());
 		registerTroll(new ObsidianCageTroll());
+		registerTroll(new SwapTroll());
 	}
 
 	public static void deregisterAllTrolls() {

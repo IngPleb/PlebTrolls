@@ -124,5 +124,8 @@ public final class Permissions {
 
 		@Permission("Obsidian cage the player")
 		public static final String OBSIDIAN_CAGE = "staxzstrolls.troll.obsidian_cage";
+
+		@Permission("Swap with the player")
+		public static final String SWAP = "staxzstrolls.troll.swap_player";
 	}
 }
