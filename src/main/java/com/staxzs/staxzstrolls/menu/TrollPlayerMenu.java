@@ -1,6 +1,7 @@
 package com.staxzs.staxzstrolls.menu;
 
 import com.staxzs.staxzstrolls.prompt.TrollSearchPrompt;
+import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.troll.Troll;
 import com.staxzs.staxzstrolls.util.Interval;
 import org.bukkit.entity.Player;
@@ -37,10 +38,12 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 	private final Button searchTrollButton;
 
 
-	public TrollPlayerMenu(Menu parentMenu, @NotNull Player target) {
+	public TrollPlayerMenu(Menu parentMenu, @NotNull Player target, @NotNull Player viewer) {
 
 		// Initialise menu
-		super(parentMenu, Interval.of(18, 44).toList(), Troll.getRegisteredTrolls());
+		super(parentMenu, Interval.of(18, 44).toList()
+				, Settings.TrollSection.FILTER_BY_PERMISSION ?
+						Troll.getRegisteredTrollsByPlayer(viewer) : Troll.getRegisteredTrolls());
 		this.setSize(54);
 		this.target = target;
 		this.setTitle(Lang.of("Menu.Troll_Menu.Title").replace("{target_name}", target.getName()));

@@ -224,6 +224,9 @@ Commands:
   Perms_Applied: "&7Do you have it? "
   Perms_Yes: "&2yes"
   Perms_No: "&cno"
+  Troll_Description: "Open the troll menu or troll a player."
+  Troll_Not_Found: "Troll '{troll}' not found."
+  Troll_Console_No_Player: "You must specify a player name when running from console."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to paginator splitting command help into multiple pages

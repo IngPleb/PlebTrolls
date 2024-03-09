@@ -38,7 +38,7 @@ public class PlayerListMenu extends MenuPagged<Player> {
 
 	@Override
 	protected void onPageClick(Player player, Player target, ClickType click) {
-		new TrollPlayerMenu(this, target).displayTo(player);
+		new TrollPlayerMenu(this, target, player).displayTo(player);
 	}
 
 	@Override

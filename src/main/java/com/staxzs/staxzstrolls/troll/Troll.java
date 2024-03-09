@@ -15,6 +15,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.Messenger;
+import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.collection.StrictSet;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.model.Tuple;
@@ -50,6 +51,16 @@ public abstract class Troll {
 
 	public static Set<Troll> getRegisteredTrolls() {
 		return REGISTERED_TROLLS.getSource();
+	}
+
+	public static Set<Troll> getRegisteredTrollsByPlayer(Player player) {
+		Set<Troll> trolls = new HashSet<>();
+		for (Troll troll : REGISTERED_TROLLS) {
+			if (PlayerUtil.hasPerm(player, troll.getPermission())) {
+				trolls.add(troll);
+			}
+		}
+		return trolls;
 	}
 
 	//////////////////////////////
@@ -161,6 +172,13 @@ public abstract class Troll {
 	//////////////////////////////
 
 	public final void executeTroll(CommandSender sender, Player target) {
+
+		// Check permission
+		if (!PlayerUtil.hasPerm(sender, this.permission)) {
+			Messenger.error(sender, Lang.of("No_Permission").replace("{permission}", this.permission));
+			return;
+		}
+
 		Tuple<Boolean, String> finalResult;
 		Tuple<Boolean, String> actionResult = this.performTroll(sender, target);
 

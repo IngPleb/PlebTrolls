@@ -8,6 +8,7 @@ import org.mineacademy.fo.settings.YamlStaticConfig;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 /**
  * A sample settings class, utilizing {@link YamlStaticConfig} with prebuilt settings.yml handler
@@ -60,6 +61,10 @@ public final class Settings extends SimpleSettings {
 	public static class TrollSection {
 		public static String PATH_PREFIX = "Trolls";
 
+		public static Set<String> COMMAND_ALIASES;
+
+		public static Boolean FILTER_BY_PERMISSION;
+
 		public static Integer IGNITE_DURATION;
 
 		public static Integer EXPLODE_POWER;
@@ -87,6 +92,10 @@ public final class Settings extends SimpleSettings {
 
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
+
+			COMMAND_ALIASES = getSet("Command_Aliases", String.class);
+
+			FILTER_BY_PERMISSION = getBoolean("Filter_By_Permission");
 
 			IGNITE_DURATION = getInteger("Ignite_Duration");
 
