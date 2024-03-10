@@ -154,5 +154,8 @@ public final class Permissions {
 
 		@Permission("Send a message as the player")
 		public static final String SEND_MESSAGE = "staxzstrolls.troll.send_message";
+
+		@Permission("Turn the player into a potato")
+		public static final String POTATO = "staxzstrolls.troll.potato";
 	}
 }

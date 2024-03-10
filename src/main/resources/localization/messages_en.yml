@@ -156,6 +156,9 @@ Trolls:
   Send_Message:
     Display_Name: "&7Send Message"
     Description: "Send a message as the player."
+  Potato:
+    Display_Name: "&6Potato"
+    Description: "Turn the player into a potato."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands

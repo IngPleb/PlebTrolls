@@ -132,6 +132,7 @@ Trolls:
     Disarm: "IRON_SWORD"
     Reverse_Messages: "BOOK"
     Send_Message: "PAPER"
+    Potato: "POTATO"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

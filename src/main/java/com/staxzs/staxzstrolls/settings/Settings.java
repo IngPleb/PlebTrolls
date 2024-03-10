@@ -206,6 +206,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial SEND_MESSAGE;
 
+			public static CompMaterial POTATO;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -249,6 +251,7 @@ public final class Settings extends SimpleSettings {
 				DISARM = get("Disarm", CompMaterial.class);
 				REVERSE_MESSAGES = get("Reverse_Messages", CompMaterial.class);
 				SEND_MESSAGE = get("Send_Message", CompMaterial.class);
+				POTATO = get("Potato", CompMaterial.class);
 			}
 		}
 	}

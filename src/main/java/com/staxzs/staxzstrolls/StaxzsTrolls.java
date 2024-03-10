@@ -2,6 +2,7 @@ package com.staxzs.staxzstrolls;
 
 import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.troll.Troll;
+import com.staxzs.staxzstrolls.util.FreezePlayerUtil;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
@@ -44,12 +45,14 @@ public final class StaxzsTrolls extends SimplePlugin {
 		// Variable.loadVariables();
 
 		Troll.registerAllTrolls();
+		FreezePlayerUtil.getINSTANCE().start();
 	}
 
 	@Override
 	protected void onPluginPreReload() {
 
 		Troll.deregisterAllTrolls();
+		FreezePlayerUtil.getINSTANCE().stop();
 
 		// Close your database here if you use one
 		//YourDatabase.getInstance().close();
