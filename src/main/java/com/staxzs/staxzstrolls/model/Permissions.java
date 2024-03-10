@@ -193,5 +193,11 @@ public final class Permissions {
 
 		@Permission("Lock player's hand")
 		public static final String LOCK_HAND = "staxzstrolls.troll.lock_hand";
+
+		@Permission("Teleport all players to the target.")
+		public static final String TELEPORT_ALL = "staxzstrolls.troll.teleport_all";
+
+		@Permission("Send fake money messages to the player.")
+		public static final String FAKE_MONEY = "staxzstrolls.troll.fake_money";
 	}
 }

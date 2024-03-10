@@ -193,6 +193,13 @@ Trolls:
   Lock_Hand:
     Display_Name: "&7Lock Hand"
     Description: "Lock the player's ability to swicht items in hand."
+  Teleport_All:
+    Display_Name: "&5Teleport All"
+    Description: "Teleport all players to the target's location."
+  Fake_Money:
+    Display_Name: "&6Fake Money"
+    Description: "Send a fake money message to the player."
+    Message: "&aYou have received $10000 from the server."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

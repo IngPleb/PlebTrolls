@@ -256,6 +256,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial LOCK_HAND;
 
+			public static CompMaterial TELEPORT_ALL;
+
+			public static CompMaterial FAKE_MONEY;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -312,6 +316,8 @@ public final class Settings extends SimpleSettings {
 				SUFFOCATE = get("Suffocate", CompMaterial.class);
 				HOUND_ATTACK = get("Hound_Attack", CompMaterial.class);
 				LOCK_HAND = get("Lock_Hand", CompMaterial.class);
+				TELEPORT_ALL = get("Teleport_All", CompMaterial.class);
+				FAKE_MONEY = get("Fake_Money", CompMaterial.class);
 			}
 		}
 	}
