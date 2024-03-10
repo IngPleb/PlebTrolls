@@ -190,5 +190,8 @@ public final class Permissions {
 
 		@Permission("Hound attack the player")
 		public static final String HOUND_ATTACK = "staxzstrolls.troll.hound_attack";
+
+		@Permission("Lock player's hand")
+		public static final String LOCK_HAND = "staxzstrolls.troll.lock_hand";
 	}
 }

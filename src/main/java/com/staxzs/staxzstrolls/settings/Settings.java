@@ -254,6 +254,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial HOUND_ATTACK;
 
+			public static CompMaterial LOCK_HAND;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -309,6 +311,7 @@ public final class Settings extends SimpleSettings {
 				STAMPEDE = get("Stampede", CompMaterial.class);
 				SUFFOCATE = get("Suffocate", CompMaterial.class);
 				HOUND_ATTACK = get("Hound_Attack", CompMaterial.class);
+				LOCK_HAND = get("Lock_Hand", CompMaterial.class);
 			}
 		}
 	}

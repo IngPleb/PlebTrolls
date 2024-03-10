@@ -190,6 +190,9 @@ Trolls:
   Hound_Attack:
     Display_Name: "&fHound Attack"
     Description: "Spawn a pack of wolves to attack the player."
+  Lock_Hand:
+    Display_Name: "&7Lock Hand"
+    Description: "Lock the player's ability to swicht items in hand."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

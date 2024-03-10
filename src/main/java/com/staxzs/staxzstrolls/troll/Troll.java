@@ -9,10 +9,7 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.player.PlayerRespawnEvent;
+import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.PlayerUtil;
@@ -125,6 +122,7 @@ public abstract class Troll {
 		registerTroll(new StampedeTroll());
 		registerTroll(new SuffocateTroll());
 		registerTroll(new HoundAttackTroll());
+		registerTroll(new LockHandTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -261,6 +259,10 @@ public abstract class Troll {
 	}
 
 	public void onAsyncPlayerChat(AsyncPlayerChatEvent event) {
+		// Override if needed
+	}
+
+	public void onPlayerItemHeld(PlayerItemHeldEvent event) {
 		// Override if needed
 	}
 }
