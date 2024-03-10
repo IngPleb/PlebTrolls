@@ -113,6 +113,8 @@ public abstract class Troll {
 		registerTroll(new ReverseMessagesTroll());
 		registerTroll(new SendMessageTroll());
 		registerTroll(new PotatoTroll());
+		registerTroll(new SlownessTroll());
+		registerTroll(new LevitationTroll());
 	}
 
 	public static void deregisterAllTrolls() {

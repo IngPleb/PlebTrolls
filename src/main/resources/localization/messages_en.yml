@@ -159,7 +159,12 @@ Trolls:
   Potato:
     Display_Name: "&6Potato"
     Description: "Turn the player into a potato."
-
+  Slowness:
+    Display_Name: "&8Slowness"
+    Description: "Give the player slowness effect."
+  Levitation:
+    Display_Name: "&7Levitation"
+    Description: "Give the player levitation effect."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

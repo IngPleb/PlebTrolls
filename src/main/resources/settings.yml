@@ -90,6 +90,12 @@ Trolls:
   # The height of the anvil rain in blocks.
   Anvil_Rain_Height: 20
 
+  # Slowness amplifier.
+  Slowness_Amplifier: 4
+
+  # Levitation duration in ticks.
+  Levitation_Amplifier: 4
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -133,6 +139,8 @@ Trolls:
     Reverse_Messages: "BOOK"
     Send_Message: "PAPER"
     Potato: "POTATO"
+    Slowness: "SUGAR"
+    Levitation: "FEATHER"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

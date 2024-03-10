@@ -90,6 +90,10 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer ANVIL_RAIN_HEIGHT;
 
+		public static Integer SLOWNESS_AMPLIFIER;
+
+		public static Integer LEVITATION_AMPLIFIER;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -119,6 +123,10 @@ public final class Settings extends SimpleSettings {
 			FAKE_BAN_MESSAGE = getString("Fake_Ban_Message");
 
 			ANVIL_RAIN_HEIGHT = getInteger("Anvil_Rain_Height");
+
+			SLOWNESS_AMPLIFIER = getInteger("Slowness_Amplifier");
+
+			LEVITATION_AMPLIFIER = getInteger("Levitation_Amplifier");
 		}
 
 
@@ -208,6 +216,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial POTATO;
 
+			public static CompMaterial SLOWNESS;
+
+			public static CompMaterial LEVITATION;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -252,6 +264,8 @@ public final class Settings extends SimpleSettings {
 				REVERSE_MESSAGES = get("Reverse_Messages", CompMaterial.class);
 				SEND_MESSAGE = get("Send_Message", CompMaterial.class);
 				POTATO = get("Potato", CompMaterial.class);
+				SLOWNESS = get("Slowness", CompMaterial.class);
+				LEVITATION = get("Levitation", CompMaterial.class);
 			}
 		}
 	}

@@ -157,5 +157,11 @@ public final class Permissions {
 
 		@Permission("Turn the player into a potato")
 		public static final String POTATO = "staxzstrolls.troll.potato";
+
+		@Permission("Toggle slowness on the player")
+		public static final String SLOWNESS = "staxzstrolls.troll.slowness";
+
+		@Permission("Make the player unable levitate")
+		public static final String LEVITATION = "staxzstrolls.troll.levitation";
 	}
 }
