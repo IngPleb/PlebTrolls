@@ -15,7 +15,7 @@ import java.util.Objects;
 public final class HoundAttackTroll extends Troll {
 
 	public HoundAttackTroll() {
-		super("HOUND_ATTACK", Permissions.Troll.SUFFOCATE, Settings.TrollSection.IconsSection.SUFFOCATE);
+		super("HOUND_ATTACK", Permissions.Troll.HOUND_ATTACK, Settings.TrollSection.IconsSection.HOUND_ATTACK);
 	}
 
 	@Override
