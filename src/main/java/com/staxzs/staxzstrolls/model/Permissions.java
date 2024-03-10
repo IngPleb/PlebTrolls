@@ -175,5 +175,8 @@ public final class Permissions {
 
 		@Permission("Dip the player in water")
 		public static final String DIP_IN_WATER = "staxzstrolls.troll.dip_in_water";
+
+		@Permission("Make the player alone")
+		public static final String ALONE = "staxzstrolls.troll.alone";
 	}
 }

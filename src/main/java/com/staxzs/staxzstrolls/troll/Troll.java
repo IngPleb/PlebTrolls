@@ -19,6 +19,7 @@ import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.collection.StrictSet;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.model.Tuple;
+import org.mineacademy.fo.remain.CompItemFlag;
 import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
@@ -119,6 +120,7 @@ public abstract class Troll {
 		registerTroll(new NearDeathTroll());
 		registerTroll(new PoisonTroll());
 		registerTroll(new DipInWaterTroll());
+		registerTroll(new AloneTroll());
 	}
 
 	public static void deregisterAllTrolls() {
@@ -222,7 +224,8 @@ public abstract class Troll {
 	public ItemStack getItemStack(Player target) {
 		ItemCreator creator = ItemCreator.of(this.getIcon())
 				.name(this.getDisplayName())
-				.lore("", this.getDescription());
+				.lore("", this.getDescription())
+				.flags(CompItemFlag.HIDE_ATTRIBUTES);
 
 		return creator.make();
 	}

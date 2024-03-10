@@ -236,6 +236,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial DIP_IN_WATER;
 
+			public static CompMaterial ALONE;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -286,6 +288,7 @@ public final class Settings extends SimpleSettings {
 				NEAR_DEATH = get("Near_Death", CompMaterial.class);
 				POISON = get("Poison", CompMaterial.class);
 				DIP_IN_WATER = get("Dip_In_Water", CompMaterial.class);
+				ALONE = get("Alone", CompMaterial.class);
 			}
 		}
 	}

@@ -8,6 +8,7 @@ import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.model.Tuple;
+import org.mineacademy.fo.settings.Lang;
 
 public final class DisarmTroll extends Troll {
 
@@ -20,7 +21,7 @@ public final class DisarmTroll extends Troll {
 		ItemStack itemInHand = target.getInventory().getItemInMainHand();
 
 		if (itemInHand.getType() == Material.AIR)
-			return new Tuple<>(false, "The player is not holding anything.");
+			return new Tuple<>(false, Lang.of("Trolls.Disarm.Empty_Hand"));
 
 		target.getInventory().setItemInMainHand(new ItemStack(Material.AIR));
 		Item item = target.getWorld().dropItem(target.getLocation(), itemInHand);

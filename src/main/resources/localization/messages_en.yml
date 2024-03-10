@@ -143,13 +143,11 @@ Trolls:
     Description: "Disable the player from picking up any items."
   Disable_Gravity:
     Display_Name: "&7Disable Gravity"
-    Description:
-      - "Disable the player's gravity."
-      - ""
-      - "&c(Be sure to have fly enabled)"
+    Description: "Disable the player's gravity."
   Disarm:
     Display_Name: "&fDisarm"
     Description: "Forces the player to throw away their held item."
+    Empty_Hand: "The player is not holding anything."
   Reverse_Messages:
     Display_Name: "&7Reverse Messages"
     Description: "Reverse the player's chat messages."
@@ -177,6 +175,9 @@ Trolls:
   Dip_In_Water:
     Display_Name: "&3Dip in Water"
     Description: "Make one block water under the player."
+  Alone:
+    Display_Name: "&7Alone"
+    Description: "Make the player unable to see anybody else."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

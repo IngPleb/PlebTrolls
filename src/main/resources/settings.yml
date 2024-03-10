@@ -151,6 +151,7 @@ Trolls:
     Near_Death: "REDSTONE"
     Poison: "SPIDER_EYE"
     Dip_In_Water: "WATER_BUCKET"
+    Alone: "OAK_DOOR"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

@@ -31,13 +31,11 @@ public abstract class ToggleableTroll extends Troll {
 	@Override
 	public ItemStack getItemStack(Player target) {
 		final String langPathPrefix = "Menu.Troll_Menu.Toggleable_Troll_";
+		String finalName = this.getDisplayName() + " " +
+				(this.isToggled(target) ? Lang.of(langPathPrefix + "Enabled") : Lang.of(langPathPrefix + "Disabled"));
 
-		ItemCreator itemCreator = ItemCreator.of(this.getIcon(),
-						this.getDisplayName() + " " +
-								(this.isToggled(target) ? Lang.of(langPathPrefix + "Enabled") : Lang.of(langPathPrefix + "Disabled")))
-				.lore("", this.getDescription())
-				.glow(this.isToggled(target));
-
-		return itemCreator.make();
+		return ItemCreator.of(super.getItemStack(target))
+				.name(finalName)
+				.glow(this.isToggled(target)).make();
 	}
 }
