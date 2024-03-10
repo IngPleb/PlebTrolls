@@ -187,6 +187,9 @@ Trolls:
   Suffocate:
     Display_Name: "&8Suffocate"
     Description: "Suffocate the player."
+  Hound_Attack:
+    Display_Name: "&fHound Attack"
+    Description: "Spawn a pack of wolves to attack the player."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

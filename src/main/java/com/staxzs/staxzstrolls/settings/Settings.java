@@ -100,6 +100,8 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer STAMPEDE_AMOUNT;
 
+		public static Integer HOUND_ATTACK_AMOUNT;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -139,6 +141,8 @@ public final class Settings extends SimpleSettings {
 			POISON_AMPLIFIER = getInteger("Poison_Amplifier");
 
 			STAMPEDE_AMOUNT = getInteger("Stampede_Amount");
+
+			HOUND_ATTACK_AMOUNT = getInteger("Hound_Attack_Amount");
 		}
 
 
@@ -248,6 +252,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial SUFFOCATE;
 
+			public static CompMaterial HOUND_ATTACK;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -302,6 +308,7 @@ public final class Settings extends SimpleSettings {
 				FIREBALL = get("Fireball", CompMaterial.class);
 				STAMPEDE = get("Stampede", CompMaterial.class);
 				SUFFOCATE = get("Suffocate", CompMaterial.class);
+				HOUND_ATTACK = get("Hound_Attack", CompMaterial.class);
 			}
 		}
 	}

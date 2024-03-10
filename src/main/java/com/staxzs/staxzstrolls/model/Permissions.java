@@ -187,5 +187,8 @@ public final class Permissions {
 
 		@Permission("Suffocate the player")
 		public static final String SUFFOCATE = "staxzstrolls.troll.suffocate";
+
+		@Permission("Hound attack the player")
+		public static final String HOUND_ATTACK = "staxzstrolls.troll.hound_attack";
 	}
 }

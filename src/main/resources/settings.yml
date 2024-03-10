@@ -105,6 +105,9 @@ Trolls:
   # How many cows should be spawned in the STAMPEDE troll?
   Stampede_Amount: 25
 
+  # How many hounds should be spawned in the HOUND_ATTACK troll?
+  Hound_Attack_Amount: 3
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -158,6 +161,7 @@ Trolls:
     Fireball: "FIRE_CHARGE"
     Stampede: "COW_SPAWN_EGG"
     Suffocate: "SAND"
+    Hound_Attack: "BONE"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
