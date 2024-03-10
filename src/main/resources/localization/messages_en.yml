@@ -178,6 +178,9 @@ Trolls:
   Alone:
     Display_Name: "&7Alone"
     Description: "Make the player unable to see anybody else."
+  Fireball:
+    Display_Name: "&cFireball"
+    Description: "Shoot a fireball at the player."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

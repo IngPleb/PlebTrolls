@@ -178,5 +178,8 @@ public final class Permissions {
 
 		@Permission("Make the player alone")
 		public static final String ALONE = "staxzstrolls.troll.alone";
+
+		@Permission("Shot a fireball at the player")
+		public static final String FIREBALL = "staxzstrolls.troll.fireball";
 	}
 }

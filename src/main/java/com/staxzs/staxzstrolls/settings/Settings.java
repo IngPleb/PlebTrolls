@@ -238,6 +238,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial ALONE;
 
+			public static CompMaterial FIREBALL;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -289,6 +291,7 @@ public final class Settings extends SimpleSettings {
 				POISON = get("Poison", CompMaterial.class);
 				DIP_IN_WATER = get("Dip_In_Water", CompMaterial.class);
 				ALONE = get("Alone", CompMaterial.class);
+				FIREBALL = get("Fireball", CompMaterial.class);
 			}
 		}
 	}
