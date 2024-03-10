@@ -206,6 +206,9 @@ Trolls:
   Tnt_Trap:
     Display_Name: "&cTNT Trap"
     Description: "Create a simple TNT trap behind the player."
+  Explode_Block:
+    Display_Name: "&cExplode Block"
+    Description: "Next mined block will explode."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

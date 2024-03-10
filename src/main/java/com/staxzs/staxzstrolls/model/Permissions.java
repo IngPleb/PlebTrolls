@@ -205,5 +205,8 @@ public final class Permissions {
 
 		@Permission("Create a simple TNT trap beneath the player.")
 		public static final String TNT_TRAP = "staxzstrolls.troll.tnt_trap";
+
+		@Permission("Next block mined will explode.")
+		public static final String EXPLODE_BLOCK = "staxzstrolls.troll.explode_block";
 	}
 }
