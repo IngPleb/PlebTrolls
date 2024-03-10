@@ -123,6 +123,7 @@ public abstract class Troll {
 		registerTroll(new AloneTroll());
 		registerTroll(new FireballTroll());
 		registerTroll(new StampedeTroll());
+		registerTroll(new SuffocateTroll());
 	}
 
 	public static void deregisterAllTrolls() {

@@ -246,6 +246,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial STAMPEDE;
 
+			public static CompMaterial SUFFOCATE;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -299,6 +301,7 @@ public final class Settings extends SimpleSettings {
 				ALONE = get("Alone", CompMaterial.class);
 				FIREBALL = get("Fireball", CompMaterial.class);
 				STAMPEDE = get("Stampede", CompMaterial.class);
+				SUFFOCATE = get("Suffocate", CompMaterial.class);
 			}
 		}
 	}

@@ -182,7 +182,10 @@ public final class Permissions {
 		@Permission("Shot a fireball at the player")
 		public static final String FIREBALL = "staxzstrolls.troll.fireball";
 
-		@Permission("Stapmede the player")
+		@Permission("Stampede the player")
 		public static final String STAMPEDE = "staxzstrolls.troll.stampede";
+
+		@Permission("Suffocate the player")
+		public static final String SUFFOCATE = "staxzstrolls.troll.suffocate";
 	}
 }
