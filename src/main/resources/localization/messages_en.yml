@@ -181,6 +181,9 @@ Trolls:
   Fireball:
     Display_Name: "&cFireball"
     Description: "Shoot a fireball at the player."
+  Stampede:
+    Display_Name: "&6STAMPEDE"
+    Description: "Spawn a stampede of cows around the player."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

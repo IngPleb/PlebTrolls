@@ -102,6 +102,9 @@ Trolls:
   # Poison amplifier.
   Poison_Amplifier: 2
 
+  # How many cows should be spawned in the STAMPEDE troll?
+  Stampede_Amount: 25
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -153,6 +156,7 @@ Trolls:
     Dip_In_Water: "WATER_BUCKET"
     Alone: "OAK_DOOR"
     Fireball: "FIRE_CHARGE"
+    Stampede: "COW_SPAWN_EGG"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

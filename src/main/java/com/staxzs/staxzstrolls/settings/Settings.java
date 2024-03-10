@@ -98,6 +98,8 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer POISON_AMPLIFIER;
 
+		public static Integer STAMPEDE_AMOUNT;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -135,6 +137,8 @@ public final class Settings extends SimpleSettings {
 			POISON_DURATION = getInteger("Poison_Duration");
 
 			POISON_AMPLIFIER = getInteger("Poison_Amplifier");
+
+			STAMPEDE_AMOUNT = getInteger("Stampede_Amount");
 		}
 
 
@@ -240,6 +244,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial FIREBALL;
 
+			public static CompMaterial STAMPEDE;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -292,6 +298,7 @@ public final class Settings extends SimpleSettings {
 				DIP_IN_WATER = get("Dip_In_Water", CompMaterial.class);
 				ALONE = get("Alone", CompMaterial.class);
 				FIREBALL = get("Fireball", CompMaterial.class);
+				STAMPEDE = get("Stampede", CompMaterial.class);
 			}
 		}
 	}
