@@ -165,6 +165,18 @@ Trolls:
   Levitation:
     Display_Name: "&7Levitation"
     Description: "Give the player levitation effect."
+  Clear_Armour:
+    Display_Name: "&7Clear Armour"
+    Description: "Clear the player's armour."
+  Near_Death:
+    Display_Name: "&4Near Death"
+    Description: "Put your victim down to 1/2 heart."
+  Poison:
+    Display_Name: "&2Poison"
+    Description: "Give the player poison effect."
+  Dip_In_Water:
+    Display_Name: "&3Dip in Water"
+    Description: "Make one block water under the player."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

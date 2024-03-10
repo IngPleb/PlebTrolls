@@ -96,6 +96,12 @@ Trolls:
   # Levitation duration in ticks.
   Levitation_Amplifier: 4
 
+  # Poison duration in ticks.
+  Poison_Duration: 200
+
+  # Poison amplifier.
+  Poison_Amplifier: 2
+
   # Icon used in the troll menu.
   Icons:
     Launch_Player: "FIREWORK"
@@ -141,6 +147,10 @@ Trolls:
     Potato: "POTATO"
     Slowness: "SUGAR"
     Levitation: "FEATHER"
+    Clear_Armour: "IRON_CHESTPLATE"
+    Near_Death: "REDSTONE"
+    Poison: "SPIDER_EYE"
+    Dip_In_Water: "WATER_BUCKET"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

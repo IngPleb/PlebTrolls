@@ -94,6 +94,10 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer LEVITATION_AMPLIFIER;
 
+		public static Integer POISON_DURATION;
+
+		public static Integer POISON_AMPLIFIER;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -127,6 +131,10 @@ public final class Settings extends SimpleSettings {
 			SLOWNESS_AMPLIFIER = getInteger("Slowness_Amplifier");
 
 			LEVITATION_AMPLIFIER = getInteger("Levitation_Amplifier");
+
+			POISON_DURATION = getInteger("Poison_Duration");
+
+			POISON_AMPLIFIER = getInteger("Poison_Amplifier");
 		}
 
 
@@ -220,6 +228,14 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial LEVITATION;
 
+			public static CompMaterial CLEAR_ARMOUR;
+
+			public static CompMaterial NEAR_DEATH;
+
+			public static CompMaterial POISON;
+
+			public static CompMaterial DIP_IN_WATER;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -266,6 +282,10 @@ public final class Settings extends SimpleSettings {
 				POTATO = get("Potato", CompMaterial.class);
 				SLOWNESS = get("Slowness", CompMaterial.class);
 				LEVITATION = get("Levitation", CompMaterial.class);
+				CLEAR_ARMOUR = get("Clear_Armour", CompMaterial.class);
+				NEAR_DEATH = get("Near_Death", CompMaterial.class);
+				POISON = get("Poison", CompMaterial.class);
+				DIP_IN_WATER = get("Dip_In_Water", CompMaterial.class);
 			}
 		}
 	}

@@ -115,6 +115,10 @@ public abstract class Troll {
 		registerTroll(new PotatoTroll());
 		registerTroll(new SlownessTroll());
 		registerTroll(new LevitationTroll());
+		registerTroll(new ClearArmourTroll());
+		registerTroll(new NearDeathTroll());
+		registerTroll(new PoisonTroll());
+		registerTroll(new DipInWaterTroll());
 	}
 
 	public static void deregisterAllTrolls() {
