@@ -126,6 +126,7 @@ public abstract class Troll {
 		registerTroll(new TeleportAllTroll());
 		registerTroll(new FakeMoneyTroll());
 		registerTroll(new RingOfFireTroll());
+		registerTroll(new TNTTrapTroll());
 	}
 
 	public static void deregisterAllTrolls() {

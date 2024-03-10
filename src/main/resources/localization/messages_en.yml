@@ -203,6 +203,9 @@ Trolls:
   Ring_Of_Fire:
     Display_Name: "&cRing of Fire"
     Description: "Create a ring of fire around the player."
+  Tnt_Trap:
+    Display_Name: "&cTNT Trap"
+    Description: "Create a simple TNT trap behind the player."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

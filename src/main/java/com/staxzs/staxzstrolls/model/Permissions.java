@@ -202,5 +202,8 @@ public final class Permissions {
 
 		@Permission("Create a ring of fire around the player.")
 		public static final String RING_OF_FIRE = "staxzstrolls.troll.ring_of_fire";
+
+		@Permission("Create a simple TNT trap beneath the player.")
+		public static final String TNT_TRAP = "staxzstrolls.troll.tnt_trap";
 	}
 }

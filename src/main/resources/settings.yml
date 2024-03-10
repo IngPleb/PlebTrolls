@@ -166,6 +166,7 @@ Trolls:
     Teleport_All: "CHORUS_FRUIT"
     Fake_Money: "GOLD_INGOT"
     Ring_Of_Fire: "BLAZE_POWDER"
+    Tnt_Trap: "TNT"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
