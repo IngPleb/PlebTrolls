@@ -142,15 +142,6 @@ public abstract class Troll {
 		return null;
 	}
 
-	public static Set<String> getTrollNames() {
-		Set<String> names = new HashSet<>();
-
-		for (Troll troll : REGISTERED_TROLLS)
-			names.add(troll.getName());
-
-		return names;
-	}
-
 	private static String getKeyFromName(String name) {
 		// Split the string into words
 		String[] words = name.split("_");
