@@ -200,6 +200,9 @@ Trolls:
     Display_Name: "&6Fake Money"
     Description: "Send a fake money message to the player."
     Message: "&aYou have received $10000 from the server."
+  Ring_Of_Fire:
+    Display_Name: "&cRing of Fire"
+    Description: "Create a ring of fire around the player."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

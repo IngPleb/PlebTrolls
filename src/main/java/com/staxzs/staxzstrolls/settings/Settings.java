@@ -260,6 +260,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial FAKE_MONEY;
 
+			public static CompMaterial RING_OF_FIRE;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -318,6 +320,7 @@ public final class Settings extends SimpleSettings {
 				LOCK_HAND = get("Lock_Hand", CompMaterial.class);
 				TELEPORT_ALL = get("Teleport_All", CompMaterial.class);
 				FAKE_MONEY = get("Fake_Money", CompMaterial.class);
+				RING_OF_FIRE = get("Ring_Of_Fire", CompMaterial.class);
 			}
 		}
 	}

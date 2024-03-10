@@ -199,5 +199,8 @@ public final class Permissions {
 
 		@Permission("Send fake money messages to the player.")
 		public static final String FAKE_MONEY = "staxzstrolls.troll.fake_money";
+
+		@Permission("Create a ring of fire around the player.")
+		public static final String RING_OF_FIRE = "staxzstrolls.troll.ring_of_fire";
 	}
 }
