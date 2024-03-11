@@ -4,6 +4,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.menu.MenuPagged;
+import org.mineacademy.fo.menu.button.Button;
+import org.mineacademy.fo.menu.button.StartPosition;
+import org.mineacademy.fo.menu.button.annotation.Position;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.remain.Remain;
@@ -14,10 +17,16 @@ import java.util.List;
 
 public class PlayerListMenu extends MenuPagged<Player> {
 
+	@Position(start = StartPosition.BOTTOM_CENTER)
+	@SuppressWarnings("unused")
+	private final Button toolsMenuButton;
+
 	public PlayerListMenu() {
 		super(getListOfPlayers());
 		this.setSize(4 * 9);
 		this.setTitle(Lang.of("Menu.Player_List_Menu.Title"));
+
+		this.toolsMenuButton = ToolMenu.getButton(this);
 	}
 
 	private static List<Player> getListOfPlayers() {

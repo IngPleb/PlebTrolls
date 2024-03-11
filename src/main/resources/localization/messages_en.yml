@@ -357,7 +357,6 @@ Menu:
     # This is the postfix text to the troll name which are toggleable
     Toggleable_Troll_Enabled: "&7(&aEnabled&7)"
     Toggleable_Troll_Disabled: "&7(&cDisabled&7)"
-
     Search_Troll_Button:
       Title: "&9Search for a Troll"
       Lore:
@@ -376,7 +375,17 @@ Menu:
       - "Please click on the troll to proceed."
       - ""
       - "Have fun!"
-
+  Tool_Menu:
+    Button_Title: "&aTools Menu"
+    Button_Lore:
+      - ""
+      - "&7Open the Tools Menu."
+    Title: "&8Tools Menu"
+    Info:
+      - "Welcome to the Tools Menu!"
+      - "Here, you can choose a tool to give yourself."
+      - ""
+      - "Have fun!"
 # -------------------------------------------------------------------------------------------------
 # Messages related to player conversation where server is waiting for his chat input
 # -------------------------------------------------------------------------------------------------

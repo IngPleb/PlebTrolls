@@ -340,4 +340,34 @@ public final class Settings extends SimpleSettings {
 			}
 		}
 	}
+
+	public static class ToolSection {
+		public static String PATH_PREFIX = "Tool";
+
+		public static CompMaterial TOOL_MENU_MATERIAL;
+
+		private static void init() {
+			setPathPrefix(PATH_PREFIX);
+
+			TOOL_MENU_MATERIAL = get("Tool_Menu_Material", CompMaterial.class);
+		}
+
+		public static class SmiteTool {
+			public static String PATH_PREFIX = ToolSection.PATH_PREFIX + ".Smite_Tool";
+
+			public static CompMaterial MATERIAL;
+
+			public static String NAME;
+
+			public static String[] LORE;
+
+			private static void init() {
+				setPathPrefix(PATH_PREFIX);
+
+				MATERIAL = get("Material", CompMaterial.class);
+				NAME = getString("Name");
+				LORE = get("Lore", String[].class);
+			}
+		}
+	}
 }

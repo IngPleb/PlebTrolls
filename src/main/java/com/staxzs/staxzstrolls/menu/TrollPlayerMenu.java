@@ -13,6 +13,7 @@ import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.menu.Menu;
 import org.mineacademy.fo.menu.MenuPagged;
 import org.mineacademy.fo.menu.button.Button;
+import org.mineacademy.fo.menu.button.StartPosition;
 import org.mineacademy.fo.menu.button.annotation.Position;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.remain.CompMaterial;
@@ -28,14 +29,22 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 
 	// Buttons
 	@Position(2)
+	@SuppressWarnings("unused")
 	private final Button teleportPlayerToYouButton;
 	@Position(4)
+	@SuppressWarnings("unused")
 	private final Button targetInfoButton;
 	@Position(6)
+	@SuppressWarnings("unused")
 	private final Button teleportToPlayerButton;
 
 	@Position(46)
+	@SuppressWarnings("unused")
 	private final Button searchTrollButton;
+
+	@Position(start = StartPosition.BOTTOM_CENTER)
+	@SuppressWarnings("unused")
+	private final Button toolsMenuButton;
 
 
 	public TrollPlayerMenu(Menu parentMenu, @NotNull Player target, @NotNull Player viewer) {
@@ -111,6 +120,8 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 					new TrollSearchPrompt(this, target).show(player);
 				}
 		);
+
+		this.toolsMenuButton = ToolMenu.getButton(this);
 
 	}
 
