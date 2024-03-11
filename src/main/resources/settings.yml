@@ -184,6 +184,7 @@ Trolls:
 # Here you can configure tools, which can be used to troll players.
 # -------------------------------------------------------------------------------------------------
 Tool:
+  Command_Aliases: [ trolltools, tt ]
   Tool_Menu_Material: "CHEST"
   Smite_Tool:
     Material: "BLAZE_ROD"

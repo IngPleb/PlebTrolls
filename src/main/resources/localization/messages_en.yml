@@ -285,6 +285,7 @@ Commands:
   Troll_Description: "Open the troll menu or troll a player."
   Troll_Not_Found: "Troll '{troll}' not found."
   Troll_Console_No_Player: "You must specify a player name when running from console."
+  Tools_Description: "Open the tools menu."
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to paginator splitting command help into multiple pages
@@ -345,6 +346,7 @@ Menu:
       - "World: &f{target_world}"
     Teleport_To_Player: "&fTeleport to Player"
     Teleport_To_Player_Lore:
+      - ""
       - "Teleport to the troll target."
     Teleport_To_Player_Success: "&7You have been teleported to the &f{target_name}."
     Teleport_Player_To_You: "&fTeleport Player to You"

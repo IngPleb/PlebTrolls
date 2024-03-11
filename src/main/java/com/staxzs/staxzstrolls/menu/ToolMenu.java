@@ -1,7 +1,10 @@
 package com.staxzs.staxzstrolls.menu;
 
+import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.tool.SmiteTool;
+import org.mineacademy.fo.Messenger;
+import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.menu.Menu;
 import org.mineacademy.fo.menu.MenuTools;
 import org.mineacademy.fo.menu.button.Button;
@@ -21,7 +24,14 @@ public final class ToolMenu extends MenuTools {
 				.name(Lang.of("Menu.Tool_Menu.Button_Title"))
 				.lore(Lang.ofArray("Menu.Tool_Menu.Button_Lore"));
 
-		return Button.makeSimple(itemCreator, player -> new ToolMenu(parentMenu).displayTo(player));
+		return Button.makeSimple(itemCreator, player -> {
+			if (!PlayerUtil.hasPerm(player, Permissions.Tools.TOOLS_MENU)) {
+				Messenger.error(player, Lang.of("No_Permission").replace("{permission}", Permissions.Tools.TOOLS_MENU));
+				return;
+			}
+
+			new ToolMenu(parentMenu).displayTo(player);
+		});
 	}
 
 	@Override

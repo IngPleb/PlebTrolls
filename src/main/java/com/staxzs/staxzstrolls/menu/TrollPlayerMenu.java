@@ -111,9 +111,9 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 
 		final String trollSearchButtonPrefix = "Menu.Troll_Menu.Search_Troll_Button.";
 
-		this.searchTrollButton = Button.makeSimple(CompMaterial.COMPASS,
-				Lang.of(trollSearchButtonPrefix + "Title"),
-				Lang.of(trollSearchButtonPrefix + "Lore"),
+		this.searchTrollButton = Button.makeSimple(ItemCreator.of(CompMaterial.COMPASS)
+						.name(Lang.of(trollSearchButtonPrefix + "Title"))
+						.lore(Lang.of(trollSearchButtonPrefix + "Lore")),
 				player -> {
 					player.closeInventory();
 

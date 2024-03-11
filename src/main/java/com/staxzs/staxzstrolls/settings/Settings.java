@@ -344,11 +344,14 @@ public final class Settings extends SimpleSettings {
 	public static class ToolSection {
 		public static String PATH_PREFIX = "Tool";
 
+		public static String[] COMMAND_ALIASES;
+
 		public static CompMaterial TOOL_MENU_MATERIAL;
 
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
+			COMMAND_ALIASES = get("Command_Aliases", String[].class);
 			TOOL_MENU_MATERIAL = get("Tool_Menu_Material", CompMaterial.class);
 		}
 

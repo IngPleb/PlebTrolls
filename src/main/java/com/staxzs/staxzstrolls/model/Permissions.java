@@ -35,6 +35,10 @@ public final class Permissions {
 
 	@PermissionGroup("Use tools.")
 	public static final class Tools {
+
+		@Permission("Open the tools menu.")
+		public static final String TOOLS_MENU = "staxzstrolls.tools.menu";
+
 		@Permission("Use the smite tool.")
 		public static final String SMITE = "staxzstrolls.tools.smite";
 	}
