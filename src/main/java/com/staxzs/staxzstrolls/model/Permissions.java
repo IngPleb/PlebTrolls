@@ -33,6 +33,12 @@ public final class Permissions {
 		public static final String DEBUG = "staxzstrolls.command.debug";
 	}
 
+	@PermissionGroup("Use tools.")
+	public static final class Tools {
+		@Permission("Use the smite tool.")
+		public static final String SMITE = "staxzstrolls.tools.smite";
+	}
+
 	@PermissionGroup("Troll permissions")
 	public static final class Troll {
 		@Permission("Launch the player into the air")
