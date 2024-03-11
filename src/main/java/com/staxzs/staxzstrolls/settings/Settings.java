@@ -102,6 +102,8 @@ public final class Settings extends SimpleSettings {
 
 		public static Integer HOUND_ATTACK_AMOUNT;
 
+		public static String[] REPLACE_MESSAGES;
+
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
@@ -143,6 +145,8 @@ public final class Settings extends SimpleSettings {
 			STAMPEDE_AMOUNT = getInteger("Stampede_Amount");
 
 			HOUND_ATTACK_AMOUNT = getInteger("Hound_Attack_Amount");
+
+			REPLACE_MESSAGES = get("Replace_Messages", String[].class);
 		}
 
 
@@ -266,6 +270,10 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial EXPLODE_BLOCK;
 
+			public static CompMaterial GIBBERISH_MESSAGES;
+
+			public static CompMaterial REPLACE_MESSAGES;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -327,6 +335,8 @@ public final class Settings extends SimpleSettings {
 				RING_OF_FIRE = get("Ring_Of_Fire", CompMaterial.class);
 				TNT_TRAP = get("Tnt_Trap", CompMaterial.class);
 				EXPLODE_BLOCK = get("Explode_Block", CompMaterial.class);
+				GIBBERISH_MESSAGES = get("Gibberish_Messages", CompMaterial.class);
+				REPLACE_MESSAGES = get("Replace_Messages", CompMaterial.class);
 			}
 		}
 	}

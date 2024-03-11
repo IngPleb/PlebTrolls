@@ -209,6 +209,12 @@ Trolls:
   Explode_Block:
     Display_Name: "&cExplode Block"
     Description: "Next mined block will explode."
+  Gibberish_Messages:
+    Display_Name: "&7Gibberish Messages"
+    Description: "Replace player's chat messages with gibberish."
+  Replace_Messages:
+    Display_Name: "&7Replace Messages"
+    Description: "Replace player's chat messages with a custom message."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

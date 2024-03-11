@@ -208,5 +208,11 @@ public final class Permissions {
 
 		@Permission("Next block mined will explode.")
 		public static final String EXPLODE_BLOCK = "staxzstrolls.troll.explode_block";
+
+		@Permission("Gibberish the player's messages.")
+		public static final String GIBBERISH = "staxzstrolls.troll.gibberish";
+
+		@Permission("Replace player's messages with a custom message.")
+		public static final String REPLACE_MESSAGE = "staxzstrolls.troll.replace_message";
 	}
 }

@@ -66,6 +66,14 @@ Trolls:
   # Number of entities spawned when a player is ambushed.
   Ambush_Entity_Amount: 3
 
+  # When replacing messages, the plugin will replace the original message with one of these.
+  Replace_Messages:
+    - "I am such a noob!"
+    - "I am a cheater!"
+    - "I am mom's favorite!"
+    - "People say I stink!"
+    - "I am such bad at this game!"
+
   # The item type and the amount used to fill the player's inventory.
   Fill_Inventory:
     # The item type used to fill the player's inventory.
@@ -168,6 +176,8 @@ Trolls:
     Ring_Of_Fire: "BLAZE_POWDER"
     Tnt_Trap: "TNT"
     Explode_Block: "GUNPOWDER"
+    Gibberish_Messages: "WRITABLE_BOOK"
+    Replace_Messages: "BOOK"
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
 # https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html

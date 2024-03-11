@@ -128,6 +128,8 @@ public abstract class Troll {
 		registerTroll(new RingOfFireTroll());
 		registerTroll(new TNTTrapTroll());
 		registerTroll(new ExplodeBlockTroll());
+		registerTroll(new GibberishMessagesTroll());
+		registerTroll(new ReplaceMessagesTroll());
 	}
 
 	public static void deregisterAllTrolls() {
