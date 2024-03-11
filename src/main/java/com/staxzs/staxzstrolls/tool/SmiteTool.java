@@ -37,8 +37,10 @@ public final class SmiteTool extends Tool {
 		Block clickedBlock = event.getClickedBlock();
 
 		String permission = Permissions.Tools.SMITE;
-		if (!PlayerUtil.hasPerm(player, permission))
+		if (!PlayerUtil.hasPerm(player, permission)) {
 			Messenger.error(player, Lang.of("No_Permission").replace("{permission}", permission));
+			return;
+		}
 
 		if (clickedBlock != null && clickedBlock.getType() != Material.AIR) {
 			// If the clicked block is not air, spawn lightning there

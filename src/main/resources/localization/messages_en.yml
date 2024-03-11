@@ -329,7 +329,6 @@ Menu:
     Title: "&8List of Players"
     Player_Name: "&f{player_name} &7(Click to troll)"
     Info:
-      - "Welcome to the List of Players Menu!"
       - "Here, you can choose a player to troll."
       - "Please click on the player to proceed."
   Troll_Menu:
@@ -363,7 +362,6 @@ Menu:
         - ""
         - "Search for a troll to use."
     Info:
-      - "Welcome to the Troll Selection Menu!"
       - "Here, you can choose a troll action to use on the target."
       - "Please click on your desired troll to proceed."
       - ""
@@ -373,8 +371,6 @@ Menu:
     Info:
       - "These are the search results."
       - "Please click on the troll to proceed."
-      - ""
-      - "Have fun!"
   Tool_Menu:
     Button_Title: "&aTools Menu"
     Button_Lore:
