@@ -41,6 +41,9 @@ public final class Permissions {
 
 		@Permission("Use the smite tool.")
 		public static final String SMITE = "staxzstrolls.tools.smite";
+
+		@Permission("Use the explode tool.")
+		public static final String EXPLODE = "staxzstrolls.tools.explode";
 	}
 
 	@PermissionGroup("Troll permissions")

@@ -192,6 +192,13 @@ Tool:
     Lore:
       - ""
       - "&7Click to summon a lightning."
+  Explode_Tool:
+    Material: "STICK"
+    Name: "&cExplode"
+    Lore:
+      - ""
+      - "&7Click to create explosion."
+    Power: 4
 
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:

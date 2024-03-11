@@ -6,7 +6,6 @@ import org.mineacademy.fo.settings.Lang;
 import org.mineacademy.fo.settings.SimpleSettings;
 import org.mineacademy.fo.settings.YamlStaticConfig;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
@@ -54,7 +53,7 @@ public final class Settings extends SimpleSettings {
 	 */
 	@Override
 	protected List<String> getUncommentedSections() {
-		return Arrays.asList(
+		return List.of(
 				"Example.Uncommented_Section");
 	}
 
@@ -356,7 +355,6 @@ public final class Settings extends SimpleSettings {
 		}
 
 		public static class SmiteTool {
-			public static String PATH_PREFIX = ToolSection.PATH_PREFIX + ".Smite_Tool";
 
 			public static CompMaterial MATERIAL;
 
@@ -365,11 +363,31 @@ public final class Settings extends SimpleSettings {
 			public static String[] LORE;
 
 			private static void init() {
-				setPathPrefix(PATH_PREFIX);
+				setPathPrefix(ToolSection.PATH_PREFIX + ".Smite_Tool");
 
 				MATERIAL = get("Material", CompMaterial.class);
 				NAME = getString("Name");
 				LORE = get("Lore", String[].class);
+			}
+		}
+
+		public static class ExplodeTool {
+
+			public static CompMaterial MATERIAL;
+
+			public static String NAME;
+
+			public static String[] LORE;
+
+			public static Integer POWER;
+
+			private static void init() {
+				setPathPrefix(ToolSection.PATH_PREFIX + ".Explode_Tool");
+
+				MATERIAL = get("Material", CompMaterial.class);
+				NAME = getString("Name");
+				LORE = get("Lore", String[].class);
+				POWER = getInteger("Power");
 			}
 		}
 	}
