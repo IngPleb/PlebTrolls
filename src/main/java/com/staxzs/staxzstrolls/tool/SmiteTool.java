@@ -34,7 +34,6 @@ public final class SmiteTool extends Tool {
 	@Override
 	protected void onBlockClick(PlayerInteractEvent event) {
 		Player player = event.getPlayer();
-		Block clickedBlock = event.getClickedBlock();
 
 		String permission = Permissions.Tools.SMITE;
 		if (!PlayerUtil.hasPerm(player, permission)) {
@@ -42,6 +41,7 @@ public final class SmiteTool extends Tool {
 			return;
 		}
 
+		Block clickedBlock = event.getClickedBlock();
 		if (clickedBlock != null && clickedBlock.getType() != Material.AIR) {
 			// If the clicked block is not air, spawn lightning there
 			clickedBlock.getWorld().strikeLightning(clickedBlock.getLocation());
