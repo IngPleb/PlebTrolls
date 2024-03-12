@@ -87,26 +87,14 @@ public final class StaxzsTrolls extends SimplePlugin {
 		String divider = "\u200E\n" + Common.consoleLineSmooth() + "\n \u200E";
 
 		// Divider
-		Common.logNoPrefix(divider);
-
-		// Name of the plugin
-		Common.logNoPrefix(staxzsLogo);
-		Common.logNoPrefix(productName);
-
-		// Space
-		Common.logNoPrefix(" ");
-
-		// Version
-		Common.logNoPrefix("StaxzsTrolls v" + Settings.VERSION + " by Staxzs (IngPleb)");
-		Common.logNoPrefix("If you encounter any issues, please contact us!"); //TODO add contact info
-
-		// Space
-		Common.logNoPrefix(" ");
-
-		// PS
-		Common.logNoPrefix("Enjoy Trolling!");
-
-		// Divider
-		Common.logNoPrefix(divider);
+		Common.logNoPrefix(divider + "\n"
+				+ staxzsLogo + "\n"
+				+ productName + "\n"
+				+ " " + "\n"
+				+ "StaxzsTrolls v" + Settings.VERSION + " by Staxzs (IngPleb)" + "\n"
+				+ "If you encounter any issues, use our GitHub Issues!" + "\n"
+				+ " " + "\n"
+				+ "Enjoy Trolling!" + "\n"
+				+ divider);
 	}
 }
