@@ -110,3 +110,4 @@ replay_pid*
 /target/maven-archiver/pom.properties
 /.vscode/settings.json
 /target/classes/settings.yml
+!/qodana.yaml
