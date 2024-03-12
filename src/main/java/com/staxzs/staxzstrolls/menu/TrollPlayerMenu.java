@@ -1,5 +1,6 @@
 package com.staxzs.staxzstrolls.menu;
 
+import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.prompt.TrollSearchPrompt;
 import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.troll.Troll;
@@ -17,7 +18,6 @@ import org.mineacademy.fo.menu.button.StartPosition;
 import org.mineacademy.fo.menu.button.annotation.Position;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.remain.CompMaterial;
-import org.mineacademy.fo.remain.Remain;
 import org.mineacademy.fo.settings.Lang;
 
 import java.util.Arrays;
@@ -30,7 +30,7 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 	// Buttons
 	@Position(2)
 	@SuppressWarnings("unused")
-	private final Button teleportPlayerToYouButton;
+	private final Button bringPlayerToYouButton;
 	@Position(4)
 	@SuppressWarnings("unused")
 	private final Button targetInfoButton;
@@ -58,31 +58,9 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 		this.setTitle(Lang.of("Menu.Troll_Menu.Title").replace("{target_name}", target.getName()));
 
 		// Initialise buttons
-		List<String> lore = Lang.ofList("Menu.Troll_Menu.Target_Info_Lore")
-				.stream()
-				.map(line -> {
-
-					String newLine;
-					// name
-					newLine = line.replace("{target_name}", target.getName());
-					// ping
-					newLine = newLine.replace("{target_ping}", PlayerUtil.getPing(target) + "");
-					// health
-					newLine = newLine.replace("{target_health}", Remain.getHealth(target) + "");
-					// food
-					newLine = newLine.replace("{target_food}", target.getFoodLevel() + "");
-					// gamemode
-					newLine = newLine.replace("{target_gamemode}", target.getGameMode().name());
-					// World name
-					newLine = newLine.replace("{target_world}", target.getWorld().getName());
-
-					return newLine;
-				})
-				.toList();
-
 		this.targetInfoButton = Button.makeDummy(ItemCreator.of(CompMaterial.PLAYER_HEAD)
 				.name(Lang.of("Menu.Troll_Menu.Target_Info_Title").replace("{target_name}", target.getName()))
-				.lore(lore)
+				.lore(com.staxzs.staxzstrolls.util.PlayerUtil.getTargetInfo(target))
 				.skullOwner(target.getName()));
 
 		this.teleportToPlayerButton = Button.makeSimple(
@@ -91,21 +69,28 @@ public final class TrollPlayerMenu extends MenuPagged<Troll> {
 						Lang.ofList("Menu.Troll_Menu.Teleport_To_Player_Lore")),
 				player -> {
 
+					if (!PlayerUtil.hasPerm(player, Permissions.TELEPORT)) {
+						Messenger.error(player, Lang.of("No_Permission").replace("{permission}", Permissions.TELEPORT));
+						return;
+					}
 					player.teleport(target);
 
 					Messenger.success(player, Lang.of("Menu.Troll_Menu.Teleport_To_Player_Success")
 							.replace("{target_name}", target.getName()));
 				});
 
-		this.teleportPlayerToYouButton = Button.makeSimple(
+		this.bringPlayerToYouButton = Button.makeSimple(
 				ItemCreator.of(CompMaterial.ENDER_EYE,
-						Lang.of("Menu.Troll_Menu.Teleport_Player_To_You"),
-						Lang.ofList("Menu.Troll_Menu.Teleport_Player_To_You_Lore")),
+						Lang.of("Menu.Troll_Menu.Bring_Player_To_You"),
+						Lang.ofList("Menu.Troll_Menu.Bring_Player_To_You_Lore")),
 				player -> {
-
+					if (!PlayerUtil.hasPerm(player, Permissions.BRING)) {
+						Messenger.error(player, Lang.of("No_Permission").replace("{permission}", Permissions.BRING));
+						return;
+					}
 					target.teleport(player);
 
-					Messenger.success(player, Lang.of("Menu.Troll_Menu.Teleport_Player_To_You_Success")
+					Messenger.success(player, Lang.of("Menu.Troll_Menu.Bring_Player_To_You_Success")
 							.replace("{target_name}", target.getName()));
 				});
 

@@ -1,5 +1,6 @@
 package com.staxzs.staxzstrolls.menu;
 
+import com.staxzs.staxzstrolls.util.PlayerUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;
@@ -39,8 +40,8 @@ public class PlayerListMenu extends MenuPagged<Player> {
 	protected ItemStack convertToItemStack(Player player) {
 		ItemCreator creator = ItemCreator.of(CompMaterial.PLAYER_HEAD)
 				.skullOwner(player.getName())
-				.name(Lang.of("Menu.Player_List_Menu.Player_Name").replace("{player_name}", player.getName()));
-		// TODO: add lore
+				.name(Lang.of("Menu.Player_List_Menu.Player_Name").replace("{player_name}", player.getName()))
+				.lore(PlayerUtil.getTargetInfo(player));
 
 		return creator.make();
 	}

@@ -13,6 +13,12 @@ import org.mineacademy.fo.command.annotation.PermissionGroup;
  */
 public final class Permissions {
 
+	@Permission("Teleport to player using the menu.")
+	public static final String TELEPORT = "staxzstrolls.teleport";
+
+	@Permission("Bring the player to you.")
+	public static final String BRING = "staxzstrolls.bring";
+
 	/**
 	 * A sample permission group for your convenience. The {@link PermissionGroup}
 	 * is used in the {@link PermsCommand} for your convenience automatically.

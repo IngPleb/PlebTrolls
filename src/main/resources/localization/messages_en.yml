@@ -326,6 +326,13 @@ Menu:
   Button_Return_Lore:
     - ""
     - "Return back."
+  Target_Info:
+    - ""
+    - "Ping: &f{target_ping} &ams"
+    - "Health: &f{target_health} &c❤"
+    - "Food: &f{target_food} &6✿"
+    - "Gamemode: &f{target_gamemode}"
+    - "World: &f{target_world}"
   Player_List_Menu:
     Title: "&8List of Players"
     Player_Name: "&f{player_name} &7(Click to troll)"
@@ -336,24 +343,16 @@ Menu:
     Title: "&8Trolling &l{target_name}"
     # You can use {target_name}
     Target_Info_Title: "&fTarget Information"
-    Target_Info_Lore:
-      - ""
-      - "Name: &f{target_name}"
-      - "Ping: &f{target_ping} &ams"
-      - "Health: &f{target_health} &c❤"
-      - "Food: &f{target_food} &6✿"
-      - "Gamemode: &f{target_gamemode}"
-      - "World: &f{target_world}"
     Teleport_To_Player: "&fTeleport to Player"
     Teleport_To_Player_Lore:
       - ""
       - "Teleport to the troll target."
     Teleport_To_Player_Success: "&7You have been teleported to the &f{target_name}."
-    Teleport_Player_To_You: "&fTeleport Player to You"
-    Teleport_Player_To_You_Lore:
+    Bring_Player_To_You: "&fBring Player to You"
+    Bring_Player_To_You_Lore:
       - ""
-      - "Teleport the troll target to you."
-    Teleport_Player_To_You_Success: "&7The &f{target_name} &7has been teleported to you."
+      - "Bring the target to you."
+    Bring_Player_To_You_Success: "&7The &f{target_name} &7has been brought to you."
 
     # This is the postfix text to the troll name which are toggleable
     Toggleable_Troll_Enabled: "&7(&aEnabled&7)"

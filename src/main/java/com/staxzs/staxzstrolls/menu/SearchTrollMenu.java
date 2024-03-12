@@ -1,9 +1,11 @@
 package com.staxzs.staxzstrolls.menu;
 
+import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.troll.Troll;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;
+import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.menu.Menu;
 import org.mineacademy.fo.menu.MenuPagged;
 import org.mineacademy.fo.settings.Lang;
@@ -16,7 +18,7 @@ public final class SearchTrollMenu extends MenuPagged<Troll> {
 	private final Player target;
 
 	public SearchTrollMenu(Menu parentMenu, Player target, String searchInput) {
-		super(parentMenu, getTrollsBySearchInput(searchInput));
+		super(parentMenu, getTrollsBySearchInput(searchInput, target));
 
 		this.target = target;
 
@@ -24,10 +26,21 @@ public final class SearchTrollMenu extends MenuPagged<Troll> {
 		this.setSize(3 * 9);
 	}
 
-	private static Set<Troll> getTrollsBySearchInput(String searchInput) {
+	private static Set<Troll> getTrollsBySearchInput(String searchInput, Player player) {
 		Set<Troll> trolls = Troll.getRegisteredTrolls();
 
-		return trolls.stream().filter(troll -> troll.getName().toLowerCase().contains(searchInput.toLowerCase())).collect(Collectors.toSet());
+		// Filter by search input
+		trolls = trolls.stream()
+				.filter(troll -> troll.getName().toLowerCase().contains(searchInput.toLowerCase())).collect(Collectors.toSet());
+
+		if (Settings.TrollSection.FILTER_BY_PERMISSION)
+			trolls = trolls.stream()
+					.filter(troll -> {
+						String permission = troll.getPermission();
+						return PlayerUtil.hasPerm(player, permission);
+					}).collect(Collectors.toSet());
+
+		return trolls;
 	}
 
 	@Override

@@ -43,7 +43,7 @@ Trolls:
 
   # Filter trolls by permission.
   # If a player has the permission, they will be able to see and use the troll.
-  Filter_By_Permission: true
+  Filter_By_Permission: false
 
   # The time in ticks that the player will be burning after being ignited.
   # 20 ticks = 1 second
