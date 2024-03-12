@@ -23,7 +23,7 @@ public final class TrollCommand extends SimpleCommand {
 	public TrollCommand() {
 		super(new StrictList<>(Settings.TrollSection.COMMAND_ALIASES));
 		this.setDescription(Lang.of("Commands.Troll_Description"));
-		this.setUsage("[player] [troll]");
+		this.setUsage(Lang.of("Commands.Troll_Usage"));
 		this.setPermission(Permissions.Command.TROLL);
 		this.setMinArguments(0);
 	}

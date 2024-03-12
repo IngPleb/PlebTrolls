@@ -283,6 +283,7 @@ Commands:
   Perms_Yes: "&2yes"
   Perms_No: "&cno"
   Troll_Description: "Open the troll menu or troll a player."
+  Troll_Usage: "[player] [troll]"
   Troll_Not_Found: "Troll '{troll}' not found."
   Troll_Console_No_Player: "You must specify a player name when running from console."
   Tools_Description: "Open the tools menu."
