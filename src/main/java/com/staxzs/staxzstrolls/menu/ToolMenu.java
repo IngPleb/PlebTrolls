@@ -3,6 +3,7 @@ package com.staxzs.staxzstrolls.menu;
 import com.staxzs.staxzstrolls.model.Permissions;
 import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.tool.ExplodeTool;
+import com.staxzs.staxzstrolls.tool.RepulsorTool;
 import com.staxzs.staxzstrolls.tool.SmiteTool;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.PlayerUtil;
@@ -39,7 +40,8 @@ public final class ToolMenu extends MenuTools {
 	protected Object[] compileTools() {
 		return new Object[]{
 				SmiteTool.class,
-				ExplodeTool.class
+				ExplodeTool.class,
+				RepulsorTool.class
 		};
 	}
 

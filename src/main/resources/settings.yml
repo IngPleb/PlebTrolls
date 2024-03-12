@@ -199,6 +199,16 @@ Tool:
       - ""
       - "&7Click to create explosion."
     Power: 4
+  Repulsor_Tool:
+    Material: "IRON_SWORD"
+    Name: "&bRepulsor"
+    Lore:
+      - ""
+      - "&7Click to repulse players and blocks."
+    Radius: 5
+    Force: 1
+    Play_Sound: true
+    Sound: "ENTITY_ENDERMAN_TELEPORT"
 
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:

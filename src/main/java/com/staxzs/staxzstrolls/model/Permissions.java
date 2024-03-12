@@ -44,6 +44,9 @@ public final class Permissions {
 
 		@Permission("Use the explode tool.")
 		public static final String EXPLODE = "staxzstrolls.tools.explode";
+
+		@Permission("Use the repulsor tool.")
+		public static final String REPULSOR = "staxzstrolls.tools.repulsor";
 	}
 
 	@PermissionGroup("Troll permissions")

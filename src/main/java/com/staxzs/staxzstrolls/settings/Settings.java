@@ -2,6 +2,7 @@ package com.staxzs.staxzstrolls.settings;
 
 import org.bukkit.entity.EntityType;
 import org.mineacademy.fo.remain.CompMaterial;
+import org.mineacademy.fo.remain.CompSound;
 import org.mineacademy.fo.settings.Lang;
 import org.mineacademy.fo.settings.SimpleSettings;
 import org.mineacademy.fo.settings.YamlStaticConfig;
@@ -388,6 +389,29 @@ public final class Settings extends SimpleSettings {
 				NAME = getString("Name");
 				LORE = get("Lore", String[].class);
 				POWER = getInteger("Power");
+			}
+		}
+
+		public static class RepulsorTool {
+
+			public static CompMaterial MATERIAL;
+			public static String NAME;
+			public static String[] LORE;
+			public static Integer RADIUS;
+			public static Integer FORCE;
+			public static Boolean PLAY_SOUND;
+			public static CompSound SOUND;
+
+			private static void init() {
+				setPathPrefix(ToolSection.PATH_PREFIX + ".Repulsor_Tool");
+
+				MATERIAL = get("Material", CompMaterial.class);
+				NAME = getString("Name");
+				LORE = get("Lore", String[].class);
+				RADIUS = getInteger("Radius");
+				FORCE = getInteger("Force");
+				PLAY_SOUND = getBoolean("Play_Sound");
+				SOUND = get("Sound", CompSound.class);
 			}
 		}
 	}
