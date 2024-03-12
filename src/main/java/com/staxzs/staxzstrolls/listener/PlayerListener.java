@@ -18,7 +18,7 @@ public final class PlayerListener implements Listener {
 	/**
 	 * Listen for player join and loads his data
 	 *
-	 * @param event
+	 * @param event the event
 	 */
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void onJoin(PlayerJoinEvent event) {
@@ -33,7 +33,7 @@ public final class PlayerListener implements Listener {
 	/**
 	 * Automatically unload player's cache on his exit to save memory.
 	 *
-	 * @param event
+	 * @param event the event
 	 */
 	@EventHandler
 	public void onQuit(PlayerQuitEvent event) {

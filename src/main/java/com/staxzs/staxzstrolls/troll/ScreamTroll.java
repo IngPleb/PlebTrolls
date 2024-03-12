@@ -9,6 +9,8 @@ import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.remain.CompSound;
 import org.mineacademy.fo.settings.Lang;
 
+import java.util.Objects;
+
 public final class ScreamTroll extends Troll {
 
 	public ScreamTroll() {
@@ -21,7 +23,11 @@ public final class ScreamTroll extends Troll {
 
 	@Override
 	public Tuple<Boolean, String> performTroll(CommandSender sender, Player target) {
-		CompSound.fromName(Settings.TrollSection.SCREAM_SOUND).play(target, Settings.TrollSection.SCREAM_VOLUME, 0);
+		CompSound compSound = CompSound.fromName(Settings.TrollSection.SCREAM_SOUND);
+
+		Objects.requireNonNull(compSound, "Sound " + Settings.TrollSection.SCREAM_SOUND + " not found");
+
+		compSound.play(target, Settings.TrollSection.SCREAM_VOLUME, 0);
 		return null;
 	}
 }

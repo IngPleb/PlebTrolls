@@ -5,7 +5,6 @@ import com.staxzs.staxzstrolls.settings.Settings;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.entity.Projectile;
 import org.bukkit.util.Vector;
 import org.mineacademy.fo.model.Tuple;
 
@@ -26,10 +25,8 @@ public final class FireballTroll extends Troll {
 		Location spawnLocation = targetLocation.subtract(targetDirection.multiply(6));
 
 		// Spawn the fireball at the new location
-		Projectile fireball = Objects.requireNonNull(spawnLocation.getWorld()).spawn(spawnLocation, org.bukkit.entity.Fireball.class);
+		Objects.requireNonNull(spawnLocation.getWorld()).spawn(spawnLocation, org.bukkit.entity.Fireball.class);
 
-		// Set the fireball's velocity to match the player's direction
-		//fireball.setVelocity(targetDirection);
 
 		return null;
 	}

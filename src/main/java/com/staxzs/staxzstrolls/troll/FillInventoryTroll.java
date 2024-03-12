@@ -9,6 +9,8 @@ import org.mineacademy.fo.model.Tuple;
 import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.settings.Lang;
 
+import java.util.Objects;
+
 public final class FillInventoryTroll extends Troll {
 
 	public FillInventoryTroll() {
@@ -28,7 +30,7 @@ public final class FillInventoryTroll extends Troll {
 		// fill the empty slots in the main inventory only
 		// 36 is the main inventory size
 		for (int i = 0; i < 36; i++) {
-			if (inventory.getItem(i) == null || inventory.getItem(i).getType() == CompMaterial.AIR.getMaterial()) {
+			if (inventory.getItem(i) == null || Objects.requireNonNull(inventory.getItem(i)).getType() == CompMaterial.AIR.getMaterial()) {
 				inventory.setItem(i, material.toItem(amount));
 			}
 		}
