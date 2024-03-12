@@ -13,6 +13,9 @@ import org.mineacademy.fo.command.annotation.PermissionGroup;
  */
 public final class Permissions {
 
+	@Permission("Immunity from being trolled.")
+	public static final String IMMUNITY = "staxzstrolls.immunity";
+
 	@Permission("Teleport to player using the menu.")
 	public static final String TELEPORT = "staxzstrolls.teleport";
 

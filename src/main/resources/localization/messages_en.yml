@@ -439,6 +439,11 @@ Data_Loading: "Database is currently loading data, please wait..."
 No_Permission: "&cNo permission: {permission}"
 
 # -------------------------------------------------------------------------------------------------
+# Messages shown when player tries to use a troll on someone with immunity
+# -------------------------------------------------------------------------------------------------
+Immune: "&c{target_name} &cis immune to trolls."
+
+# -------------------------------------------------------------------------------------------------
 # Internal versioning number
 # -------------------------------------------------------------------------------------------------
 Version: 1

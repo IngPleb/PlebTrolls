@@ -28,7 +28,7 @@
 # !-----------------------------------------------------------------------------------------------!
 
 # -------------------------------------------------------------------------------------------------
-# Allows you to enable the startup message.
+# Allows you to enable/disable the startup message.
 # -------------------------------------------------------------------------------------------------
 Silent_Start: false
 
@@ -40,6 +40,9 @@ Trolls:
 
   # What commands should trigger the troll command?
   Command_Aliases: [ troll, tr ]
+
+  # Should we ignore the staxzstrolls.immune permission?
+  Ignore_Immunity: false
 
   # Filter trolls by permission.
   # If a player has the permission, they will be able to see and use the troll.

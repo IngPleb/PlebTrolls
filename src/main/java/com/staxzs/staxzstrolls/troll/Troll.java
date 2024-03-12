@@ -1,5 +1,7 @@
 package com.staxzs.staxzstrolls.troll;
 
+import com.staxzs.staxzstrolls.model.Permissions;
+import com.staxzs.staxzstrolls.settings.Settings;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.bukkit.command.CommandSender;
@@ -185,6 +187,13 @@ public abstract class Troll {
 		// Check permission
 		if (!PlayerUtil.hasPerm(sender, this.permission)) {
 			Messenger.error(sender, Lang.of("No_Permission").replace("{permission}", this.permission));
+			return;
+		}
+
+		// Check immunity
+		if (!Settings.TrollSection.IGNORE_IMMUNITY && PlayerUtil.hasPerm(target, Permissions.IMMUNITY)) {
+			Messenger.error(sender, Lang.of("Immune")
+					.replace("{target_name}", target.getName()));
 			return;
 		}
 
