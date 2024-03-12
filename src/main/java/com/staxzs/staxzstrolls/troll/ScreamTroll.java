@@ -5,19 +5,14 @@ import com.staxzs.staxzstrolls.settings.Settings;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.model.Tuple;
-import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.remain.CompSound;
-import org.mineacademy.fo.settings.Lang;
 
 import java.util.Objects;
 
 public final class ScreamTroll extends Troll {
 
 	public ScreamTroll() {
-		super("SREAM_PLAYER", Lang.of("Trolls.Scream.Display_Name"),
-				Lang.of("Trolls.Scream.Description"),
-				Permissions.Troll.SCREAM_PLAYER,
-				CompMaterial.fromString(Settings.TrollSection.IconsSection.SCREAM));
+		super("SCREAM", Permissions.Troll.SCREAM, Settings.TrollSection.IconsSection.SCREAM);
 	}
 
 

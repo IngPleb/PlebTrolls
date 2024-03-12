@@ -34,6 +34,7 @@ Silent_Start: false
 
 # -------------------------------------------------------------------------------------------------
 # Trolls section
+#
 # Here you can configure each aspect of the trolls.
 # -------------------------------------------------------------------------------------------------
 Trolls:
@@ -42,31 +43,31 @@ Trolls:
   Command_Aliases: [ troll, tr ]
 
   # Should we ignore the staxzstrolls.immune permission?
-  Ignore_Immunity: false
+  Ignore_Immunity: true #TODO change to false
 
-  # Filter trolls by permission.
-  # If a player has the permission, they will be able to see and use the troll.
+  # If enabled, we will only show trolls that the player has permission for.
   Filter_By_Permission: false
 
-  # The time in ticks that the player will be burning after being ignited.
+  # For how long should we ignite the player in ticks?
   # 20 ticks = 1 second
-  # 100 ticks = 5 seconds
   Ignite_Duration: 100
 
-  # The power of the explosion when a player is exploded.
-  # 1 is the default power.
+  # With how much power we should explode the player?
   Explosion_Power: 1
 
-  # Name of the scream sound.
-  Scream_Sound: "GHAST_SCREAM"
-  # Volume of the scream sound.
-  # 1 is the default volume.
-  Scream_Volume: 1
+  # Which sound should we play during th scream troll?
+  # For all available sounds, see: https://is.gd/bHuypT
+  Scream_Sound: "WITHER_IDLE"
 
-  # Ambush entity type.
+  # How loud should the scream sound be?
+  # 1 is the default volume.
+  Scream_Volume: 3
+
+  # What type of entity should be spawned when a player is ambushed?
+  # For all available entities, see: https://is.gd/hmC0XM
   Ambush_Entity_Type: "PILLAGER"
 
-  # Number of entities spawned when a player is ambushed.
+  # How many entities should be spawned when a player is ambushed?
   Ambush_Entity_Amount: 3
 
   # When replacing messages, the plugin will replace the original message with one of these.
@@ -77,46 +78,42 @@ Trolls:
     - "People say I stink!"
     - "I am such bad at this game!"
 
-  # The item type and the amount used to fill the player's inventory.
+  # Settings for the Fill_Inventory troll.
   Fill_Inventory:
-    # The item type used to fill the player's inventory.
+    # With what material should we fill the player's inventory?
     Material: "DEAD_BUSH"
-    # The amount of items used to fill the player's inventory.
+    # How big will be each stack?
     Amount: 64
 
-  # The message spammed in the player's chat.
-  # You can use color codes and placeholders.
+  # With what message should we spam the player's chat?
   Spam_Chat_Message: "You have been trolled!!! Muhahaa!"
 
-  # How long does the blindness effect last in ticks.
-  # 20 ticks = 1 second
-  Blindness_Duration: 200
-
-  # Radius of the random teleportation in blocks.
+  # How big should the random teleport radius be?
   Random_Teleport_Radius: 150
 
-  # The message sent to the player when they are fake banned.
+  # What fake ban message should we send to the player?
   Fake_Ban_Message: "&c&lYou have been banned for CHEATING!"
 
-  # The height of the anvil rain in blocks.
+  # How high above the player should we spawn the anvils?
   Anvil_Rain_Height: 20
 
-  # Slowness amplifier.
+  # How strong should the slowness be?
   Slowness_Amplifier: 4
 
-  # Levitation duration in ticks.
+  # How strong should the levitation be?
   Levitation_Amplifier: 4
 
-  # Poison duration in ticks.
+  # How long should the poison last in ticks?
+  # 20 ticks = 1 second
   Poison_Duration: 200
 
-  # Poison amplifier.
+  # How strong should the poison be?
   Poison_Amplifier: 2
 
-  # How many cows should be spawned in the STAMPEDE troll?
+  # How many cows should be spawned in the stampede troll?
   Stampede_Amount: 25
 
-  # How many hounds should be spawned in the HOUND_ATTACK troll?
+  # How many hounds should be spawned in the hound attack troll?
   Hound_Attack_Amount: 3
 
   # Icon used in the troll menu.
@@ -141,29 +138,29 @@ Trolls:
     Abyss: "BEDROCK"
     Blindness: "INK_SAC"
     Random_Teleport: "ENDER_PEARL"
-    Lag_Behind: "Redstone"
+    Lag_Behind: "REDSTONE"
     Pumpkin: "PUMPKIN"
-    No_Item_Drop: "DROPPER"
+    No_Item_Drop: "HOPPER"
     Open_Random_Inventory: "CHEST"
-    Fake_Ban: "BARRIER"
+    Fake_Ban: "COMMAND_BLOCK"
     Cobweb: "COBWEB"
     No_Build_And_Break: "OAK_SIGN"
     Freeze_Player: "ICE"
     Teleport_To_Sun: "SUNFLOWER"
     Obsidian_Cage: "OBSIDIAN"
     Swap: "PURPLE_DYE"
-    No_Chest: "CHEST"
+    No_Chest: "TRAPPED_CHEST"
     Anvil_Rain: "ANVIL"
     Shuffle_Inventory: "ENDER_CHEST"
-    Spawn_Creeper: "CREEPER_HEAD"
-    No_Item_Pickup: "FLOWER_POT"
+    Spawn_Creeper: "FIREWORK_STAR"
+    No_Item_Pickup: "FEATHER"
     Disable_Gravity: "FEATHER"
     Disarm: "IRON_SWORD"
     Reverse_Messages: "BOOK"
-    Send_Message: "PAPER"
+    Send_Message: "WRITTEN_BOOK"
     Potato: "POTATO"
     Slowness: "SUGAR"
-    Levitation: "FEATHER"
+    Levitation: "SHULKER_SHELL"
     Clear_Armour: "IRON_CHESTPLATE"
     Near_Death: "REDSTONE"
     Poison: "SPIDER_EYE"
@@ -177,18 +174,23 @@ Trolls:
     Teleport_All: "CHORUS_FRUIT"
     Fake_Money: "GOLD_INGOT"
     Ring_Of_Fire: "BLAZE_POWDER"
-    Tnt_Trap: "TNT"
+    Tnt_Trap: "LEVER"
     Explode_Block: "GUNPOWDER"
     Gibberish_Messages: "WRITABLE_BOOK"
-    Replace_Messages: "BOOK"
+    Replace_Messages: "MAP"
 
 # -------------------------------------------------------------------------------------------------
 # Tool section
 # Here you can configure tools, which can be used to troll players.
 # -------------------------------------------------------------------------------------------------
 Tool:
+  # What commands should trigger the tools command?
   Command_Aliases: [ trolltools, tt ]
+
+  # What material should be used for the button which opens the tool menu?
   Tool_Menu_Material: "CHEST"
+
+  # Settings for each tool.
   Smite_Tool:
     Material: "BLAZE_ROD"
     Name: "&6Smite"
@@ -201,6 +203,7 @@ Tool:
     Lore:
       - ""
       - "&7Click to create explosion."
+    # With how much power we should make the explosion?
     Power: 4
   Repulsor_Tool:
     Material: "IRON_SWORD"
@@ -208,9 +211,14 @@ Tool:
     Lore:
       - ""
       - "&7Click to repulse players and blocks."
+
+    # How big should the repulsion radius be?
     Radius: 5
+    # How strong should the repulsion be?
     Force: 1
+    # Should we play a sound when using the tool?
     Play_Sound: true
+    # What sound should we play?
     Sound: "ENTITY_ENDERMAN_TELEPORT"
   Spawn_Creeper_Tool:
     Material: "CREEPER_HEAD"

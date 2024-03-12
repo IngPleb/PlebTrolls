@@ -84,8 +84,6 @@ public final class Settings extends SimpleSettings {
 
 		public static String SPAM_CHAT_MESSAGE;
 
-		public static Integer BLINDNESS_DURATION;
-
 		public static Integer RANDOM_TELEPORT_RADIUS;
 
 		public static String FAKE_BAN_MESSAGE;
@@ -130,8 +128,6 @@ public final class Settings extends SimpleSettings {
 
 			SPAM_CHAT_MESSAGE = getString("Spam_Chat_Message");
 
-			BLINDNESS_DURATION = getInteger("Blindness_Duration");
-
 			RANDOM_TELEPORT_RADIUS = getInteger("Random_Teleport_Radius");
 
 			FAKE_BAN_MESSAGE = getString("Fake_Ban_Message");
@@ -168,7 +164,7 @@ public final class Settings extends SimpleSettings {
 
 			public static String EXPLODE_PLAYER;
 
-			public static String SCREAM;
+			public static CompMaterial SCREAM;
 
 			public static String AMBUSH_PLAYER;
 
@@ -286,7 +282,7 @@ public final class Settings extends SimpleSettings {
 				LIGHTNING_STRIKE = getString("Lightning_Strike");
 				IGNITE_PLAYER = getString("Ignite_Player");
 				EXPLODE_PLAYER = getString("Explode_Player");
-				SCREAM = getString("Scream");
+				SCREAM = get("Scream", CompMaterial.class);
 				AMBUSH_PLAYER = getString("Ambush_Player");
 				FILL_INVENTORY = getString("Fill_Inventory");
 				DIP_IN_LAVA = get("Dip_In_Lava", CompMaterial.class);

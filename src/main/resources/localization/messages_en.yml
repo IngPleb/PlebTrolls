@@ -25,7 +25,9 @@
 # !-----------------------------------------------------------------------------------------------!
 
 # -------------------------------------------------------------------------------------------------
-# Texts/messages related to trolls
+# Trolls section
+#
+# Here you can configure each aspect of the troll names, descriptions, and messages.
 # -------------------------------------------------------------------------------------------------
 Trolls:
   Execute_Message: "&7Executed troll {troll_name} &7on &f{target_name}&7!"
