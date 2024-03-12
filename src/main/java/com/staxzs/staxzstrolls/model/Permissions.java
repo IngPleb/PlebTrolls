@@ -47,6 +47,9 @@ public final class Permissions {
 
 		@Permission("Use the repulsor tool.")
 		public static final String REPULSOR = "staxzstrolls.tools.repulsor";
+
+		@Permission("Use the spawn creeper tool.")
+		public static final String SPAWN_CREEPER = "staxzstrolls.tools.spawn_creeper";
 	}
 
 	@PermissionGroup("Troll permissions")

@@ -414,5 +414,20 @@ public final class Settings extends SimpleSettings {
 				SOUND = get("Sound", CompSound.class);
 			}
 		}
+
+		public static class SpawnCreeperTool {
+
+			public static CompMaterial MATERIAL;
+			public static String NAME;
+			public static String[] LORE;
+
+			private static void init() {
+				setPathPrefix(ToolSection.PATH_PREFIX + ".Spawn_Creeper_Tool");
+
+				MATERIAL = get("Material", CompMaterial.class);
+				NAME = getString("Name");
+				LORE = get("Lore", String[].class);
+			}
+		}
 	}
 }

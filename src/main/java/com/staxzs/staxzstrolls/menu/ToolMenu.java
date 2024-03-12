@@ -5,6 +5,7 @@ import com.staxzs.staxzstrolls.settings.Settings;
 import com.staxzs.staxzstrolls.tool.ExplodeTool;
 import com.staxzs.staxzstrolls.tool.RepulsorTool;
 import com.staxzs.staxzstrolls.tool.SmiteTool;
+import com.staxzs.staxzstrolls.tool.SpawnCreeperTool;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.menu.Menu;
@@ -41,7 +42,8 @@ public final class ToolMenu extends MenuTools {
 		return new Object[]{
 				SmiteTool.class,
 				ExplodeTool.class,
-				RepulsorTool.class
+				RepulsorTool.class,
+				SpawnCreeperTool.class
 		};
 	}
 

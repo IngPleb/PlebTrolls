@@ -209,6 +209,12 @@ Tool:
     Force: 1
     Play_Sound: true
     Sound: "ENTITY_ENDERMAN_TELEPORT"
+  Spawn_Creeper_Tool:
+    Material: "CREEPER_HEAD"
+    Name: "&aSpawn Creeper"
+    Lore:
+      - ""
+      - "&7Click to spawn a creeper."
 
 # -------------------------------------------------------------------------------------------------
 # The formats used in the {timestamp} and {location} variables. For help with timestamp, see:
