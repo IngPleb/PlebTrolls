@@ -274,6 +274,8 @@ public final class Settings extends SimpleSettings {
 
 			public static CompMaterial REPLACE_MESSAGES;
 
+			public static CompMaterial GUARDIAN;
+
 			private static void init() {
 				setPathPrefix(PATH_PREFIX);
 
@@ -337,6 +339,7 @@ public final class Settings extends SimpleSettings {
 				EXPLODE_BLOCK = get("Explode_Block", CompMaterial.class);
 				GIBBERISH_MESSAGES = get("Gibberish_Messages", CompMaterial.class);
 				REPLACE_MESSAGES = get("Replace_Messages", CompMaterial.class);
+				GUARDIAN = get("Guardian", CompMaterial.class);
 			}
 		}
 	}

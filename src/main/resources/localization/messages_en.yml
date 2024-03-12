@@ -217,6 +217,9 @@ Trolls:
   Replace_Messages:
     Display_Name: "&7Replace Messages"
     Description: "Replace player's chat messages with a custom message."
+  Guardian:
+    Display_Name: "&bGuardian"
+    Description: "Give the player the guardian jumpscare (screen effect)."
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------

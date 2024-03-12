@@ -242,5 +242,8 @@ public final class Permissions {
 
 		@Permission("Replace player's messages with a custom message.")
 		public static final String REPLACE_MESSAGE = "staxzstrolls.troll.replace_message";
+
+		@Permission("Give the player a guardian jumpscare.")
+		public static final String GUARDIAN = "staxzstrolls.troll.guardian";
 	}
 }

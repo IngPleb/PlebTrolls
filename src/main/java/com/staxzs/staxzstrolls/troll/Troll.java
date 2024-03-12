@@ -132,6 +132,7 @@ public abstract class Troll {
 		registerTroll(new ExplodeBlockTroll());
 		registerTroll(new GibberishMessagesTroll());
 		registerTroll(new ReplaceMessagesTroll());
+		registerTroll(new GuardianTroll());
 	}
 
 	public static void deregisterAllTrolls() {

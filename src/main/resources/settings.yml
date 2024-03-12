@@ -178,6 +178,7 @@ Trolls:
     Explode_Block: "GUNPOWDER"
     Gibberish_Messages: "WRITABLE_BOOK"
     Replace_Messages: "MAP"
+    Guardian: "PRISMARINE_SHARD"
 
 # -------------------------------------------------------------------------------------------------
 # Tool section
