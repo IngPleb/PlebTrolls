@@ -45,6 +45,9 @@ Trolls:
   # Should we ignore the staxzstrolls.immune permission?
   Ignore_Immunity: true #TODO change to false
 
+  # Should we log all executed trolls in the console?
+  Log_Trolls: true
+
   # If enabled, we will only show trolls that the player has permission for.
   Filter_By_Permission: false
 

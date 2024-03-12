@@ -61,9 +61,11 @@ public final class Settings extends SimpleSettings {
 	public static class TrollSection {
 		public static String PATH_PREFIX = "Trolls";
 
+		public static Set<String> COMMAND_ALIASES;
+
 		public static Boolean IGNORE_IMMUNITY;
 
-		public static Set<String> COMMAND_ALIASES;
+		public static Boolean LOG_TROLLS;
 
 		public static Boolean FILTER_BY_PERMISSION;
 
@@ -107,9 +109,11 @@ public final class Settings extends SimpleSettings {
 		private static void init() {
 			setPathPrefix(PATH_PREFIX);
 
+			COMMAND_ALIASES = getSet("Command_Aliases", String.class);
+
 			IGNORE_IMMUNITY = getBoolean("Ignore_Immunity");
 
-			COMMAND_ALIASES = getSet("Command_Aliases", String.class);
+			LOG_TROLLS = getBoolean("Log_Trolls");
 
 			FILTER_BY_PERMISSION = getBoolean("Filter_By_Permission");
 

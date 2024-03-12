@@ -13,6 +13,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
+import org.mineacademy.fo.Common;
 import org.mineacademy.fo.Messenger;
 import org.mineacademy.fo.PlayerUtil;
 import org.mineacademy.fo.collection.StrictSet;
@@ -196,6 +197,14 @@ public abstract class Troll {
 			Messenger.error(sender, Lang.of("Immune")
 					.replace("{target_name}", target.getName()));
 			return;
+		}
+
+		// Log the troll
+		if (Settings.TrollSection.LOG_TROLLS) {
+			Common.log(Lang.of("Trolls.Log_Message")
+					.replace("{troll_name}", this.displayName)
+					.replace("{sender_name}", sender.getName())
+					.replace("{target_name}", target.getName()));
 		}
 
 		Tuple<Boolean, String> finalResult;
