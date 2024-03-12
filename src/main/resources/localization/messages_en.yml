@@ -2,25 +2,14 @@
 #                              Welcome to the localization file.
 # !-----------------------------------------------------------------------------------------------!
 #
-#   The localization/ folder stores various localization files. Use the suggested naming
-#   convention message_LANGUAGE.yml and then the "SimpleLocalization" or the "Lang" class to
-#   use this file.
+# Here you can translate 99.9% messages in the plugin to your own language.
 #
 #   1) COLOR CODES are supported with the '&' character.
 #      - For usage, see http://minecraftwiki.net/wiki/Formatting_codes
 #      - When you use them, place quotes around the message like this: "Hello &cworld."
 #       - To use HEX colors, use #123456 syntax: "Hello #123456world."
 #
-#   2) TO HIDE any message, set it to 'none'.
-#
-#   3) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding. See
-#      - https://github.com/${author}/${project.name}/wiki/Use-Right-Encoding
-#
-#   4) JSON is supported. Prepend the message with [JSON].
-#
-#   5) JAVASCRIPT NOTICE: Some of our messages are just-in-time compiled with JavaScript.
-#      Those typically have variables such as "self" inside of them. IF YOU CANNOT CODE
-#      in JavaScript, be extra careful and do not remove () brackets or the variables!
+#   2) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding (default).
 #
 # !-----------------------------------------------------------------------------------------------!
 
