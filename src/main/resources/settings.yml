@@ -3,7 +3,7 @@
 # !-----------------------------------------------------------------------------------------------!
 #
 #    For support and documentation, please visit:
-#    - https://github.com/${author}/${project.name}/wiki
+#    - https://github.com/${author}/${project.name}-public/wiki
 #
 # !-----------------------------------------------------------------------------------------------!
 #
@@ -233,8 +233,15 @@ Location_Format: "{world} [{x}, {y}, {z}]"
 Command_Aliases: [ staxzstrolls ]
 
 # -------------------------------------------------------------------------------------------------
-# What language should we use for messages?
-# -------------------------------------------------------------------------------------------------
+# What language should we use for messages? If it exists, the language file will be copied
+# to your messages/ folder where you can edit it.
+# See tutorial here: https://github.com/${author}/${project.name}-public/wiki/Localization
+#
+# AVAILABLE TRANSLATIONS: en (English)
+#
+# If you wish to share your translation, feel free to submit it on our github by opening a new issue: https://github.com/${author}/${project.name}-public/issues/new
+# You will be credited in this file, like our other kind translators, and in the update log!
+# ------------------------------------------------------------------------------------------
 Locale: en
 
 # -------------------------------------------------------------------------------------------------
@@ -250,8 +257,7 @@ Prefix: "&8[&a${project.name}&8]&7 "
 Log_Lag_Over_Milis: 100
 
 # -------------------------------------------------------------------------------------------------
-# List of section names that will print informative messages about this plugin's features.
-# The Debugger class utilizes this key and will only print messages for sections enabled below.
+# List of section names that will print informative messages about their features.
 # -------------------------------------------------------------------------------------------------
 Debug: [ ]
 
