@@ -14,6 +14,11 @@ import org.mineacademy.fo.menu.button.Button;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.settings.Lang;
 
+/**
+ * This class extends the MenuTools class and represents a menu for tools in the application.
+ * It contains methods for creating the menu, getting a button for the menu, compiling the tools for the menu, and getting the position and information for the info button.
+ * The class is final, which means it cannot be subclassed.
+ */
 public final class ToolMenu extends MenuTools {
 
 	public ToolMenu(Menu parent) {

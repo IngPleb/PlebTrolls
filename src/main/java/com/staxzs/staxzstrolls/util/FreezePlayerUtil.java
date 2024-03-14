@@ -14,6 +14,15 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
 
+/**
+ * The FreezePlayerUtil class provides utility methods for freezing and unfreezing players in a game.
+ * It maintains a map of frozen players and their locations, and provides methods to freeze/unfreeze players,
+ * start a task that keeps frozen players in place, and stop this task.
+ * <p>
+ * This class is a singleton, and an instance can be obtained using the getINSTANCE() method.
+ * <p>
+ * This class is not intended to be instantiated directly, hence the private no-args constructor.
+ */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class FreezePlayerUtil {
 

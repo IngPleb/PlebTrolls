@@ -5,6 +5,7 @@ import com.staxzs.staxzstrolls.troll.Troll;
 import com.staxzs.staxzstrolls.util.FreezePlayerUtil;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
+import org.mineacademy.fo.settings.SimpleLocalization;
 
 /**
  * The main class of the plugin.
@@ -30,6 +31,10 @@ public final class StaxzsTrolls extends SimplePlugin {
 	protected void onPluginStart() {
 		if (!Settings.SILENT_START)
 			this.consoleGreeting();
+
+		Common.runLater(40, () -> {
+			System.out.println("Test: " + SimpleLocalization.isLocalizationCalled());
+		});
 	}
 
 	/**
@@ -37,13 +42,6 @@ public final class StaxzsTrolls extends SimplePlugin {
 	 */
 	@Override
 	protected void onReloadablesStart() {
-
-		// You can check for necessary plugins and disable loading if they are missing
-		//Valid.checkBoolean(HookManager.isVaultLoaded(), "You need to install Vault so that we can work with packets, offline player data, prefixes and groups.");
-
-		// Uncomment to load variables
-		// Variable.loadVariables();
-
 		Troll.registerAllTrolls();
 		FreezePlayerUtil.getINSTANCE().start();
 	}

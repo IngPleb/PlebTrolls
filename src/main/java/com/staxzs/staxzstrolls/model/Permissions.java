@@ -5,8 +5,7 @@ import org.mineacademy.fo.command.annotation.Permission;
 import org.mineacademy.fo.command.annotation.PermissionGroup;
 
 /**
- * A sample permissions class. This is the preferred way of keeping all permissions
- * of your plugin in one place.
+ * A permissions class.
  * <p>
  * You will also be able to use the {@link PermsCommand} to list them automatically
  * if you choose to this class.

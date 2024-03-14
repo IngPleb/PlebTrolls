@@ -23,6 +23,7 @@ import java.util.Set;
 public final class Settings extends SimpleSettings {
 
 	public static Boolean SILENT_START;
+	
 
 	/*
 	 * Automatically called method when we load settings.yml to load values in this class

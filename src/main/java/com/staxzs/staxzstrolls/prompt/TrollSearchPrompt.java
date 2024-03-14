@@ -13,6 +13,17 @@ import org.mineacademy.fo.conversation.SimplePrompt;
 import org.mineacademy.fo.menu.Menu;
 import org.mineacademy.fo.settings.Lang;
 
+/**
+ * The TrollSearchPrompt class extends the SimplePrompt class and represents a prompt for searching trolls in the game.
+ * This class is used to handle the conversation with the player when they are searching for a troll.
+ * <p>
+ * The @Getter annotation from the Lombok library is used to automatically generate getter methods for all non-static fields.
+ * <p>
+ * This class includes a return menu, a target player, and a search input string.
+ * The return menu is the menu that will be displayed to the player after the conversation ends.
+ * The target player is the player who will be affected by the troll.
+ * The search input string is the string that the player inputs to search for a troll.
+ */
 @Getter
 public class TrollSearchPrompt extends SimplePrompt {
 

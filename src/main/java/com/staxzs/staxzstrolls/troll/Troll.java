@@ -26,6 +26,11 @@ import org.mineacademy.fo.settings.Lang;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * This class represents a Troll in the game.
+ * It contains methods to register, deregister, and execute trolls.
+ * It also contains event handlers for various game events.
+ */
 @Getter
 @EqualsAndHashCode(of = "name")
 public abstract class Troll {
@@ -38,10 +43,16 @@ public abstract class Troll {
 	final String permission;
 	final CompMaterial icon;
 
+	/**
+	 * Constructor for creating a Troll with a name, permission, and icon.
+	 */
 	protected Troll(String name, String permission, CompMaterial icon) {
 		this(name, getDisplayNameFromName(name), getDescriptionFromName(name), permission, icon);
 	}
 
+	/**
+	 * Constructor for creating a Troll with a name, display name, description, permission, and icon.
+	 */
 	protected Troll(String name, String displayName, String description, String permission, CompMaterial icon) {
 		this.name = name;
 		this.displayName = displayName;
@@ -50,10 +61,16 @@ public abstract class Troll {
 		this.icon = icon;
 	}
 
+	/**
+	 * Returns a set of all registered trolls.
+	 */
 	public static Set<Troll> getRegisteredTrolls() {
 		return REGISTERED_TROLLS.getSource();
 	}
 
+	/**
+	 * Returns a set of all registered trolls that a player has permission for.
+	 */
 	public static Set<Troll> getRegisteredTrollsByPlayer(Player player) {
 		Set<Troll> trolls = new HashSet<>();
 		for (Troll troll : REGISTERED_TROLLS) {
@@ -143,6 +160,14 @@ public abstract class Troll {
 		REGISTERED_TROLLS.clear();
 	}
 
+	/**
+	 * This method is used to get a Troll object from its name.
+	 * It iterates over all registered trolls and returns the one with the matching name.
+	 * If no troll with the given name is found, it returns null.
+	 *
+	 * @param name The name of the troll to be retrieved.
+	 * @return The Troll object with the given name, or null if no such troll is found.
+	 */
 	public static Troll fromName(String name) {
 		for (Troll troll : REGISTERED_TROLLS)
 			if (troll.getName().equalsIgnoreCase(name))
@@ -151,6 +176,13 @@ public abstract class Troll {
 		return null;
 	}
 
+	/**
+	 * This method is used to format a given name into a specific key format.
+	 * The name is split into words, each word is capitalized, and then the words are joined back together with underscores.
+	 *
+	 * @param name The name to be formatted.
+	 * @return The formatted key string.
+	 */
 	private static String getKeyFromName(String name) {
 		// Split the string into words
 		String[] words = name.split("_");
@@ -184,6 +216,17 @@ public abstract class Troll {
 	// Instance methods
 	//////////////////////////////
 
+	/**
+	 * This method is used to execute a troll on a target player.
+	 * It first checks if the sender has the required permission to execute the troll.
+	 * If the sender does not have the required permission, an error message is sent to the sender and the method returns.
+	 * If the target player has immunity, an error message is sent to the sender and the method returns.
+	 * If the troll is successfully executed, a success message is sent to the sender.
+	 * If it is not successfully executed, an error message is sent to the sender.
+	 *
+	 * @param sender The CommandSender who is trying to execute the troll.
+	 * @param target The Player who is the target of the troll.
+	 */
 	public final void executeTroll(CommandSender sender, Player target) {
 
 		// Check permission
@@ -228,18 +271,44 @@ public abstract class Troll {
 			Messenger.error(sender, message);
 	}
 
+	/**
+	 * This is an abstract method that must be implemented by any class that extends the Troll class.
+	 * It is used to perform the specific actions of a troll on a target player.
+	 * The method returns a Tuple where the Boolean indicates the success of the troll execution and the String provides a message about the execution.
+	 * The specific implementation of this method will depend on the type of troll being executed.
+	 *
+	 * @param sender The CommandSender who is trying to execute the troll.
+	 * @param target The Player who is the target of the troll.
+	 * @return A Tuple where the Boolean indicates the success of the troll execution and the String provides a message about the execution.
+	 */
 	protected abstract Tuple<Boolean, String> performTroll(CommandSender sender, Player target);
 
 	public void onDeregister() {
 		// Override if needed
 	}
 
+	/**
+	 * This method is used to generate a message for the execution of a troll.
+	 * It uses the display name of the troll and the name of the target player to create the message.
+	 * The message is retrieved from a language file and placeholders in the message are replaced with the troll's display name and the target player's name.
+	 *
+	 * @param target The Player who is the target of the troll.
+	 * @return A String containing the message for the execution of the troll.
+	 */
 	protected String getExecuteMessage(Player target) {
 		return Lang.of("Trolls.Execute_Message")
 				.replace("{troll_name}", this.displayName)
 				.replace("{target_name}", target.getName());
 	}
 
+	/**
+	 * This method is used to create an ItemStack representing the troll.
+	 * The ItemStack is created with the icon of the troll, the display name of the troll, and the description of the troll.
+	 * The ItemStack also has the HIDE_ATTRIBUTES flag set, which means that any attributes of the item (such as attack damage or speed) will not be displayed.
+	 *
+	 * @param target The Player who is the target of the troll.
+	 * @return An ItemStack representing the troll.
+	 */
 	public ItemStack getItemStack(Player target) {
 		ItemCreator creator = ItemCreator.of(this.getIcon())
 				.name(this.getDisplayName())

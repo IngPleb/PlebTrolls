@@ -23,6 +23,11 @@ import org.mineacademy.fo.settings.Lang;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This class extends the MenuPagged class and represents a menu for trolling a player in the application.
+ * It contains a target player and methods for creating the menu, getting trolls by search input, converting a troll to an ItemStack, handling page clicks, and getting information for the info button.
+ * The class is final, which means it cannot be subclassed.
+ */
 public final class TrollPlayerMenu extends MenuPagged<Troll> {
 
 	private final Player target;

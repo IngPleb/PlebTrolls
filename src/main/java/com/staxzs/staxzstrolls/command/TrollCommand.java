@@ -17,6 +17,15 @@ import java.util.Set;
 
 import static java.util.stream.Collectors.toSet;
 
+/**
+ * The TrollCommand class extends the SimpleCommand class and represents the command that triggers the troll functionality in the game.
+ * This command can be used to display a list of online players to the command sender, or to execute a specific troll on a target player.
+ * <p>
+ * This class is final and cannot be subclassed.
+ * <p>
+ * The @AutoRegister annotation indicates that this command is automatically registered when the plugin is enabled.
+ * The @SuppressWarnings("unused") annotation is used to suppress warnings about unused methods or variables in this class.
+ */
 @AutoRegister
 @SuppressWarnings("unused")
 public final class TrollCommand extends SimpleCommand {

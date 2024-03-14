@@ -16,6 +16,13 @@ import org.mineacademy.fo.settings.Lang;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * The PlayerListMenu class extends the MenuPagged class and represents a paginated menu of online players in the game.
+ * This menu displays a list of online players, and each player is represented by an item in the menu.
+ * Clicking on a player's item in the menu opens the TrollPlayerMenu for the clicked player.
+ * <p>
+ * This class also includes a button that opens the tools menu.
+ */
 public class PlayerListMenu extends MenuPagged<Player> {
 
 	@Position(start = StartPosition.BOTTOM_CENTER)

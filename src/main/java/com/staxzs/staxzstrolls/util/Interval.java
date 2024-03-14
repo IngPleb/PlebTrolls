@@ -9,6 +9,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * The Interval class represents a range of integers defined by a start and an end point.
+ */
 @Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Interval {
@@ -18,6 +21,15 @@ public class Interval {
 	////////////////////////////
 	// Static factory methods
 	////////////////////////////
+
+	/**
+	 * Static factory method to create an instance of Interval.
+	 *
+	 * @param start The start point of the interval. Must be less than or equal to end.
+	 * @param end   The end point of the interval.
+	 * @return An instance of Interval.
+	 * @throws IllegalArgumentException if start is greater than end.
+	 */
 	public static Interval of(int start, int end) {
 		if (start > end) {
 			throw new IllegalArgumentException("Start must be less than or equal to end.");
