@@ -43,12 +43,8 @@ public final class StaxzsTrolls extends SimplePlugin {
 
 	@Override
 	protected void onPluginPreReload() {
-
 		Troll.deregisterAllTrolls();
 		FreezePlayerUtil.getINSTANCE().stop();
-
-		// Close your database here if you use one
-		//YourDatabase.getInstance().close();
 	}
 
 	/* ------------------------------------------------------------------------------- */
