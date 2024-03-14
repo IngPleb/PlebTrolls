@@ -5,7 +5,6 @@ import com.staxzs.staxzstrolls.troll.Troll;
 import com.staxzs.staxzstrolls.util.FreezePlayerUtil;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
-import org.mineacademy.fo.settings.SimpleLocalization;
 
 /**
  * The main class of the plugin.
@@ -31,10 +30,6 @@ public final class StaxzsTrolls extends SimplePlugin {
 	protected void onPluginStart() {
 		if (!Settings.SILENT_START)
 			this.consoleGreeting();
-
-		Common.runLater(40, () -> {
-			System.out.println("Test: " + SimpleLocalization.isLocalizationCalled());
-		});
 	}
 
 	/**
