@@ -237,9 +237,13 @@ Command_Aliases: [ staxzstrolls ]
 # to your messages/ folder where you can edit it.
 # See tutorial here: https://github.com/${author}/${project.name}-public/wiki/Localization
 #
-# AVAILABLE TRANSLATIONS: en (English)
+# AVAILABLE TRANSLATIONS:
+#                  - en (English)
+#                  - de (German)
+#                  - cs (Czech)
 #
-# If you wish to share your translation, feel free to submit it on our github by opening a new issue: https://github.com/${author}/${project.name}-public/issues/new
+# If you wish to share your translation, feel free to submit it on our github
+# by opening a new issue: https://github.com/${author}/${project.name}-public/issues/new
 # You will be credited in this file, like our other kind translators, and in the update log!
 # ------------------------------------------------------------------------------------------
 Locale: en

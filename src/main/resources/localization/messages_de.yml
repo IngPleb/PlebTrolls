@@ -1,0 +1,438 @@
+# !-----------------------------------------------------------------------------------------------!
+#                              Welcome to the localization file.
+# !-----------------------------------------------------------------------------------------------!
+#
+# Here you can translate 99.9% messages in the plugin to your own language.
+#
+#   1) COLOR CODES are supported with the '&' character.
+#      - For usage, see http://minecraftwiki.net/wiki/Formatting_codes
+#      - When you use them, place quotes around the message like this: "Hello &cworld."
+#       - To use HEX colors, use #123456 syntax: "Hello #123456world."
+#
+#   2) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding (default).
+#
+# !-----------------------------------------------------------------------------------------------!
+
+# -------------------------------------------------------------------------------------------------
+# Trolls section
+#
+# Here you can configure each aspect of the troll names, descriptions, and messages.
+# -------------------------------------------------------------------------------------------------
+Trolls:
+  Execute_Message: "&7Troll {troll_name} &7auf &f{target_name}&7 ausgeführt!"
+  Log_Message: "&aTroll&7: &f{troll_name} &7ausgeführt auf &f{target_name} &7durch &f{sender_name}&7!"
+  Toggle_Troll:
+    Execute_Message: "Troll {troll_name} &7für &f{target_name}&7 {state} geschaltet!"
+    On_State: "&aeingeschaltet"
+    Off_State: "&causgeschaltet"
+  Creeper_Hiss:
+    Display_Name: "&aC&fr&ae&fe&ap&fe&ar&f &aZ&fi&as&fschen"
+    Description: "Spiele ein Creeper-Zischgeräusch für einen Spieler."
+  Launch_Player:
+    Display_Name: "&3Spieler starten"
+    Description: "Starte den Spieler in die Luft."
+  Lightning_Strike:
+    Display_Name: "&eBlitzeinschlag"
+    Description: "Schlage den Spieler mit einem Blitz."
+  Ignite_Player:
+    Display_Name: "&6Spieler entzünden"
+    Description: "Setze den Spieler in Brand."
+  Explode_Player:
+    Display_Name: "&cSpieler sprengen"
+    Description: "Lasse den Spieler explodieren."
+  Scream:
+    Display_Name: "&5Schreien"
+    Description: "Spiele ein lautes Ghast-Schreien für einen Spieler."
+  Ambush_Player:
+    Display_Name: "&4Hinterhalt"
+    Description: "Erzeuge einige Monster um den Spieler herum, um ihn zu überfallen."
+  Fill_Inventory:
+    Display_Name: "&bInventar füllen"
+    Description: "Fülle das Inventar des Spielers mit einigen Gegenständen."
+  Dip_In_Lava:
+    Display_Name: "&6In Lava tauchen"
+    Description: "Erzeuge einen Lavablock unter dem Spieler."
+  Clear_Inventory:
+    Display_Name: "&7Inventar leeren"
+    Description: "Leere das Inventar des Spielers."
+  Spam_Chat:
+    Display_Name: "&eChat spammen"
+    Description: "Spamme den Chat des Spielers mit Nachrichten."
+  Turn_Player:
+    Display_Name: "&dSpieler drehen"
+    Description: "Drehe den Spieler herum."
+  Drop_Inventory:
+    Display_Name: "&8Inventar fallen lassen"
+    Description: "Lasse das Inventar des Spielers auf den Boden fallen."
+  Fake_Op:
+    Display_Name: "&bFake OP"
+    Description: "Sende eine gefälschte OP-Nachricht an den Spieler."
+  Fake_Crash:
+    Display_Name: "&4Fake Crash"
+    Description: "Kicke den Spieler mit einer gefälschten Absturznachricht vom Server."
+  Kill_Player:
+    Display_Name: "&cSpieler töten"
+    Description: "Töte den Spieler."
+  Slingshot_Player:
+    Display_Name: "&aSpieler schleudern"
+    Description: "Schleudere den Spieler in die Luft."
+  Abyss:
+    Display_Name: "&8Abgrund"
+    Description: "Teleportiere den Spieler in die Leere."
+  Blindness:
+    Display_Name: "&8Blindheit"
+    Description: "Gebe dem Spieler den Effekt der Blindheit."
+  Random_Teleport:
+    Display_Name: "&9Zufällige Teleportation"
+    Description: "Teleportiere den Spieler an eine zufällige Stelle."
+  Lag_Behind:
+    Display_Name: "&cHinterherhinken"
+    Description: "Lasse den Spieler beim Gehen hinterherhinken."
+  Pumpkin:
+    Display_Name: "&6Kürbis"
+    Description: "Setze einen Kürbis auf den Kopf des Spielers."
+  No_Item_Drop:
+    Display_Name: "&7Kein Item-Fall"
+    Description: "Lasse keine Gegenstände fallen, wenn der Spieler einen Block abbaut."
+  Open_Random_Inventory:
+    Display_Name: "&7Zufälliges Inventar öffnen"
+    Description: "Öffne ein zufälliges Inventar für den Spieler."
+  Fake_Ban:
+    Display_Name: "&4Fake Ban"
+    Description: "Sende eine gefälschte Bann-Nachricht an den Spieler."
+  Cobweb:
+    Display_Name: "&fSpinnennetz"
+    Description: "Platziere Spinnennetze um den Spieler."
+  No_Build_And_Break:
+    Display_Name: "&7Bauen und Abbauen deaktivieren"
+    Description: "Verhindere, dass der Spieler Blöcke baut oder abbaut."
+  Freeze_Player:
+    Display_Name: "&bSpieler einfrieren"
+    Description: "Friere den Spieler an Ort und Stelle ein."
+  Teleport_To_Sun:
+    Display_Name: "&eZur Sonne teleportieren"
+    Description: "Teleportiere den Spieler zur maximalen Bauhöhe auf einen 1x1 Glasblock"
+  Obsidian_Cage:
+    Display_Name: "&8Obsidian-Käfig"
+    Description: "Erstelle einen Obsidian-Käfig um den Spieler."
+  Swap:
+    Display_Name: "&5Tauschen"
+    Description: "Tausche deine Position mit der des Spielers."
+  No_Chest:
+    Display_Name: "&7Keine Truhe"
+    Description: "Verhindere, dass der Spieler irgendeine Truhe öffnet."
+  Anvil_Rain:
+    Display_Name: "&8Amboss-Regen"
+    Description: "Lasse Ambosse auf den Spieler regnen."
+  Shuffle_Inventory:
+    Display_Name: "&7Inventar mischen"
+    Description: "Mische das Inventar des Spielers."
+  Spawn_Creeper:
+    Display_Name: "&aCreeper spawnen"
+    Description: "Spawne einen Creeper hinter dem Spieler."
+  No_Item_Pickup:
+    Display_Name: "&7Keine Item-Aufnahme"
+    Description: "Verhindere, dass der Spieler irgendwelche Gegenstände aufnimmt."
+  Disable_Gravity:
+    Display_Name: "&7Schwerkraft deaktivieren"
+    Description: "Deaktiviere die Schwerkraft für den Spieler."
+  Disarm:
+    Display_Name: "&fEntwaffnen"
+    Description: "Zwinge den Spieler, den gehaltenen Gegenstand wegzuschmeißen."
+    Empty_Hand: "Der Spieler hält nichts in der Hand."
+  Reverse_Messages:
+    Display_Name: "&7Nachrichten umkehren"
+    Description: "Kehre die Chatnachrichten des Spielers um."
+  Send_Message:
+    Display_Name: "&7Nachricht senden"
+    Description: "Sende eine Nachricht als der Spieler."
+  Potato:
+    Display_Name: "&6Kartoffel"
+    Description: "Verwandle den Spieler in eine Kartoffel."
+  Slowness:
+    Display_Name: "&8Langsamkeit"
+    Description: "Gebe dem Spieler den Effekt der Langsamkeit."
+  Levitation:
+    Display_Name: "&7Levitation"
+    Description: "Gebe dem Spieler den Levitationseffekt."
+  Clear_Armour:
+    Display_Name: "&7Rüstung leeren"
+    Description: "Leere die Rüstung des Spielers."
+  Near_Death:
+    Display_Name: "&4Nahe dem Tod"
+    Description: "Setze das Opfer auf 1/2 Herz herunter."
+  Poison:
+    Display_Name: "&2Vergiftung"
+    Description: "Gebe dem Spieler den Gift-Effekt."
+  Dip_In_Water:
+    Display_Name: "&3In Wasser tauchen"
+    Description: "Erzeuge einen Wasserblock unter dem Spieler."
+  Alone:
+    Display_Name: "&7Allein"
+    Description: "Mache es dem Spieler unmöglich, irgendjemand anderen zu sehen."
+  Fireball:
+    Display_Name: "&cFeuerball"
+    Description: "Schieße einen Feuerball auf den Spieler."
+  Stampede:
+    Display_Name: "&6STAMPEDE"
+    Description: "Erzeuge eine Stampede von Kühen um den Spieler."
+  Suffocate:
+    Display_Name: "&8Ersticken"
+    Description: "Ersticke den Spieler."
+  Hound_Attack:
+    Display_Name: "&fHundeangriff"
+    Description: "Spawne ein Rudel Wölfe, um den Spieler anzugreifen."
+  Lock_Hand:
+    Display_Name: "&7Hand sperren"
+    Description: "Sperre die Fähigkeit des Spielers, Gegenstände in der Hand zu wechseln."
+  Teleport_All:
+    Display_Name: "&5Alle teleportieren"
+    Description: "Teleportiere alle Spieler zur Position des Ziels."
+  Fake_Money:
+    Display_Name: "&6Falsches Geld"
+    Description: "Sende eine gefälschte Geldnachricht an den Spieler."
+    Message: "&aDu hast $10000 vom Server erhalten."
+  Ring_Of_Fire:
+    Display_Name: "&cFeuerring"
+    Description: "Erstelle einen Feuerring um den Spieler."
+  Tnt_Trap:
+    Display_Name: "&cTNT-Falle"
+    Description: "Erstelle eine einfache TNT-Falle hinter dem Spieler."
+  Explode_Block:
+    Display_Name: "&cBlock explodieren"
+    Description: "Der nächste abgebaute Block wird explodieren."
+  Gibberish_Messages:
+    Display_Name: "&7Kauderwelsch-Nachrichten"
+    Description: "Ersetze die Chatnachrichten des Spielers durch Kauderwelsch."
+  Replace_Messages:
+    Display_Name: "&7Nachrichten ersetzen"
+    Description: "Ersetze die Chatnachrichten des Spielers durch eine benutzerdefinierte Nachricht."
+  Guardian:
+    Display_Name: "&bWächter"
+    Description: "Gebe dem Spieler den Wächter-Schreckeffekt (Bildschirmeffekt)."
+# -------------------------------------------------------------------------------------------------
+# Messages related to commands
+# -------------------------------------------------------------------------------------------------
+Commands:
+  Simple_Help_Design: false
+  Error: "&4&lUps! &cDer Befehl ist fehlgeschlagen :( Überprüfe die Konsole und melde den Fehler."
+  Header_No_Subcommands: "&cEs gibt keine Argumente für diesen Befehl."
+  Header_No_Subcommands_Permission: "&cDu hast keine Berechtigung, Unterbefehle einzusehen."
+  Header_Color: GOLD
+  Header_Secondary_Color: RED
+  Header_Format: "&r\n{theme_color}&m<center>&r{theme_color} {title} &m\n&r"
+  Header_Center_Letter: "-"
+  Header_Center_Padding: 150
+  Reloading: "neu laden"
+  Disabled: "deaktiviert"
+  Use_While_Null: "&cDieser Befehl kann nicht verwendet werden, solange das Plugin {state} ist."
+  Cannot_Autodetect_World: "Nur lebende Spieler können ~ für ihre Welt verwenden!"
+  Incompatible: "Dieser Befehl erfordert Minecraft {0} oder höher."
+  Toggled_Plugin_Part: "'&7Du hast ' + (ignoring ? '&2nicht mehr' : '&cjetzt') + ' &7{0} ignoriert.'"
+  Use_Alternative_Header: false
+  Alternative_Header: "&c{plugin_name}: &7Gib '/{0} ?' ein, um alle Befehle zu sehen."
+  No_Console: "&cDieser Befehl kann nur als Spieler verwendet werden."
+  No_BungeeCord: "Du benötigst BungeeCord, um dieses Feature zu nutzen."
+  Console_Missing_Player_Name: "Beim Ausführen von der Konsole aus muss ein Spielername angegeben werden."
+  Cooldown_Wait: "&cWarte {duration} Sekunde(n), bevor du diesen Befehl erneut verwendest."
+  Invalid_Argument: "&cUngültiges Argument. Führe &6/{label} ? &cfür Hilfe aus."
+  Invalid_Sub_Argument: "&cUngültiges Argument. Führe '/{label} {0}' für Hilfe aus."
+  Invalid_Argument_Multiline: "&cUngültiges Argument. Verwendung:"
+  Invalid_Time: "Erwartete Zeitangabe wie '3 Stunden' oder '15 Minuten', erhalten: '{input}'"
+  Invalid_Number: "Die Zahl muss eine ganze oder eine Dezimalzahl sein. Erhalten: '{input}'"
+  Invalid_String: "&cUngültige Zeichenfolge. Erhalten: '{input}&c'"
+  Invalid_World: "Ungültige Welt '{world}'. Verfügbar: {available}"
+  Label_Authors: "Erstellt von"
+  Label_Description: "&c&lBeschreibung:"
+  Label_Optional_Args: "optionale Argumente"
+  Label_Required_Args: "erforderliche Argumente"
+  Label_Usages: "&c&lVerwendungen:"
+  Label_Usage: "&c&lVerwendung:"
+  Label_Help_For: "Hilfe für /{label}"
+  Label_Subcommand_Description: " &f/{label} {sublabel} {usage+}{dash+}{description}"
+  Help_Tooltip_Description: "&7Beschreibung: &f{description}"
+  Help_Tooltip_Permission: "&7Berechtigung: &f{permission}"
+  Help_Tooltip_Usage: "&7Verwendung: &f"
+  Reload_Description: "Konfiguration neu laden."
+  Reload_Started: "Plugin-Daten werden neu geladen, bitte warten.."
+  Reload_Success: "&6{plugin_name} {plugin_version} wurde neu geladen."
+  Reload_Fail: "&4Ups, &cneu laden fehlgeschlagen! Siehe Konsole für mehr Informationen. Fehler: {error}"
+  Reload_File_Load_Error: "&4Ups, &ces gab ein Problem beim Laden der Dateien von deiner Festplatte! Siehe Konsole für mehr Informationen. {plugin_name} wurde nicht neu geladen."
+  Debug_Description: "ZIP deine Einstellungen, um Fehler zu melden."
+  Debug_Preparing: "&6Bereite Debug-Log vor..."
+  Debug_Success: "&2Erfolgreich {amount} Datei(en) zu debug.zip kopiert. Deine sensiblen MySQL-Informationen wurden aus den yml-Dateien entfernt. Bitte lade es über ufile.io hoch und sende es uns zur Überprüfung."
+  Debug_Copy_Fail: "&cKopieren der Dateien bei Datei {file} fehlgeschlagen und wurde gestoppt. Siehe Konsole für mehr Informationen."
+  Debug_Zip_Fail: "&cErstellen eines ZIPs deiner Dateien fehlgeschlagen, siehe Konsole für mehr Informationen. Bitte ZIPpe den debug/ Ordner manuell und sende ihn uns über ufile.io."
+  Perms_Description: "Liste aller Berechtigungen des Plugins auf."
+  Perms_Usage:
+  Perms_Header: "Auflistung aller Plugin-Berechtigungen"
+  Perms_Main: "Haupt"
+  Perms_Permissions: "Berechtigungen:"
+  Perms_True_By_Default: "&7[standardmäßig wahr]"
+  Perms_Info: "&7Info: &f"
+  Perms_Default: "&7Standard? "
+  Perms_Applied: "&7Hast du es? "
+  Perms_Yes: "&2ja"
+  Perms_No: "&cnein"
+  Troll_Description: "Öffne das Troll-Menü oder trolle einen Spieler."
+  Troll_Usage: "[Spieler] [Troll]"
+  Troll_Not_Found: "Troll '{troll}' nicht gefunden."
+  Troll_Console_No_Player: "Du musst einen Spielernamen angeben, wenn du von der Konsole ausführst."
+  Tools_Description: "Öffne das Werkzeug-Menü."
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to paginator splitting command help into multiple pages
+# -------------------------------------------------------------------------------------------------
+Pages:
+  No_Page_Number: "&cBitte gib die Seitenzahl für diesen Befehl an."
+  No_Pages: "&cDu hast keine Seiten gespeichert, die angezeigt werden können."
+  No_Page: "Die Seiten enthalten die angegebene Seitenzahl nicht."
+  Invalid_Page: "&cDeine Eingabe '{input}' ist keine gültige Zahl."
+  Go_To_Page: "&7Gehe zu Seite {page}"
+  Go_To_First_Page: "&7Gehe zur ersten Seite"
+  Tooltip:
+    - "&7Du kannst auch mit dem"
+    - "&7versteckten Befehl '/#flp <Seite>' navigieren."
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to players
+# -------------------------------------------------------------------------------------------------
+Player:
+  Not_Online: "&cSpieler {player} &cist nicht online auf diesem Server."
+  Not_Played_Before: "&cSpieler {player} &chat zuvor nicht gespielt oder wir konnten seine Datenspeicher nicht lokalisieren."
+  Invalid_UUID: "&cKonnte keinen Spieler mit der UUID {uuid} finden."
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to menus
+# -------------------------------------------------------------------------------------------------
+Menu:
+  Cannot_Open_During_Conversation: "&cGib 'exit' ein, um deine Konversation zu beenden, bevor du das Menü öffnest."
+  Item_Deleted: "&2Das {item} wurde gelöscht."
+  Error: "&cUps! Es gab ein Problem mit diesem Menü! Bitte kontaktiere den Administrator, um die Konsole zu überprüfen."
+  Page_Previous: "&8<< &fSeite {page}"
+  Page_Next: "Seite {page} &8>>"
+  Page_First: "&7Erste Seite"
+  Page_Last: "&7Letzte Seite"
+  Title_Tools: "Werkzeug-Menü"
+  Tooltip_Info: "&fMenü-Informationen"
+  Button_Return_Title: "&4&lZurück"
+  Button_Return_Lore:
+    - ""
+    - "Zurückkehren."
+  Target_Info:
+    - ""
+    - "Ping: &f{target_ping} &ams"
+    - "Gesundheit: &f{target_health} &c❤"
+    - "Nahrung: &f{target_food} &6✿"
+    - "Spielmodus: &f{target_gamemode}"
+    - "Welt: &f{target_world}"
+  Player_List_Menu:
+    Title: "&8Liste der Spieler"
+    Player_Name: "&f{player_name} &7(Klicken, um zu trollen)"
+    Info:
+      - "Hier kannst du einen Spieler auswählen, den du trollen möchtest."
+      - "Bitte klicke auf den Spieler, um fortzufahren."
+  Troll_Menu:
+    Title: "&8Trolling &l{target_name}"
+    Target_Info_Title: "&fZiel-Informationen"
+    Teleport_To_Player: "&fZum Spieler teleportieren"
+    Teleport_To_Player_Lore:
+      - ""
+      - "Zum Troll-Ziel teleportieren."
+    Teleport_To_Player_Success: "&7Du wurdest zu &f{target_name} &7teleportiert."
+    Bring_Player_To_You: "&fSpieler zu dir bringen"
+    Bring_Player_To_You_Lore:
+      - ""
+      - "Bring das Ziel zu dir."
+    Bring_Player_To_You_Success: "&7Der &f{target_name} &7wurde zu dir gebracht."
+    Toggleable_Troll_Enabled: "&7(&aAktiviert&7)"
+    Toggleable_Troll_Disabled: "&7(&cDeaktiviert&7)"
+    Search_Troll_Button:
+      Title: "&9Nach einem Troll suchen"
+      Lore:
+        - ""
+        - "Suche nach einem Troll zum Verwenden."
+    Info:
+      - "Hier kannst du eine Troll-Aktion auswählen, um sie am Ziel zu verwenden."
+      - "Bitte klicke auf den gewünschten Troll, um fortzufahren."
+      - ""
+      - "Viel Spaß!"
+  Troll_Search_Menu:
+    Title: "&8Suchergebnisse: &l{search_input}"
+    Info:
+      - "Dies sind die Suchergebnisse."
+      - "Bitte klicke auf den Troll, um fortzufahren."
+  Tool_Menu:
+    Button_Title: "&aWerkzeug-Menü"
+    Button_Lore:
+      - ""
+      - "&7Öffne das Werkzeug-Menü."
+    Title: "&8Werkzeug-Menü"
+    Info:
+      - "Willkommen im Werkzeug-Menü!"
+      - "Hier kannst du ein Werkzeug auswählen, um es dir selbst zu geben."
+      - ""
+      - "Viel Spaß!"
+# -------------------------------------------------------------------------------------------------
+# Messages related to player conversation where server is waiting for his chat input
+# -------------------------------------------------------------------------------------------------
+Conversation:
+  Not_Conversing: "&cDu kannst diesen Befehl nur verwenden, wenn du aufgefordert wurdest, etwas im Chat einzutippen."
+  Requires_Player: "Nur Spieler können diese Unterhaltung betreten."
+  Error: "&cUps! Es gab ein Problem in dieser Unterhaltung! Bitte kontaktiere den Administrator, um die Konsole zu überprüfen."
+  Conversation_Cancelled: "Deine ausstehende Chat-Antwort wurde abgebrochen."
+  Conversation_Cancelled_Inactive: "Deine ausstehende Chat-Antwort wurde wegen Inaktivität abgebrochen."
+  Troll_Search_Prompt: "Gib den&a Namen &7des Trolls ein, nach dem du suchen möchtest, oder tippe&c exit&7:"
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to tools
+# -------------------------------------------------------------------------------------------------
+Tool:
+  Error: "&cUps! Es gab ein Problem mit diesem Werkzeug! Bitte kontaktiere den Administrator, um die Konsole zu überprüfen."
+
+# -------------------------------------------------------------------------------------------------
+# Words for both singular and plural form. Separate these two forms with ", "
+# -------------------------------------------------------------------------------------------------
+Cases:
+  Second: Sekunde, Sekunden
+  Message: Nachricht, Nachrichten
+  Command: Befehl, Befehle
+
+# -------------------------------------------------------------------------------------------------
+# Different prefixes you can use by calling {prefix_<type>} such as {prefix_info}
+# -------------------------------------------------------------------------------------------------
+Prefix:
+  Info: "&8&l[&9&li&8&l]&7 "
+  Success: "&8&l[&2&l!&8&l]&7 "
+  Warn: "&8&l[&6&l!&8&l]&6 "
+  Error: "&8&l[&4&lX&8&l]&c "
+  Question: "&8&l[&a&l?&l&8]&7 "
+  Announce: "&8&l[&5&l!&l&8]&d "
+
+# -------------------------------------------------------------------------------------------------
+# Miscellaneous
+# -------------------------------------------------------------------------------------------------
+None: "Keine"
+Server_Prefix: "[Server]"
+Console_Name: "Konsole"
+
+# -------------------------------------------------------------------------------------------------
+# Database related messages
+# -------------------------------------------------------------------------------------------------
+Data_Missing: "&c{name} fehlen Datenbankinformationen! Bitte erstelle {type} nur im Spiel! Überspringen.."
+Data_Loading: "Datenbank lädt derzeit Daten, bitte warte..."
+
+# -------------------------------------------------------------------------------------------------
+# Messages shown when player runs a command he lacks permission for
+# -------------------------------------------------------------------------------------------------
+No_Permission: "&cKeine Berechtigung: {permission}"
+
+# -------------------------------------------------------------------------------------------------
+# Messages shown when player tries to use a troll on someone with immunity
+# -------------------------------------------------------------------------------------------------
+Immune: "&c{target_name} &cist immun gegen Trolle."
+
+# -------------------------------------------------------------------------------------------------
+# Internal versioning number
+# -------------------------------------------------------------------------------------------------
+Version: 1

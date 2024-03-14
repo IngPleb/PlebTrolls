@@ -1,0 +1,439 @@
+# !-----------------------------------------------------------------------------------------------!
+#                              Welcome to the localization file.
+# !-----------------------------------------------------------------------------------------------!
+#
+# Here you can translate 99.9% messages in the plugin to your own language.
+#
+#   1) COLOR CODES are supported with the '&' character.
+#      - For usage, see http://minecraftwiki.net/wiki/Formatting_codes
+#      - When you use them, place quotes around the message like this: "Hello &cworld."
+#       - To use HEX colors, use #123456 syntax: "Hello #123456world."
+#
+#   2) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding (default).
+#
+# !-----------------------------------------------------------------------------------------------!
+
+# -------------------------------------------------------------------------------------------------
+# Trolls section
+#
+# Here you can configure each aspect of the troll names, descriptions, and messages.
+# -------------------------------------------------------------------------------------------------
+Trolls:
+  Execute_Message: "&7Troll {troll_name} &7na &f{target_name}&7 byl spuštěn!"
+  Log_Message: "&aTroll&7: &f{troll_name} &7proveden na &f{target_name} &7od &f{sender_name}&7!"
+  Toggle_Troll:
+    Execute_Message: "Troll {troll_name} &7pro &f{target_name}&7 {state}!"
+    On_State: "&aaktivován"
+    Off_State: "&cdeaktivován"
+  Creeper_Hiss:
+    Display_Name: "&aC&fr&ae&fe&ap&fe&ar&f &aŠ&fi&as&fs"
+    Description: "Přehraj zvuk syčení creepera hráči."
+  Launch_Player:
+    Display_Name: "&3Vystřelit Hráče"
+    Description: "Vystřel hráče do vzduchu."
+  Lightning_Strike:
+    Display_Name: "&eÚder Blesku"
+    Description: "Udeř bleskem do hráče."
+  Ignite_Player:
+    Display_Name: "&6Zapálit Hráče"
+    Description: "Zapál hráče."
+  Explode_Player:
+    Display_Name: "&cVýbuch Hráče"
+    Description: "Exploduj hráče."
+  Scream:
+    Display_Name: "&5Výkřik"
+    Description: "Přehraj hráči hlasitý výkřik ghasta."
+  Ambush_Player:
+    Display_Name: "&4Přepadení"
+    Description: "Spawni několik monster kolem hráče, aby ho přepadli."
+  Fill_Inventory:
+    Display_Name: "&bNaplnit Inventář"
+    Description: "Napln inventář hráče nějakou položkou."
+  Dip_In_Lava:
+    Display_Name: "&6Ponoření do Lávy"
+    Description: "Vytvoř pod hráčem blok lávy."
+  Clear_Inventory:
+    Display_Name: "&7Vyčistit Inventář"
+    Description: "Vyčisti inventář hráče."
+  Spam_Chat:
+    Display_Name: "&eSpamovat Chat"
+    Description: "Zaspamuj chat hráče zprávami."
+  Turn_Player:
+    Display_Name: "&dOtočit Hráče"
+    Description: "Otoč hráče dokola."
+  Drop_Inventory:
+    Display_Name: "&8Vyhodit Inventář"
+    Description: "Vyhod na zem inventář hráče."
+  Fake_Op:
+    Display_Name: "&bFalešný OP"
+    Description: "Pošli hráči falešnou zprávu o OP."
+  Fake_Crash:
+    Display_Name: "&4Falešný Crash"
+    Description: "Vyhoď hráče ze serveru s falešnou chybovou zprávou."
+  Kill_Player:
+    Display_Name: "&cZabít Hráče"
+    Description: "Zabij hráče."
+  Slingshot_Player:
+    Display_Name: "&aPračka Hráče"
+    Description: "Vystřel hráče do vzduchu jako z pračky."
+  Abyss:
+    Display_Name: "&8Propast"
+    Description: "Teleportuj hráče do prázdnoty."
+  Blindness:
+    Display_Name: "&8Slepota"
+    Description: "Dej hráči efekt slepoty."
+  Random_Teleport:
+    Display_Name: "&9Náhodná Teleportace"
+    Description: "Teleportuj hráče na náhodné místo."
+  Lag_Behind:
+    Display_Name: "&cZpomalení"
+    Description: "Zpomal hráče při chůzi."
+  Pumpkin:
+    Display_Name: "&6Dýně"
+    Description: "Dej na hlavu hráče dýni."
+  No_Item_Drop:
+    Display_Name: "&7Bez Vypadávání Předmětů"
+    Description: "Zabrání hráči vypadávat předměty při těžbě bloků."
+  Open_Random_Inventory:
+    Display_Name: "&7Otevřít Náhodný Inventář"
+    Description: "Otevři hráči náhodný inventář."
+  Fake_Ban:
+    Display_Name: "&4Falešný Ban"
+    Description: "Pošli hráči falešnou zprávu o banu."
+  Cobweb:
+    Display_Name: "&fPavučiny"
+    Description: "Umísti kolem hráče pavučiny."
+  No_Build_And_Break:
+    Display_Name: "&7Zakázat Stavění a Ničení"
+    Description: "Zabrání hráči stavět a ničit bloky."
+  Freeze_Player:
+    Display_Name: "&bZmrazit Hráče"
+    Description: "Zmraz hráče na místě."
+  Teleport_To_Sun:
+    Display_Name: "&eTeleportovat k Slunci"
+    Description: "Teleportuj hráče na maximální výšku stavby na 1x1 skleněný blok."
+  Obsidian_Cage:
+    Display_Name: "&8Obsidiánová Klec"
+    Description: "Vytvoř kolem hráče klec z obsidiánu."
+  Swap:
+    Display_Name: "&5Výměna"
+    Description: "Vyměň si pozici s hráčem."
+  No_Chest:
+    Display_Name: "&7Bez Truhly"
+    Description: "Zabrání hráči otevírat jakoukoliv truhlu."
+  Anvil_Rain:
+    Display_Name: "&8Déšť Kovadel"
+    Description: "Nechej na hráče pršet kovadliny."
+  Shuffle_Inventory:
+    Display_Name: "&7Zamíchat Inventář"
+    Description: "Zamíchej inventář hráče."
+  Spawn_Creeper:
+    Display_Name: "&aSpawn Creeper"
+    Description: "Spawni za hráčem creepera."
+  No_Item_Pickup:
+    Display_Name: "&7Bez Sbírání Předmětů"
+    Description: "Zabrání hráči sbírat jakékoliv předměty."
+  Disable_Gravity:
+    Display_Name: "&7Vypnout Gravitaci"
+    Description: "Vypni hráči gravitaci."
+  Disarm:
+    Display_Name: "&fOdstranit z Rukou"
+    Description: "Přinutí hráče vyhodit držený předmět."
+    Empty_Hand: "Hráč nic nedrží."
+  Reverse_Messages:
+    Display_Name: "&7Obrácené Zprávy"
+    Description: "Obrátí chatové zprávy hráče."
+  Send_Message:
+    Display_Name: "&7Poslat Zprávu"
+    Description: "Pošli zprávu jako hráč."
+  Potato:
+    Display_Name: "&6Brambora"
+    Description: "Proměň hráče v bramboru."
+  Slowness:
+    Display_Name: "&8Pomalost"
+    Description: "Dej hráči efekt pomalosti."
+  Levitation:
+    Display_Name: "&7Levitace"
+    Description: "Dej hráči efekt levitace."
+  Clear_Armour:
+    Display_Name: "&7Vyčistit Brnění"
+    Description: "Vyčisti hráčovo brnění."
+  Near_Death:
+    Display_Name: "&4Těsně Před Smrtí"
+    Description: "Sníží životy hráče na polovinu srdce."
+  Poison:
+    Display_Name: "&2Otrava"
+    Description: "Dej hráči efekt otravy."
+  Dip_In_Water:
+    Display_Name: "&3Ponoření do Vody"
+    Description: "Vytvoř pod hráčem blok vody."
+  Alone:
+    Display_Name: "&7Sám"
+    Description: "Udělá, že hráč nemůže vidět nikoho jiného."
+  Fireball:
+    Display_Name: "&cOhnivá Koule"
+    Description: "Vystřel na hráče ohnivou kouli."
+  Stampede:
+    Display_Name: "&6Štampéda"
+    Description: "Spawni štampédu krav kolem hráče."
+  Suffocate:
+    Display_Name: "&8Udusit"
+    Description: "Udus hráče."
+  Hound_Attack:
+    Display_Name: "&fÚtok Psů"
+    Description: "Spawni smečku vlků, aby zaútočili na hráče."
+  Lock_Hand:
+    Display_Name: "&7Zamknout Ruku"
+    Description: "Zamkne schopnost hráče měnit předměty v ruce."
+  Teleport_All:
+    Display_Name: "&5Teleportovat Všechny"
+    Description: "Teleportuj všechny hráče na pozici cíle."
+  Fake_Money:
+    Display_Name: "&6Falešné Peníze"
+    Description: "Pošli hráči falešnou zprávu o penězích."
+    Message: "&aObdržel jsi $10000 od serveru."
+  Ring_Of_Fire:
+    Display_Name: "&cOhnivý Kruh"
+    Description: "Vytvoř kolem hráče kruh z ohně."
+  Tnt_Trap:
+    Display_Name: "&cTNT Past"
+    Description: "Vytvoř za hráčem jednoduchou TNT past."
+  Explode_Block:
+    Display_Name: "&cVýbuch Bloku"
+    Description: "Další vytěžený blok exploduje."
+  Gibberish_Messages:
+    Display_Name: "&7Nesmyslné Zprávy"
+    Description: "Nahraď chatové zprávy hráče nesmysly."
+  Replace_Messages:
+    Display_Name: "&7Nahradit Zprávy"
+    Description: "Nahraď chatové zprávy hráče vlastní zprávou."
+  Guardian:
+    Display_Name: "&bStrážce"
+    Description: "Dá hráči efekt strašidelného vzhledu strážce (obrazový efekt)."
+# -------------------------------------------------------------------------------------------------
+# Messages related to commands
+# -------------------------------------------------------------------------------------------------
+Commands:
+  Simple_Help_Design: false
+  Error: "&4&lJejda! &cPříkaz selhal :( Zkontrolujte konzoli a nahlaste chybu."
+  Header_No_Subcommands: "&cPro tento příkaz nejsou žádné argumenty."
+  Header_No_Subcommands_Permission: "&cNemáte oprávnění pro zobrazení žádných podpříkazů."
+  Header_Color: GOLD
+  Header_Secondary_Color: RED
+  Header_Format: "&r\n{theme_color}&m<center>&r{theme_color} {title} &m\n&r"
+  Header_Center_Letter: "-"
+  Header_Center_Padding: 150
+  Reloading: "znovu načítání"
+  Disabled: "zakázáno"
+  Use_While_Null: "&cTento příkaz nelze použít, zatímco je plugin ve stavu {state}."
+  Cannot_Autodetect_World: "Pouze živí hráči mohou používat ~ pro svůj svět!"
+  Incompatible: "Tento příkaz vyžaduje Minecraft {0} nebo novější."
+  Toggled_Plugin_Part: "'&7Nyní ' + (ignoring ? '&2již ne' : '&cnyní') + ' &7ignorujete {0}.'"
+  Use_Alternative_Header: false
+  Alternative_Header: "&c{plugin_name}: &7Pro zobrazení všech příkazů napište '/{0} ?'."
+  No_Console: "&cTento příkaz může použít pouze hráč."
+  No_BungeeCord: "Pro použití této funkce je potřeba mít zapnutý BungeeCord."
+  Console_Missing_Player_Name: "Při spuštění z konzole specifikujte jméno hráče."
+  Cooldown_Wait: "&cPočkejte {duration} sekund(y) před dalším použitím tohoto příkazu."
+  Invalid_Argument: "&cNeplatný argument. Pro nápovědu spusťte &6/{label} ? &c."
+  Invalid_Sub_Argument: "&cNeplatný argument. Pro nápovědu spusťte '/{label} {0}'."
+  Invalid_Argument_Multiline: "&cNeplatný argument. Použití:"
+  Invalid_Time: "Očekávaný čas jako '3 hodiny' nebo '15 minut', získáno: '{input}'"
+  Invalid_Number: "Číslo musí být celé nebo desetinné. Získáno: '{input}'"
+  Invalid_String: "&cNeplatný řetězec. Získáno: '{input}&c'"
+  Invalid_World: "Neplatný svět '{world}'. Dostupné: {available}"
+  Label_Authors: "Vytvořeno"
+  Label_Description: "&c&lPopis:"
+  Label_Optional_Args: "volitelné argumenty"
+  Label_Required_Args: "požadované argumenty"
+  Label_Usages: "&c&lPoužití:"
+  Label_Usage: "&c&lPoužití:"
+  Label_Help_For: "Nápověda pro /{label}"
+  Label_Subcommand_Description: " &f/{label} {sublabel} {usage+}{dash+}{description}"
+  Help_Tooltip_Description: "&7Popis: &f{description}"
+  Help_Tooltip_Permission: "&7Oprávnění: &f{permission}"
+  Help_Tooltip_Usage: "&7Použití: &f"
+  Reload_Description: "Znovu načíst konfiguraci."
+  Reload_Started: "Data pluginu se znovu načítají, čekejte prosím.."
+  Reload_Success: "&6{plugin_name} {plugin_version} byl úspěšně znovu načten."
+  Reload_Fail: "&4Jejda, &cznovunačtení selhalo! Podívejte se do konzole pro více informací. Chyba: {error}"
+  Reload_File_Load_Error: "&4Jejda, &cpři načítání souborů z disku došlo k problému! Podívejte se do konzole pro více informací. {plugin_name} nebyl znovu načten."
+  Debug_Description: "ZIPujte vaše nastavení pro hlášení chyb."
+  Debug_Preparing: "&6Příprava debug logu..."
+  Debug_Success: "&2Úspěšně zkopírováno {amount} souborů do debug.zip. Vaše citlivé informace MySQL byly z yml souborů odstraněny. Prosím, nahrajte jej přes ufile.io a pošlete nám jej k posouzení."
+  Debug_Copy_Fail: "&cKopírování souborů selhalo u souboru {file} a bylo zastaveno. Podívejte se do konzole pro více informací."
+  Debug_Zip_Fail: "&cVytvoření ZIPu vašich souborů selhalo, podívejte se do konzole pro více informací. Prosím, manuálně zazipujte složku debug/ a pošlete nám ji přes ufile.io."
+  Perms_Description: "Vypsat všechna oprávnění pluginu."
+  Perms_Usage:
+  Perms_Header: "Výpis všech oprávnění pluginu"
+  Perms_Main: "Hlavní"
+  Perms_Permissions: "Oprávnění:"
+  Perms_True_By_Default: "&7[ve výchozím nastavení pravda]"
+  Perms_Info: "&7Informace: &f"
+  Perms_Default: "&7Ve výchozím nastavení? "
+  Perms_Applied: "&7Máte to? "
+  Perms_Yes: "&2ano"
+  Perms_No: "&cne"
+  Troll_Description: "Otevřít menu trollů nebo trollit hráče."
+  Troll_Usage: "[hráč] [troll]"
+  Troll_Not_Found: "Troll '{troll}' nebyl nalezen."
+  Troll_Console_No_Player: "Při spouštění z konzole specifikujte jméno hráče."
+  Tools_Description: "Otevřít menu nástrojů."
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to paginator splitting command help into multiple pages
+# -------------------------------------------------------------------------------------------------
+Pages:
+  No_Page_Number: "&cProsím specifikujte číslo stránky pro tento příkaz."
+  No_Pages: "&cNemáte uložené žádné stránky k zobrazení."
+  No_Page: "Stránky neobsahují dané číslo stránky."
+  Invalid_Page: "&cVaše vstup '{input}' není platné číslo."
+  Go_To_Page: "&7Jdi na stránku {page}"
+  Go_To_First_Page: "&7Jdi na první stránku"
+  Tooltip:
+    - "&7Můžete také navigovat pomocí"
+    - "&7skrytého příkazu '/#flp <stránka>'."
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to players
+# -------------------------------------------------------------------------------------------------
+Player:
+  Not_Online: "&cHráč {player} &cnení online na tomto serveru."
+  Not_Played_Before: "&cHráč {player} &cještě nikdy nehrál nebo jsme nemohli najít jeho data na disku."
+  Invalid_UUID: "&cNepodařilo se najít hráče s UUID {uuid}."
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to menus
+# -------------------------------------------------------------------------------------------------
+Menu:
+  Cannot_Open_During_Conversation: "&cNapište 'exit' pro ukončení konverzace před otevřením menu."
+  Item_Deleted: "&2Položka {item} byla smazána."
+  Error: "&cJejda! Došlo k problému s tímto menu! Kontaktujte prosím administrátora pro kontrolu konzole."
+  Page_Previous: "&8<< &fStránka {page}"
+  Page_Next: "Stránka {page} &8>>"
+  Page_First: "&7První stránka"
+  Page_Last: "&7Poslední stránka"
+  Title_Tools: "Menu Nástrojů"
+  Tooltip_Info: "&fInformace o menu"
+  Button_Return_Title: "&4&lNávrat"
+  Button_Return_Lore:
+    - ""
+    - "Vrátit zpět."
+  Target_Info:
+    - ""
+    - "Ping: &f{target_ping} &ams"
+    - "Zdraví: &f{target_health} &c❤"
+    - "Jídlo: &f{target_food} &6✿"
+    - "Herní mód: &f{target_gamemode}"
+    - "Svět: &f{target_world}"
+  Player_List_Menu:
+    Title: "&8Seznam Hráčů"
+    Player_Name: "&f{player_name} &7(Klikněte pro trollení)"
+    Info:
+      - "Zde si můžete vybrat hráče, kterého chcete trollit."
+      - "Pro pokračování klikněte na hráče."
+  Troll_Menu:
+    Title: "&8Trollení &l{target_name}"
+    Target_Info_Title: "&fInformace o cíli"
+    Teleport_To_Player: "&fTeleport k hráči"
+    Teleport_To_Player_Lore:
+      - ""
+      - "Teleportovat k cíli trollení."
+    Teleport_To_Player_Success: "&7Byl jste teleportován k &f{target_name}."
+    Bring_Player_To_You: "&fPřivést hráče k vám"
+    Bring_Player_To_You_Lore:
+      - ""
+      - "Přivést cíl k vám."
+    Bring_Player_To_You_Success: "&7Hráč &f{target_name} &7byl přiveden k vám."
+
+    Toggleable_Troll_Enabled: "&7(&aAktivováno&7)"
+    Toggleable_Troll_Disabled: "&7(&cDeaktivováno&7)"
+    Search_Troll_Button:
+      Title: "&9Hledat Trolla"
+      Lore:
+        - ""
+        - "Hledej trolla k použití."
+    Info:
+      - "Zde si můžete vybrat akci trolla, kterou chcete použít na cíl."
+      - "Pro pokračování klikněte na vybraného trolla."
+      - ""
+      - "Bavte se!"
+  Troll_Search_Menu:
+    Title: "&8Výsledky Hledání: &l{search_input}"
+    Info:
+      - "Tohle jsou výsledky hledání."
+      - "Pro pokračování klikněte na trolla."
+  Tool_Menu:
+    Button_Title: "&aNástrojové Menu"
+    Button_Lore:
+      - ""
+      - "&7Otevřít Nástrojové Menu."
+    Title: "&8Nástrojové Menu"
+    Info:
+      - "Vítejte v menu nástrojů!"
+      - "Zde si můžete vybrat nástroj, který si chcete dát."
+      - ""
+      - "Bavte se!"
+# -------------------------------------------------------------------------------------------------
+# Messages related to player conversation where server is waiting for his chat input
+# -------------------------------------------------------------------------------------------------
+Conversation:
+  Not_Conversing: "&cTento příkaz můžete použít pouze, když máte napsat něco do chatu."
+  Requires_Player: "Do tohoto rozhovoru mohou vstoupit pouze hráči."
+  Error: "&cJejda! V tomto rozhovoru došlo k problému! Kontaktujte prosím správce, aby zkontroloval konzoli pro podrobnosti."
+  Conversation_Cancelled: "Vaše čekající odpověď v chatu byla zrušena."
+  Conversation_Cancelled_Inactive: "Vaše čekající odpověď v chatu byla zrušena kvůli vaší neaktivitě."
+  Troll_Search_Prompt: "Zadejte název&a trolla, kterého chcete hledat, nebo napište&c exit&7:"
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to tools
+# -------------------------------------------------------------------------------------------------
+Tool:
+  Error: "&cJejda! S tímto nástrojem došlo k problému! Kontaktujte prosím správce, aby zkontroloval konzoli pro podrobnosti."
+
+# -------------------------------------------------------------------------------------------------
+# Words for both singular and plural form. Separate these two forms with ", "
+# -------------------------------------------------------------------------------------------------
+Cases:
+  Second: sekunda, sekundy
+  Message: zpráva, zprávy
+  Command: příkaz, příkazy
+
+# -------------------------------------------------------------------------------------------------
+# Different prefixes you can use by calling {prefix_<type>} such as {prefix_info}
+# -------------------------------------------------------------------------------------------------
+Prefix:
+  Info: "&8&l[&9&li&8&l]&7 "
+  Success: "&8&l[&2&l!&8&l]&7 "
+  Warn: "&8&l[&6&l!&8&l]&6 "
+  Error: "&8&l[&4&lX&8&l]&c "
+  Question: "&8&l[&a&l?&8&l]&7 "
+  Announce: "&8&l[&5&l!&8&l]&d "
+
+# -------------------------------------------------------------------------------------------------
+# Miscellaneous
+# -------------------------------------------------------------------------------------------------
+None: "Žádný"
+Server_Prefix: "[Server]"
+Console_Name: "Konzole"
+
+# -------------------------------------------------------------------------------------------------
+# Database related messages
+# -------------------------------------------------------------------------------------------------
+Data_Missing: "&c{name} postrádá informace v databázi! Prosím, vytvářejte {type} pouze ve hře! Přeskakuji.."
+Data_Loading: "Databáze aktuálně načítá data, čekejte prosím..."
+
+# -------------------------------------------------------------------------------------------------
+# Messages shown when player runs a command he lacks permission for
+# -------------------------------------------------------------------------------------------------
+No_Permission: "&cNemáte oprávnění: {permission}"
+
+# -------------------------------------------------------------------------------------------------
+# Messages shown when player tries to use a troll on someone with immunity
+# -------------------------------------------------------------------------------------------------
+Immune: "&c{target_name} &cje imunní vůči trollům."
+
+# -------------------------------------------------------------------------------------------------
+# Internal versioning number
+# -------------------------------------------------------------------------------------------------
+Version: 1
