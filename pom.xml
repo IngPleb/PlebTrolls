@@ -42,7 +42,7 @@
 
         <!-- Leave on "com.github.kangarko" if you use Foundation from GitHub like most people,
              or change to "org.mineacademy" if you downloaded our library to your disk and compiled it. -->
-        <foundation.path>com.github.kangarko</foundation.path>
+        <foundation.path>org.mineacademy</foundation.path>
 
         <!-- DO NOT EDIT. -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -83,9 +83,9 @@
         <!-- Use our Foundation library. It contains the latest Spigot API, you only need to import that if you build
              for a different version. In that case, place your API above Foundation so Maven will prioritize it. -->
         <dependency>
-            <groupId>${foundation.path}</groupId>
+            <groupId>org.mineacademy</groupId>
             <artifactId>Foundation</artifactId>
-            <version>${foundation.version}</version>
+            <version>6.6.4</version>
         </dependency>
 
         <dependency>
