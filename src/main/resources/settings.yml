@@ -32,7 +32,7 @@ Trolls:
   Command_Aliases: [ troll, tr ]
 
   # Should we ignore the staxzstrolls.immune permission?
-  Ignore_Immunity: true #TODO change to false
+  Ignore_Immunity: true
 
   # Should we log all executed trolls in the console?
   Log_Trolls: true
