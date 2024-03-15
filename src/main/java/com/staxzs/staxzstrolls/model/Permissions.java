@@ -188,7 +188,7 @@ public final class Permissions {
 		@Permission("Toggle slowness on the player")
 		public static final String SLOWNESS = "staxzstrolls.troll.slowness";
 
-		@Permission("Make the player unable levitate")
+		@Permission("Make the player levitate")
 		public static final String LEVITATION = "staxzstrolls.troll.levitation";
 
 		@Permission("Clear the player's armour")
@@ -197,7 +197,7 @@ public final class Permissions {
 		@Permission("Put your victim down to 1/2 heart")
 		public static final String NEAR_DEATH = "staxzstrolls.troll.near_death";
 
-		@Permission("Poisson the player")
+		@Permission("Poison the player")
 		public static final String POISON = "staxzstrolls.troll.poison";
 
 		@Permission("Dip the player in water")
