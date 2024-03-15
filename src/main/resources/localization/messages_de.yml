@@ -243,6 +243,7 @@ Commands:
   Invalid_String: "&cUngültige Zeichenfolge. Erhalten: '{input}&c'"
   Invalid_World: "Ungültige Welt '{world}'. Verfügbar: {available}"
   Label_Authors: "Erstellt von"
+  Label_Credits: "&7Weitere Informationen finden Sie unter &f{link}"
   Label_Description: "&c&lBeschreibung:"
   Label_Optional_Args: "optionale Argumente"
   Label_Required_Args: "erforderliche Argumente"

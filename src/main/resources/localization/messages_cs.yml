@@ -243,6 +243,7 @@ Commands:
   Invalid_String: "&cNeplatný řetězec. Získáno: '{input}&c'"
   Invalid_World: "Neplatný svět '{world}'. Dostupné: {available}"
   Label_Authors: "Vytvořeno"
+  Label_Credits: "&7Navštivte &f{link} &7pro více informací."
   Label_Description: "&c&lPopis:"
   Label_Optional_Args: "volitelné argumenty"
   Label_Required_Args: "požadované argumenty"

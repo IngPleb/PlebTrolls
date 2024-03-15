@@ -9,6 +9,7 @@ import org.mineacademy.fo.command.DebugCommand;
 import org.mineacademy.fo.command.PermsCommand;
 import org.mineacademy.fo.command.ReloadCommand;
 import org.mineacademy.fo.command.SimpleCommandGroup;
+import org.mineacademy.fo.settings.Lang;
 
 @AutoRegister
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
@@ -21,7 +22,8 @@ public final class StaxzsTrollsCommandGroup extends SimpleCommandGroup {
 
 	@Override
 	protected String getCredits() {
-		return ChatColor.GRAY + "Visit " + ChatColor.WHITE + "www.staxzs.com" + ChatColor.GRAY + " for more information."; // TODO: Change to real website
+		return Lang.of("Commands.Label_Credits")
+				.replace("{link}", "github.com/staxzs");
 	}
 
 	@Override

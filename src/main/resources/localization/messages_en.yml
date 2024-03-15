@@ -246,6 +246,7 @@ Commands:
   Invalid_String: "&cInvalid string. Got: '{input}&c'"
   Invalid_World: "Invalid world '{world}'. Available: {available}"
   Label_Authors: "Made by"
+  Label_Credits: "&7Visit &f{link} &7for more information."
   Label_Description: "&c&lDescription:"
   Label_Optional_Args: "optional arguments"
   Label_Required_Args: "required arguments"
