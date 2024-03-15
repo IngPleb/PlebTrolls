@@ -9,6 +9,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.model.Tuple;
 import org.mineacademy.fo.remain.CompMaterial;
@@ -45,7 +47,7 @@ public final class PotatoTroll extends ToggleableTroll {
 		droppedPotato.setPickupDelay(Integer.MAX_VALUE);
 		this.potatoPlayerLocation.put(targetUUID, droppedPotato);
 		FreezePlayerUtil.getINSTANCE().freezePlayerInPlace(targetUUID, true);
-		target.setInvisible(true);
+		target.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, Integer.MAX_VALUE, 1, false, false));
 	}
 
 	private void removePotatoEffect(Player target, UUID targetUUID) {
@@ -53,9 +55,9 @@ public final class PotatoTroll extends ToggleableTroll {
 		if (droppedPotato != null) {
 			droppedPotato.remove();
 			this.potatoPlayerLocation.remove(targetUUID);
+			FreezePlayerUtil.getINSTANCE().freezePlayerInPlace(targetUUID, false);
+			target.removePotionEffect(PotionEffectType.INVISIBILITY);
 		}
-		FreezePlayerUtil.getINSTANCE().freezePlayerInPlace(targetUUID, false);
-		target.setInvisible(false);
 	}
 
 	@Override

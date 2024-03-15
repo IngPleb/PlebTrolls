@@ -15,6 +15,7 @@ import org.mineacademy.fo.settings.Lang;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * The PlayerListMenu class extends the MenuPagged class and represents a paginated menu of online players in the game.
@@ -40,7 +41,7 @@ public class PlayerListMenu extends MenuPagged<Player> {
 	private static List<Player> getListOfPlayers() {
 		Collection<? extends Player> players = Remain.getOnlinePlayers();
 
-		return players.stream().map(player -> (Player) player).toList();
+		return players.stream().map(player -> (Player) player).collect(Collectors.toList());
 	}
 
 	@Override

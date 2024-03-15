@@ -44,8 +44,9 @@ public final class NoItemPickUpTroll extends ToggleableTroll {
 	public void onEntityPickupItem(EntityPickupItemEvent event) {
 		Entity entity = event.getEntity();
 
-		if (!(entity instanceof Player player))
+		if (!(entity instanceof Player))
 			return;
+		Player player = (Player) entity;
 
 		if (this.isToggled(player))
 			event.setCancelled(true);

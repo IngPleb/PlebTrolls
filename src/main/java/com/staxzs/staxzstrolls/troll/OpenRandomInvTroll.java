@@ -17,10 +17,18 @@ public final class OpenRandomInvTroll extends Troll {
 		int random = (int) (Math.random() * 4);
 
 		switch (random) {
-			case 0 -> target.openWorkbench(null, true);
-			case 1 -> target.openEnchanting(null, true);
-			case 2 -> target.openInventory(target.getEnderChest());
-			case 3 -> target.openInventory(target.getInventory());
+			case 0:
+				target.openWorkbench(null, true);
+				break;
+			case 1:
+				target.openEnchanting(null, true);
+				break;
+			case 2:
+				target.openInventory(target.getEnderChest());
+				break;
+			case 3:
+				target.openInventory(target.getInventory());
+				break;
 		}
 
 		return null;

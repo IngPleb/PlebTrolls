@@ -15,8 +15,9 @@ public final class SwapTroll extends Troll {
 
 	@Override
 	public Tuple<Boolean, String> performTroll(CommandSender sender, Player target) {
-		if (!(sender instanceof Player senderPlayer))
+		if (!(sender instanceof Player))
 			return new Tuple<>(false, "Only players can use this troll.");
+		Player senderPlayer = (Player) sender;
 
 		Location senderLocation = senderPlayer.getLocation();
 		Location targetLocation = target.getLocation();

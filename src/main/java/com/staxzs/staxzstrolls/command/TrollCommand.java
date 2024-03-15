@@ -67,18 +67,19 @@ public final class TrollCommand extends SimpleCommand {
 
 	@Override
 	protected List<String> tabComplete() {
-		return switch (this.args.length) {
-			case 1 -> Common.getPlayerNames();
-			case 2 -> {
+		switch (this.args.length) {
+			case 1:
+				return Common.getPlayerNames();
+			case 2:
 				Set<String> trollNames = (Settings.TrollSection.FILTER_BY_PERMISSION ?
 						Troll.getRegisteredTrollsByPlayer((Player) this.sender) : Troll.getRegisteredTrolls())
 						.stream()
 						.map(Troll::getName)
 						.collect(toSet());
 
-				yield this.completeLastWord(trollNames);
-			}
-			default -> NO_COMPLETE;
-		};
+				return this.completeLastWord(trollNames);
+			default:
+				return NO_COMPLETE;
+		}
 	}
 }

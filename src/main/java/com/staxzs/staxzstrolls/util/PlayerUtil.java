@@ -5,6 +5,7 @@ import org.mineacademy.fo.remain.Remain;
 import org.mineacademy.fo.settings.Lang;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * The PlayerUtil class provides utility methods related to Player entities in a game.
@@ -28,6 +29,6 @@ public final class PlayerUtil {
 						.replace("{target_food}", target.getFoodLevel() + "")
 						.replace("{target_gamemode}", target.getGameMode().name())
 						.replace("{target_world}", target.getWorld().getName()))
-				.toList();
+				.collect(Collectors.toList());
 	}
 }

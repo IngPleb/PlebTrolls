@@ -57,7 +57,7 @@ Trolls:
 
   # What type of entity should be spawned when a player is ambushed?
   # For all available entities, see: https://is.gd/hmC0XM
-  Ambush_Entity_Type: "PILLAGER"
+  Ambush_Entity_Type: "ZOMBIE"
 
   # How many entities should be spawned when a player is ambushed?
   Ambush_Entity_Amount: 3

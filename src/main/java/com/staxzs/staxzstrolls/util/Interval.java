@@ -4,10 +4,7 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * The Interval class represents a range of integers defined by a start and an end point.
@@ -52,7 +49,7 @@ public class Interval {
 	}
 
 	public List<Integer> toList() {
-		return List.copyOf(this.toSet());
+		return new ArrayList<>(this.toSet());
 	}
 
 }

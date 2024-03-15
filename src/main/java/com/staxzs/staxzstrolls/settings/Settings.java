@@ -7,7 +7,6 @@ import org.mineacademy.fo.settings.Lang;
 import org.mineacademy.fo.settings.SimpleSettings;
 import org.mineacademy.fo.settings.YamlStaticConfig;
 
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -23,7 +22,7 @@ import java.util.Set;
 public final class Settings extends SimpleSettings {
 
 	public static Boolean SILENT_START;
-	
+
 
 	/*
 	 * Automatically called method when we load settings.yml to load values in this class
@@ -42,21 +41,6 @@ public final class Settings extends SimpleSettings {
 	@Override
 	protected int getConfigVersion() {
 		return 1;
-	}
-
-	/**
-	 * Place the sections where user can create new "key: value" pairs
-	 * here so that they are not removed while adding comments.
-	 * <p>
-	 * Example use in ChatControl: user can add new channels in "Channels.List"
-	 * section so we place "Channels.List" here.
-	 *
-	 * @return the ignored sections
-	 */
-	@Override
-	protected List<String> getUncommentedSections() {
-		return List.of(
-				"Example.Uncommented_Section");
 	}
 
 	public static class TrollSection {
