@@ -24,10 +24,10 @@ public final class TNTTrapTroll extends Troll {
 
 		Location behindLocation = targetLocation.add(direction);
 		Location pressurePlateLocation = behindLocation.clone(); // One block below the player
-		Location tntLocation = pressurePlateLocation.clone().add(0, -1, 0); // One block below the pressure plate
+		Location tntLocation = pressurePlateLocation.clone().add(0, -2, 0); // One block below the pressure plate
 
-		pressurePlateLocation.getBlock().setType(org.bukkit.Material.STONE_PRESSURE_PLATE);
 		tntLocation.getBlock().setType(org.bukkit.Material.TNT);
+		pressurePlateLocation.getBlock().setType(org.bukkit.Material.STONE_PRESSURE_PLATE);
 
 		return null;
 	}
