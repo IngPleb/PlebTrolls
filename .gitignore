@@ -113,3 +113,4 @@ replay_pid*
 !/qodana.yaml
 /target/classes/localization/messages_cs.yml
 /target/classes/localization/messages_de.yml
+/qodana.yaml
