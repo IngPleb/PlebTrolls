@@ -13,6 +13,7 @@ import org.mineacademy.fo.settings.Lang;
 
 @AutoRegister
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
+@SuppressWarnings("unused")
 public final class StaxzsTrollsCommandGroup extends SimpleCommandGroup {
 
 	@Override
