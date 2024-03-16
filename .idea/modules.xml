@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/plugintemplate.iml" filepath="$PROJECT_DIR$/plugintemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/staxzstrolls.iml" filepath="$PROJECT_DIR$/staxzstrolls.iml" />
     </modules>
   </component>
 </project>

@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Change to your own main package name. -->
-    <groupId>com.staxzs</groupId>
+    <groupId>io.ingpleb</groupId>
 
     <!-- Change to your plugin name, must be lower cased and match your end package name. No spaces. -->
-    <artifactId>staxzstrolls</artifactId>
+    <artifactId>plebtrolls</artifactId>
 
     <!-- Change to your plugin's name. Can contain capital letters, but do NOT use spaces. -->
-    <name>StaxzsTrolls</name>
+    <name>PlebTrolls</name>
 
     <!-- Change to the appropriate plugin's version, starting at 1.0.0. -->
     <version>1.0.0</version>
@@ -21,10 +21,10 @@
     <properties>
 
         <!-- Change to your name or the main project author. -->
-        <author>Staxzs</author>
+        <author>IngPleb</author>
 
         <!-- Change to the full path where your main plugin class is located. -->
-        <main.class>com.staxzs.staxzstrolls.StaxzsTrolls</main.class>
+        <main.class>io.ingpleb.plebtrolls.PlebTrolls</main.class>
 
         <!-- Change the Java version this plugin is built on.
 
@@ -42,7 +42,7 @@
 
         <!-- Leave on "com.github.kangarko" if you use Foundation from GitHub like most people,
              or change to "org.mineacademy" if you downloaded our library to your disk and compiled it. -->
-        <foundation.path>org.mineacademy</foundation.path>
+        <foundation.path>com.github.kangarko</foundation.path>
 
         <!-- DO NOT EDIT. -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -83,11 +83,10 @@
         <!-- Use our Foundation library. It contains the latest Spigot API, you only need to import that if you build
              for a different version. In that case, place your API above Foundation so Maven will prioritize it. -->
         <dependency>
-            <groupId>org.mineacademy</groupId>
+            <groupId>${foundation.path}</groupId>
             <artifactId>Foundation</artifactId>
-            <version>6.6.4</version>
+            <version>${foundation.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>

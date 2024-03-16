@@ -17,11 +17,6 @@
 # !-----------------------------------------------------------------------------------------------!
 
 # -------------------------------------------------------------------------------------------------
-# Allows you to enable/disable the startup message.
-# -------------------------------------------------------------------------------------------------
-Silent_Start: false
-
-# -------------------------------------------------------------------------------------------------
 # Trolls section
 #
 # Here you can configure each aspect of the trolls.
@@ -31,7 +26,7 @@ Trolls:
   # What commands should trigger the troll command?
   Command_Aliases: [ troll, tr ]
 
-  # Should we ignore the staxzstrolls.immune permission?
+  # Should we ignore the plebtrolls.immune permission?
   Ignore_Immunity: true
 
   # Should we log all executed trolls in the console?
@@ -230,7 +225,7 @@ Location_Format: "{world} [{x}, {y}, {z}]"
 # -------------------------------------------------------------------------------------------------
 # What commands should trigger the main plugin command group?
 # -------------------------------------------------------------------------------------------------
-Command_Aliases: [ staxzstrolls ]
+Command_Aliases: [ plebtrolls ]
 
 # -------------------------------------------------------------------------------------------------
 # What language should we use for messages? If it exists, the language file will be copied
